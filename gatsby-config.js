@@ -26,6 +26,15 @@ module.exports = {
                 }
             },
         },
+        {
+            resolve: `gatsby-plugin-intl`,
+            options: {
+                path: `${__dirname}/src/intl`,
+                languages: [`pl`, `en`],
+                defaultLanguage: `pl`,
+                redirect: true,
+            },
+        },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         // {
