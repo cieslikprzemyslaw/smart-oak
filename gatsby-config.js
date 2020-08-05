@@ -7,6 +7,17 @@ module.exports = {
         `gatsby-plugin-sharp`,
         `gatsby-plugin-layout`,
         {
+            resolve: `gatsby-plugin-prefetch-google-fonts`,
+            options: {
+                fonts: [
+                    {
+                        family: `Mulish`,
+                        variants: [`400, 600, 700`],
+                    },
+                ],
+            },
+        },
+        {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,
