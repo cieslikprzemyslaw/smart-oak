@@ -1,11 +1,14 @@
 import React from "react"
-// import {Link} from "gatsby"
-// import {faReact} from "@fortawesome/free-brands-svg-icons"
-// import "typeface-muli"
+import Navigation from "../components/navigation/navigation";
+import GlobalStyles from '../assets/GlobalStyles';
+
 
 
 const IndexPage = () => (
-   <h1>Hello</h1>
+    <>
+        <GlobalStyles/>
+        <Navigation/>
+    </>
 )
 
 export default IndexPage
