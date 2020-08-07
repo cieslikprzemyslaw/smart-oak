@@ -1,9 +1,18 @@
-import React from "react"
+import React from 'react';
+import { useIntl } from 'gatsby-plugin-intl';
 
+const NotFoundPage = () => {
+    const intl = useIntl();
 
-const NotFoundPage = () => (
-    <>
-    </>
-)
+    return (
+        <>
+            <h1>
+                {intl.formatMessage({
+                    id: 'notFoundPage.test',
+                })}
+            </h1>
+        </>
+    );
+};
 
-export default NotFoundPage
+export default NotFoundPage;

@@ -1,2 +1,8 @@
 {
+    "notFoundPage": {
+        "test": "Welcome"
+    },
+    "homePage": {
+        "test": "Welcome"
+    }
 }

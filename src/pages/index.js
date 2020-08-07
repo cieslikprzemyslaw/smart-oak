@@ -1,11 +1,24 @@
-import React from "react"
-// import {Link} from "gatsby"
-// import {faReact} from "@fortawesome/free-brands-svg-icons"
-// import "typeface-muli"
+import React from 'react';
+import { useIntl } from 'gatsby-plugin-intl';
+import styled from 'styled-components';
 
+const StyledHeading = styled.h1`
+    color: ${({ theme: { colors } }) => colors.underline1};
+    font-size: ${({ theme: { fontSizes } }) => fontSizes.big};
+`;
 
-const IndexPage = () => (
-   <h1>Hello</h1>
-)
+const IndexPage = () => {
+    const intl = useIntl();
 
-export default IndexPage
+    return (
+        <>
+            <StyledHeading>
+                {intl.formatMessage({
+                    id: 'homePage.test',
+                })}
+            </StyledHeading>
+        </>
+    );
+};
+
+export default IndexPage;
