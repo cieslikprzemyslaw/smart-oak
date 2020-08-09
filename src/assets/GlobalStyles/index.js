@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-import 'typeface-muli';
 
 export default createGlobalStyle`
 * {
@@ -20,7 +19,7 @@ html {
 }
 
 body {
-    font-family: 'Muli', sans-serif ;
+   font-family: 'Muli', sans-serif ;
   font-size: 1.6rem ;
   font-weight: 300 ;
   touch-action: manipulation;
