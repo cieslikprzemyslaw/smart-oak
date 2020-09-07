@@ -11,4 +11,7 @@ export default {
         small: '1rem',
         big: '2.4rem',
     },
+    sizes: {
+        navigationHeight: '5rem',
+    },
 };
