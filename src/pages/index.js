@@ -5,7 +5,7 @@ import Nav from '../components/Navigation';
 import VideoSection from '../components/VideoSection';
 import ProjetsSection from '../components/ProjectsSection';
 import Footer from '../components/Footer';
-
+import MoreInfo from '../components/MoreInfo';
 const StyledHeading = styled.h1`
     color: ${({ theme: { colors } }) => colors.underline1};
     font-size: ${({ theme: { fontSizes } }) => fontSizes.big};
@@ -21,6 +21,7 @@ const IndexPage = () => {
                 <VideoSection />
             </div>
             <ProjetsSection />
+            <MoreInfo />
             <Footer />
         </>
     );
