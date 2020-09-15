@@ -1,19 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import moreInfoImage from '../../assets/images/ee0b4f1923892e73fdae2ce30834984b.jpg';
+import moreInfoImage from '../../assets/images/moreInfo-photo.jpg';
 
 const Container = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 4rem 7rem;
 
     @media only screen and (max-width: 1000px) {
      flex-direction: column-reverse;
      align-items: center;
      text-align: center;
-
+  
+   
      h3{
-         margin: 21px auto 0;
+         margin: 2.1rem auto 0;
      }
     }
 
@@ -24,33 +25,33 @@ const HeadingAndTitle = styled.div`
         
         h3{
             border-bottom: 3px solid #4099C0;
-            width: 180px;
+            width: 18rem;
             font-weight: bold;
-            font-size: 24px;
+            font-size: 2.4rem;
            
         }
         
         p{
-            margin-top: 39px;
-            width: 401px;
+           
+            max-width: 40rem;
 
- 
+            margin-top: 4rem;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
-            line-height: 25px;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
         }
 `;
 
 const Image = styled.img`
 
-    width: 489px;
-    height: 353px;
+        max-width: 50rem;
+        
+
 `;
  
-function MoreInfo() {
-
-
+ 
+const MoreInfo = () =>{
     return (
        <Container>
         <HeadingAndTitle>
