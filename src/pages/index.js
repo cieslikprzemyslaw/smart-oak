@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import { useIntl } from 'gatsby-plugin-intl';
 import styled from 'styled-components';
-import Nav from '../components/Navigation';
+import Nav from '../components/Nav';
+import MobileNav from '../components/MobileNav';
 import VideoSection from '../components/VideoSection';
 import ProjetsSection from '../components/ProjectsSection';
 import Footer from '../components/Footer';
@@ -18,6 +19,7 @@ const IndexPage = () => {
         <>
             <div className="pinSection">
                 <Nav />
+                <MobileNav />
                 <VideoSection />
             </div>
             <ProjetsSection />

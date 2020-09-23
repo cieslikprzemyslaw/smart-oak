@@ -82,7 +82,7 @@ const VideoSection = ({ navRef }) => {
                     <source src={videoSrc} type="video/mp4" />
                 </VideoWrapper>
                 <TextContainer>
-                    <Title ref={titleRef}>SOCIAL & COMMERCIAL MINDS</Title>
+                    <Title ref={titleRef}>SMART OAK PLATFORM</Title>
                     <Description forwardRef={descRef} />
                 </TextContainer>
             </DesktopWrapper>

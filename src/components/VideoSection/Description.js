@@ -43,8 +43,8 @@ const DescriptionTitle = styled.h2`
     font-style: normal;
     font-weight: bold;
     margin-bottom: 3rem;
-    font-size: 72px;
-    line-height: 113.5%;
+    font-size: 48px;
+    line-height: 111.5%;
     color: #fff;
 
     @media only screen and (max-width: 900px) {
@@ -58,10 +58,10 @@ const DescriptionText = styled.p`
     font-weight: 600;
     margin-bottom: 7.8rem;
     width: 830px;
-    font-size: 18px;
-    line-height: 126.5%;
+    font-size: 20px;
+    line-height: 136%;
     color: #fff;
-
+    text-transform: uppercase;
     @media only screen and (max-width: 900px) {
         font-size: 16px;
         line-height: 125%;
@@ -102,10 +102,14 @@ const Description = ({ forwardRef }) => {
     return (
         <Section>
             <DescriptionContainer ref={forwardRef}>
-                <DescriptionTitle>KRÓTKIE COPY ZACHĘCAJĄCE DO WZIĘCIA UDZIAŁU</DescriptionTitle>
+                <DescriptionTitle>
+                    Pobierz naszą platformę i bierz aktywny udział w realizacji projektów
+                    społecznych, naukowych i komercyjnych.
+                </DescriptionTitle>
                 <DescriptionText>
-                    ŚLEDŹ NASZE MEDIA SPOŁECZNOŚCIOWE I BĄDŹ NA BIEŻĄCO - POWSTAJĄ APLIKACJE NA
-                    RÓŻNE PLATFORMY, Z KTÓRYMI BĘDZIESZ MÓGŁ REALIZOWAĆ PROJEKTY.
+                    Dołącz do naszego środowiska projektowego i zawalcz o stypendia od NeuroN
+                    Foundation. Rozwijaj umiejętności liderskie, znajdź sponsorów i inwestorów dla
+                    twoich projektów (dostępna od 6.06.2021).
                 </DescriptionText>
                 <SocialMedia />
                 <DescriptionButton>dowiedz się wiecej</DescriptionButton>
