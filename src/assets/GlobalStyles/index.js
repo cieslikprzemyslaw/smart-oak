@@ -10,7 +10,6 @@ export default createGlobalStyle`
 *::after,
 *::before {
     box-sizing: inherit;
-    /* border: 1px solid red; */
 }
 
 html {
@@ -21,10 +20,12 @@ html {
 body {
    font-family: 'Muli', sans-serif ;
   font-size: 1.6rem ;
+  background-color: #F9F7F6;
   font-weight: 300 ;
   touch-action: manipulation;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   overflow-x: hidden;   
+  visibility: hidden;
 }
 
 img {

@@ -1,68 +1,52 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import videoSrc from '../../assets/videos/video.mp4';
-import mobileImgSrc from '../../assets/images/video-mobile.png';
 import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-import MobileSection from './mobileIndex';
+
 import Description from './Description';
+import logoSrc from '../../assets/images/smart-oak-platform-logo.svg';
+
 const Container = styled.div`
     position: relative;
+    height: calc(100vh - 5.5rem);
 `;
+const TextContainer = styled.div`
+    position: relative;
+    height: 100%;
+`;
+
 const VideoWrapper = styled.video`
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: fill;
-    @media screen and (max-width: 900px) {
-        display: none;
-        visibility: hidden;
-    }
-`;
-const DesktopWrapper = styled.div`
-height: ${({ theme: { sizes } }) => `calc(100vh - ${sizes.navigationHeight}`})};
-    @media screen and (max-width: 900px) {
-        display: none;
-        visibility: hidden;
-    }
-`;
-const TextContainer = styled.div`
-    position: absolute;
+    object-fit: cover;
 `;
 
-const Title = styled.h1`
-    color: #fff;
+const StyledLogo = styled.img`
+    width: 90rem;
     position: absolute;
-    width: 650px;
-    height: 306px;
-    left: 76px;
-    top: 269px;
-    font-weight: bold;
-    font-size: 9.6rem;
-    line-height: 106%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 1100px) {
+        width: 70rem;
+    }
+    @media screen and (max-width: 600px) {
+        width: 90%;
+    }
 `;
 
 const VideoSection = ({ navRef }) => {
-    const titleRef = useRef(null);
+    const imgRef = useRef(null);
     const descRef = useRef(null);
+
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        const tl = gsap.timeline({
-            // todo after adding some others sections.
-            // scrollTrigger: {
-            //     trigger: '.pinSection',
-            //     id: 'test',
-            //     markers: true,
-            //     scrub: 0.1,
-            //     pin: '.pinSection',
-            //     // pinSpacing: false,
-            //     once: true,
-            // },
-        });
-        tl.from(titleRef.current, { opacity: 0, y: '+=15' })
-            .to(titleRef.current, {
+        const tl = gsap.timeline();
+
+        tl.from(imgRef.current, { opacity: 0, y: '+=15' })
+            .to(imgRef.current, {
                 opacity: 0,
                 y: '-=15',
                 duration: 1.5,
@@ -74,19 +58,15 @@ const VideoSection = ({ navRef }) => {
             });
     }, []);
 
-    const passRef = (ref) => {};
     return (
         <Container>
-            <DesktopWrapper>
-                <VideoWrapper muted autoPlay preload="auto" playsinline>
-                    <source src={videoSrc} type="video/mp4" />
-                </VideoWrapper>
-                <TextContainer>
-                    <Title ref={titleRef}>SMART OAK PLATFORM</Title>
-                    <Description forwardRef={descRef} />
-                </TextContainer>
-            </DesktopWrapper>
-            <MobileSection />
+            <VideoWrapper muted autoPlay preload="auto" playsinline>
+                <source src={videoSrc} type="video/mp4" />
+            </VideoWrapper>
+            <TextContainer>
+                <StyledLogo src={logoSrc} alt="" ref={imgRef} />
+                <Description forwardRef={descRef} />
+            </TextContainer>
         </Container>
     );
 };

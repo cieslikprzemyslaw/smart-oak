@@ -2,10 +2,8 @@ import React from 'react';
 import { injectIntl } from 'gatsby-plugin-intl';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-import { ThemeProvider } from 'styled-components';
-
 import GlobalStyles from '../assets/GlobalStyles';
-import theme from '../assets/theme';
+
 // import Cookie from "../components/Cookie"
 
 const Layout = ({ children }) => {
@@ -30,7 +28,7 @@ const Layout = ({ children }) => {
                     }}
                 />
             </Helmet>
-            <ThemeProvider theme={theme}>{children}</ThemeProvider>
+            {children}
 
             {/* <Cookie /> */}
         </>

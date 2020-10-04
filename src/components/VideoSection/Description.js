@@ -1,20 +1,9 @@
-import React, { useEffect, useRef } from 'react';
-import styled, { css } from 'styled-components';
-import videoSrc from '../../assets/videos/video.mp4';
-import mobileImgSrc from '../../assets/images/video-mobile.png';
-import { gsap } from 'gsap';
-import SocialMedia from './SocialMedia';
-import ScrollTrigger from 'gsap/ScrollTrigger';
-
-const positionAbsoluteNoTopAndLeft = css`
-    position: absolute;
-    top: 0;
-    left: 0;
-`;
+import React from 'react';
+import styled from 'styled-components';
+import SocialMedia from '../common/SocialMedia';
+import { useIntl } from 'gatsby-plugin-intl';
 
 const Section = styled.div`
-    width: 100%;
-    height: 100%;
     object-fit: fill;
     height: 100vh;
 
@@ -26,20 +15,26 @@ const Section = styled.div`
     }
 `;
 
-const DescriptionContainer = styled.div`
-    ${positionAbsoluteNoTopAndLeft}
-
+const Container = styled.div`
+    width: 59vw;
+    @media only screen and (max-width: 1250px) {
+        width: 80vw;
+    }
     @media only screen and (max-width: 900px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: 120px;
-        margin-left: 30px;
-        margin-right: 30px;
+    }
+    @media only screen and (max-width: 550px) {
+        width: 90vw;
     }
 `;
-const DescriptionTitle = styled.h2`
+const Title = styled.h2`
     font-style: normal;
     font-weight: bold;
     margin-bottom: 3rem;
@@ -52,8 +47,16 @@ const DescriptionTitle = styled.h2`
         line-height: 119%;
         margin-bottom: 2rem;
     }
+    @media only screen and (max-width: 500px) {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
 `;
-const DescriptionText = styled.p`
+const Description = styled.p`
     font-style: normal;
     font-weight: 600;
     margin-bottom: 7.8rem;
@@ -68,8 +71,16 @@ const DescriptionText = styled.p`
         margin-bottom: 4rem;
         width: 100%;
     }
+    @media only screen and (max-width: 500px) {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
 `;
-const DescriptionButton = styled.a`
+const Button = styled.a`
     width: 319px;
     height: 43px;
     margin-top: 5rem;
@@ -78,7 +89,6 @@ const DescriptionButton = styled.a`
     font-weight: bold;
     font-size: 14px;
     line-height: 125%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,34 +97,43 @@ const DescriptionButton = styled.a`
     color: #000000;
     @media only screen and (min-width: 900px) {
         padding: 15px 30px;
-
         width: 250px;
         background: transparent;
         height: 41px;
-
         border: 2px solid #ffffff;
         box-sizing: border-box;
         color: #fff;
     }
+    @media only screen and (max-width: 500px) {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
 `;
 
-const Description = ({ forwardRef }) => {
+const DescriptionSection = ({ forwardRef }) => {
+    const intl = useIntl();
     return (
         <Section>
-            <DescriptionContainer ref={forwardRef}>
-                <DescriptionTitle>
-                    Pobierz naszą platformę i bierz aktywny udział w realizacji projektów
-                    społecznych, naukowych i komercyjnych.
-                </DescriptionTitle>
-                <DescriptionText>
-                    Dołącz do naszego środowiska projektowego i zawalcz o stypendia od NeuroN
-                    Foundation. Rozwijaj umiejętności liderskie, znajdź sponsorów i inwestorów dla
-                    twoich projektów (dostępna od 6.06.2021).
-                </DescriptionText>
+            <Container ref={forwardRef}>
+                <Title>
+                    {intl.formatMessage({
+                        id: `videoSection.downloadPlatform`,
+                    })}
+                </Title>
+                <Description>
+                    {intl.formatMessage({
+                        id: `videoSection.joinEnvironment`,
+                    })}
+                </Description>
                 <SocialMedia />
-                <DescriptionButton>dowiedz się wiecej</DescriptionButton>
-            </DescriptionContainer>
+                {/* todo: to translate. Waiting for translation from Paweł Starczewski */}
+                <Button>dowiedz się wiecej</Button>
+            </Container>
         </Section>
     );
 };
-export default Description;
+export default DescriptionSection;

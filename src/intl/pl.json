@@ -1,8 +1,68 @@
 {
-    "notFoundPage": {
-        "test": "Witam"
+    "navigation": {
+        "download": "Pobierz",
+        "search": "Szukaj",
+        "contact": "Kontakt",
+        "aboutUs": "O nas",
+        "otherSites": "Inne Strony",
+        "searchIn": "Szukaj W"
     },
-    "homePage": {
-        "test": "Witam"
+
+    "videoSection": {
+        "downloadPlatform": "Pobierz naszą platformę i bierz aktywny udział w realizacji projektów społecznych, naukowych i komercyjnych.",
+        "joinEnvironment": "Dołącz do naszego środowiska projektowego i zawalcz o stypendia od NeuroN Foundation. Rozwijaj umiejętności liderskie, znajdź sponsorów i inwestorów dla twoich projektów."
+    },
+    "projectSection": {
+        "title1": "Podbijaj świat",
+        "title2": "projektami!",
+        "block1": "Smart Oak to innowacyjna platforma dla społeczności projektowych, która ułatwi poszerzanie kompetencji oraz da możliwość brania udziału w projektach społecznych, naukowych i komercyjnych. Mnogość narzędzi pozwoli na sprawną komunikację i zarządzanie. Na platformie dostępny będzie tasker, mapy myśli, dyski, ankiety, komunikator tekstowy, głosowy i videorozmowy. A to dopiero początek!",
+        "block2": "Użytkowanie platformy, jak i udział w projektach, są całkowicie darmowe. Portal jest budowany w ramach NeuroN Foundation, a tworzący go specjaliści udzielają swojego wsparcia nieodpłatnie wszystkim grupom projektowym. System jest rozwiązaniem dla osób budujących innowacje w sektorze społecznym, naukowym i komercyjnym.",
+        "block3": "Naszym celem jest też rozwijanie dialogu wśród osób kreatywnych, co zdecydowanie przełoży się na wzrost podejmowanych realizacji. Każdą grupę organizującą projekt można w łatwy sposób obserwować i dzięki temu śledzić jej postępy. Jeżeli interesuje cię śledzenie innych projektów, to również znajdziesz tu swoje miejsce. Sprawdzaj postępy grup projektowych, uzyskuj informacje od aktywistów i przedsiębiorców, czyli osób kluczowych względem projektów społecznie użytecznych, jak i tych nastawionych na zysk."
+    },
+    "opportunitiesSection": {
+        "title1": "Korzystaj z",
+        "title2": "możliwości",
+        "block1": {
+            "bold": "Stypendia i punkty",
+            "description": "zdobywane podczas realizacji projektów pomogą w dalszym motywowaniu i szkoleniu się. Fundacja oferuje granty dla najbardziej zaangażowanych uczestników oraz możliwość uzyskania referencji, co ma realny wpływ na zaistnienie w wybranym zawodzie."
+        },
+        "block2": {
+            "bold": "Kontakt z partnerami i współorganizatorami",
+            "description": "nie zawsze jest ogólnodostępny, a platforma online wychodzi temu problemowi naprzeciw. Bezpośredni kontakt z partnerami podczas wspólnej pracy jest kluczowym elementem usprawniającym realizację projektu."
+        },
+        "block3": {
+            "bold": "Narzędzia projektowe",
+            "description": "dostępne w jednym miejscu razem z zaawansowanym komunikatorem. Doceni to każdy, kto już miał okazję brać udział w realizacji projektów. Nasz system posiada dyski z możliwością tworzenia dokumentów i ankiet, taskery, mapy myśli i wiele innych przydatnych rozwiązań."
+        },
+        "block4": {
+            "bold": "Wzrost kompetencji zawodowych",
+            "description": "a także innych umiejętności miękkich takich jak komunikacja czy inteligencja emocjonalna, są istotne w przyszłej pracy, niezależnie od stanowiska czy rodzaju zatrudnienia."
+        },
+        "block5": {
+            "bold": "Aniołowie biznesu i sponsorzy",
+            "description": "obecni na platformie chętnie zainteresują się twoimi projektami. W grupach można na bieżąco informować o postępach za pomocą postów publicznych. Daj się zauważyć! To szansa na wsparcie nie tylko merytoryczne, ale i finansowe."
+        },
+        "block6": {
+            "bold": "Szkolenia i wydarzenia,",
+            "description": "które będą znajdować się na platformie, nie tylko ułatwią kontakt z partnerami, ale przede wszystkim pomogą zdobyć cenną wiedzę i umiejętności. Zwykle są to szkolenia płatne, jednak uczestnicy platformy mają prawie wszystkie szkolenia za darmo."
+        },
+        "block7": {
+            "bold": "Współpraca ze specjalistami i sławnymi",
+            "description": "to nie tylko możliwość uzyskania wsparcia od prawników, grafików, copywriterów etc. To również szansa na pomoc w promocji ze strony osób rozpoznawalnych w show biznesie. Każdy może podzielić się czymś, co przyczyni się do sukcesu młodego projektu."
+        },
+        "block8": {
+            "bold": "Dostępność Smart Oak",
+            "description": "jest na bardzo wysokim poziomie i z pewnością znajdziesz tam rozwiązanie dla siebie. Możesz zainstalować nasz portal na laptopie (Windows, macOS), a także ściągnąć aplikację na telefon (Android, iOS). Jest też opcja korzystania z platformy z pomocą przeglądarki. Korzystaj jak ci wygodnie!"
+        },
+        "block9": {
+            "bold": "Komunikaty projektowe",
+            "description": "pozwolą trzymać rękę na pulsie. Platforma za sprawą naszych informatorów pozwala czerpać cenne spersonalizowane informacje ze świata biznesu, startupów i działań prospołecznych. Bądź blisko informacji – to zwykle one dają przewagę na starcie!"
+        }
+    },
+    "descriptionSection": "Smart Oak to przede wszystkim przestrzeń dla społeczeństwa projektowego. Znajdzie się tu miejsce dla społecznych wilków, fanów startupów, naukowców, organizatorów wydarzeń, a także przedsiębiorców. Inwestorzy, sponsorzy i aniołowie biznesu również znajdą tu ciekawe możliwości. Każdy projekt można w łatwy sposób wspierać finansowo. Platforma pozwala każdemu aktywnie udzielać się w grupach informacyjnych. Przyczyni się to do poznania innych pasjonatów, z którymi wspólnie można rozwijając swoje zainteresowania i realizować nowe projekty. System stwarza też możliwość brania działu w e-wolontariacie – każdy z odpowiednimi kompetencjami będzie mógł się zaangażować w pomoc młodzieży. Dzięki takiemu rozwiązaniu swoimi kompetencjami będzie mógł wspierać każdy, kto posiada doświadczenie projektowe. Użytkownicy naszego portalu będą mogli personalizować swoje profile, czyniąc je atrakcyjniejszymi dla innych. Zwiększy to szansę na otrzymanie zaproszeń do uczestnictwa w projektach od innych grup projektowych lub pomoże znaleźć pracę marzeń. Ocena wszystkich podjętych działań na platformie będzie kończyć się z początkiem wakacji, natomiast podsumowanie odbędzie się podczas kilkudniowego wydarzenia w sierpniu. Rozdamy wtedy stypendia i wyróżnienia. Konferencja Smart Oak Projects pozwoli przedstawić ranking najlepszych projektów i szkół oraz zaprezentować najlepsze projekty od strony ich realizacji. Do zobaczenia na naszym portalu. Łap motywację i podbijaj świat projektami!",
+    "general": {
+        "rights": "Wszelkie prawa zastrzeżone",
+        "websiteMadeBy": "Strona zeralizowana przez firmę",
+        "privacyPolicy": "Polityka prywatności"
     }
 }

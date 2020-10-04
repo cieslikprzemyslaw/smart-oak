@@ -1,8 +1,67 @@
 {
-    "notFoundPage": {
-        "test": "Welcome"
+    "navigation": {
+        "download": "Download",
+        "search": "Search",
+        "contact": "Contact",
+        "aboutUs": "About us",
+        "otherSites": "Other Websites",
+        "searchIn": "Search In"
     },
-    "homePage": {
-        "test": "Welcome"
+    "videoSection": {
+        "downloadPlatform": "Download our platform and get actively involved in community, scientific, and commercial projects",
+        "joinEnvironment": "Join our project environment and compete for NeuroN Foundation scholarships. Develop your leadership skills, find sponsors and investors to support your ideas."
+    },
+    "projectSection": {
+        "title1": "Conquer the world with",
+        "title2": "your projects!",
+        "block1": "Smart Oak is an innovative platform for project-oriented communities, which is to facilitate the development of skills and competencies as well as make it possible to take part in community, scientific, and commercial projects. The multitude of tools to choose from guarantees efficient communication and management. The platform will feature Tasker, mind maps, drives, surveys, a text/voice messaging solution and a video chat solution. And this is just the beginning!",
+        "block2": "Using the platform and taking part in projects is absolutely free of charge. The platform is developed within the framework of NeuroN Foundation, and the specialists involved in it offer their support free of charge to all project groups. The system is a solution designed for those who create innovations in the community, scientific, and commercial sectors.",
+        "block3": "Our goal is also to develop dialog between creative individuals, which will definitely contribute to an increase in the number of pursued projects. Every project group can be easily followed, which makes it possible to track their progress. If you’d like to follow other projects, this is also the place for you. Check the progress made by project groups, get updates from activities and entrepreneurs, meaning key players in the domain of community and profit-oriented projects."
+    },
+    "opportunitiesSection": {
+        "title1": "Make the most of the available",
+        "title2": "opportunities",
+        "block1": {
+            "bold": "The scholarships and points",
+            "description": "obtained during project implementation will be good incentives, useful in further learning. The foundation offers grants to the most engaged users as well as credentials, which will be a great advantage in the pursuit of one’s profession."
+        },
+        "block2": {
+            "bold": "Getting in touch with partners and co-organizers",
+            "description": "is not always easy but our online platform addresses this issue. Contacting partners directly during joint projects is the key to making a project run smoothly and effectively."
+        },
+        "block3": {
+            "bold": "Project tools",
+            "description": "available in one place, along with an advanced messaging app. Anyone having taken part in a project before will surely find it much useful. Our system features two drives where you can create documents and surveys. There are also Taskers, mind maps, and many other practical solutions."
+        },
+        "block4": {
+            "bold": "Improving your professional competence",
+            "description": "and soft skills such as communication or emotional intelligence is important to your future career, no matter the position or the type of employment."
+        },
+        "block5": {
+            "bold": "The business angels and sponsors",
+            "description": "who have joined the platform will be interested to hear about your projects. You can post regular public updates to your groups to inform others about the progress you’ve made. Make yourself noticed! It’s a chance to get support including not only professional advice but also finance."
+        },
+        "block6": {
+            "bold": "The training courses and events",
+            "description": "found on the platform will not only facilitate getting in touch with partners but also help you acquire valuable knowledge and skills. These usually include paid training courses, but platform participants get access to almost all such courses free of charge."
+        },
+        "block7": {
+            "bold": "Working with industry specialists and well-known individuals",
+            "description": "is not only an opportunity to take advantage of the support offered by lawyers, graphic designers, copywriters etc. It’s also a chance to get help in promoting your projects from people known in show business. Everyone can contribute with something to help a budding project grow and succeed."
+        },
+        "block8": {
+            "bold": "Smart Oak’s availability",
+            "description": "is very high, and you’ll surely find a solution that will be right for you. You can install our platform on a laptop (Windows, macOS), or download it as an app to your smartphone (Android, iOS). You can also use the platform in your browser. Use it as you see fit!"
+        },
+        "block9": {
+            "bold": "Project notifications",
+            "description": "will help you keep your finger on the pulse. Thanks to our sources, the platform makes it possible to get valuable relevant, personalized information from the worlds of business, start-ups, and community initiatives. Stay updated – information is usually what can give you a head start!"
+        }
+    },
+    "descriptionSection": "Smart Oak is mainly a space for project-oriented communities. It’s a place for social wolves, start-up fans, scientists event organizers, and businesspeople alike. Investors, sponsors, and business angels will find some interesting opportunities here as well Every project can be supported financially in a really easy way. The platform lets everyone actively engage in the activity of informatio groups. This will make it possible for people with particular passions to get to know each other and then cultivate their interests and work o projects together. The system offers also a possibility to engage in e-volunteering – anyone with the right skills and abilities will be abl to get involved in helping the youth. This will make it possible for anyone with project experience to contribute with their competence an expertise. Platform users will be also able to customize their profiles to make them more attractive to others. This will increase thei chances of receiving an invitation to take part in projects from other project groups or help them land their dream job. All activities an initiatives undertaken on the platform will be assessed at the beginning of summer vacation, and the official summary will take place during  several-day event in August. This will also be when we award scholarships and give honorable mentions. The Smart Oak Projects conference wil be an occasion to present the ranking of the best projects and schools and to showcase the details of the best projects. See you on ou platform. Get motivated and conquer the world with your projects!",
+    "general": {
+        "rights": "All rights reserved",
+        "websiteMadeBy": "Website made by the company",
+        "privacyPolicy": "Privacy policy"
     }
 }

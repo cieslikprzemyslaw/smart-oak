@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-
 import PropTypes from 'prop-types';
 
 const SubmenuWrapper = styled.ul`
@@ -80,17 +79,33 @@ const StyledLink = styled.a`
 `;
 
 const Submenu = ({ krs, data }) => {
-    return (
-        <SubmenuWrapper>
-            {data.map((e, i) => {
-                return (
-                    <SubmenuListItem key={i}>
-                        <StyledLink href={e.path}>{e.text}</StyledLink>
-                    </SubmenuListItem>
-                );
-            })}
-        </SubmenuWrapper>
-    );
+    if (krs) {
+        return (
+            <SubmenuWrapper right krs={krs}>
+                {data.map((e, i) => {
+                    return (
+                        <SubmenuListItem key={i} flex>
+                            <StyledText flex isSecond={i === 1}>
+                                {e.text}
+                            </StyledText>
+                        </SubmenuListItem>
+                    );
+                })}
+            </SubmenuWrapper>
+        );
+    } else {
+        return (
+            <SubmenuWrapper>
+                {data.map((e, i) => {
+                    return (
+                        <SubmenuListItem key={i}>
+                            <StyledLink href={e.path}>{e.text}</StyledLink>
+                        </SubmenuListItem>
+                    );
+                })}
+            </SubmenuWrapper>
+        );
+    }
 };
 
 Submenu.propTypes = {

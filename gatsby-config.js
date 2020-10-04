@@ -1,4 +1,5 @@
 module.exports = {
+    pathPrefix: '/LP',
     plugins: [
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-styled-components`,
@@ -19,6 +20,9 @@ module.exports = {
                 languages: [`pl`, `en`],
                 defaultLanguage: `pl`,
                 redirect: true,
+                // redirectComponent: require.resolve(
+                //     `./src/components/Redirect/redirect.js`
+                // ),
             },
         },
         {

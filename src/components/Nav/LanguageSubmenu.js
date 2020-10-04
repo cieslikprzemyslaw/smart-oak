@@ -7,7 +7,7 @@ const SubmenuWrapper = styled.ul`
     left: 0;
     position: absolute;
     background-color: #0e0e0e;
-    z-index: 99999999999999999999999999999;
+    z-index: 99;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,20 +17,13 @@ const SubmenuWrapper = styled.ul`
 const SubmenuListItem = styled.li`
     margin: 1.6rem 0;
     list-style-type: none;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    padding: 1.2rem 0.8rem;
+
+    cursor: pointer;
     &:first-child {
         margin-top: 2.4rem;
-    }
-    span {
-        color: rgba(255, 255, 255, 0.8);
-        text-decoration: none;
-        padding: 1.2rem 0.8rem;
-
-        cursor: pointer;
-    }
-    &:hover {
-        span {
-            color: #2a80f8;
-        }
     }
 `;
 
@@ -40,12 +33,10 @@ const LanguageSubmenu = () => {
             <IntlContextConsumer>
                 {({ languages, language: currentLocale }) =>
                     languages
-                        .filter(e => e !== currentLocale)
-                        .map(language => (
-                            <SubmenuListItem key={language}>
-                                <span onClick={() => changeLocale(language)}>
-                                    {language.toUpperCase()}
-                                </span>
+                        .filter((e) => e !== currentLocale)
+                        .map((language) => (
+                            <SubmenuListItem key={language} onClick={() => changeLocale(language)}>
+                                {language.toUpperCase()}
                             </SubmenuListItem>
                         ))
                 }

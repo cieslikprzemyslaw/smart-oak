@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
-import { IoMdMenu, IoMdClose, IoMdHome } from 'react-icons/io';
+import { IoMdMenu, IoMdClose } from 'react-icons/io';
 import PropTypes from 'prop-types';
 
 const fadeInFromNone = keyframes`
@@ -47,7 +47,7 @@ const MobileNavBtn = ({ open, onClick, homeBtn }) => {
                       }
             }
         >
-            {open ? <IoMdClose /> : homeBtn ? <IoMdHome /> : <IoMdMenu />}
+            {open ? <IoMdClose /> : <IoMdMenu />}
         </MobileBtn>
     );
 };
