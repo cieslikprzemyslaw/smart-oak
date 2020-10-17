@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 import BackgroundImage from '../../assets/images/some-dude-in-cafe.png';
 
-gsap.registerPlugin(ScrollTrigger)
+ 
 
 const DummySection = styled.section`
 
@@ -15,7 +15,7 @@ const DummySection = styled.section`
 `;
 
 const Section = styled.section`
-    height: 1000px;
+    height: 2000px;
          
 `;
 
@@ -24,8 +24,9 @@ const TextContainer = styled.div`
     background: url(${BackgroundImage}) no-repeat top;
     height: 100%;
     background-size: contain;
-     
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
+    
 `;
 
 const Heading = styled.h2`
@@ -51,21 +52,32 @@ const SecondAnimation = () => {
     
     const TextContainerRef = useRef(null);;
 
-       useEffect(() => {
-        
-        gsap.fromTo(TextContainerRef.current, 
-        {width: '80%'},
-        {width: '100%',  duration: 1, scrollTrigger:{
-                trigger: TextContainerRef.current,
-                start: 'top top',
-                end: 'bottom bottom',
-                scrub: true,
-                scrub: 1,
-                markers: {startColor: "green", endColor: "red", fontSize: "12px"}
-           
-            }
-        })
+  
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
 
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: TextContainerRef.current,
+                start: '-5% top',
+                end: "+=500",
+                scrub: 0.3,
+                pin: true,
+                markers: {startColor: "green", endColor: "red", fontSize: "12px"}
+            },
+        });
+
+        
+      
+
+        tl.to(
+            TextContainerRef.current,{  scale: 1.3,
+                ease: 'none',
+                duration: 0.2,
+            }
+        )
+       
+          
     }, []);
 
     return(
