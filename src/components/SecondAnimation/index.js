@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import BackgroundImage from '../../assets/images/some-dude-in-cafe.png';
+import ImageSrc from '../../assets/images/some-dude-in-cafe.png';
 
  
 
@@ -14,26 +14,19 @@ const DummySection = styled.section`
 
 `;
 
-const Section = styled.section`
+const Wrapper = styled.div`
     height: 2000px;
          
 `;
 
-const TextContainer = styled.div`
-    
-    background: url(${BackgroundImage}) no-repeat top;
-    height: 100%;
-    background-size: contain;
-    width: 80%;
-    margin: 0 auto;
-    
-`;
+ 
 
 const Heading = styled.h2`
     display: flex;
     flex-direction: column;
     color: black;
      
+   
     width: 80%;
     margin: 100px auto;
     
@@ -47,34 +40,55 @@ const Heading = styled.h2`
     }
 `;
 
+const Image = styled.img`
+  margin: 0 auto;
+  width: 80%;
+  display: block;
+  object-fit: none;
+
+    
+`;
+
+
+
+const Text = styled.p`
+
+    font-size: 20px;
+    opacity: 0;
+`;
+ 
+
 const SecondAnimation = () => {
 
     
-    const TextContainerRef = useRef(null);;
-
+    const ImageRef = useRef(null);
+    const TextRef = useRef(null);
   
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
         const tl = gsap.timeline({
             scrollTrigger: {
-                trigger: TextContainerRef.current,
-                start: '-5% top',
-                end: "+=500",
+                trigger: ImageRef.current,
+                start: '-10% top',
+                end:  '+=600',
                 scrub: 0.3,
-                pin: true,
+                 
+                
                 markers: {startColor: "green", endColor: "red", fontSize: "12px"}
             },
         });
 
-        
-      
-
-        tl.to(
-            TextContainerRef.current,{  scale: 1.3,
-                ease: 'none',
-                duration: 0.2,
-            }
+       
+        tl.fromTo(
+            ImageRef.current,
+            {width: '80%',ease: 'none'},
+            {width: '100%',ease: 'none'}
+        )
+        .fromTo(
+            TextRef.current,
+            { opacity: 0, ease: 'none' },
+            { opacity: 1, ease: 'none' },
         )
        
           
@@ -82,14 +96,15 @@ const SecondAnimation = () => {
 
     return(
 
-        <Section>
+        <Wrapper>
         <DummySection></DummySection>
+       
         <Heading><span>Podbijaj świat</span>Projektami.</Heading>
-        <TextContainer ref={TextContainerRef}>
-        
-        </TextContainer>
+        <Image ref={ImageRef} src={ImageSrc}></Image>
+        <Text ref={TextRef}>Smart Oak to innowacyjna platforma dla społeczności projektowych, która ułatwi poszerzanie kompetencji oraz da możliwość brania udziału w projektach społecznych, naukowych i komercyjnych. Mnogość narzędzi pozwoli na sprawną komunikację i zarządzanie. Na platformie dostępny będzie tasker, mapy myśli, dyski, ankiety, komunikator tekstowy, głosowy i videorozmowy. A to dopiero początek!</Text>
+     
         <DummySection></DummySection>
-        </Section>
+        </Wrapper>
     );
 
 }
