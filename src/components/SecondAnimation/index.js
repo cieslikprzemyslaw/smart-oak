@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import ImageSrc from '../../assets/images/some-dude-in-cafe.png';
-
+import { useIntl } from 'gatsby-plugin-intl';
  
 
 const DummySection = styled.section`
@@ -25,10 +25,9 @@ const Heading = styled.h2`
     display: flex;
     flex-direction: column;
     color: black;
-     
    
     width: 80%;
-    margin: 100px auto;
+    margin: 100px auto 0;
     
     font-style: normal;
     font-weight: bold;
@@ -40,19 +39,27 @@ const Heading = styled.h2`
     }
 `;
 
-const Image = styled.img`
-  margin: 0 auto;
-  width: 80%;
-  display: block;
-  object-fit: none;
+const ImageAndTextContainer = styled.div`
 
-    &.fixedScrolling {
-        position: sticky;
-        top: 0;
-        left: 0;
-        right: 0;
-      
+    position: relative;
+    
+    .pin-spacer{
+        width: 100% !important;
+        margin: 0 auto !important;
     }
+
+   
+    
+`;
+
+const Image = styled.img`
+   
+    display: inline-block !important;
+    object-fit: none;
+    width: 100%;
+    margin: 0 auto !important;
+    max-width: none !important;
+    transform: scaleX(0.8);
 `;
 
 
@@ -60,13 +67,35 @@ const Image = styled.img`
 const Text = styled.p`
 
     font-size: 20px;
-    opacity: 0;
+    color: white;
+    position: absolute;
+    left: 130px;
+    bottom: 300px;
+    width: 800px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 152%;
+
+    p{ margin: 24px 0;
+         
+    }
+   
+
+    & p:first-of-type{
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 152%;
+    color: #F9F9F9;
+}
+    
 `;
  
 
 const SecondAnimation = () => {
 
-    
+    const intl = useIntl();
     const ImageRef = useRef(null);
     const TextRef = useRef(null);
   
@@ -76,21 +105,19 @@ const SecondAnimation = () => {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ImageRef.current,
-                start: '-10% top',
-                end:  '+=600',
-                scrub: 0.3,
-                toggleClass: 'fixedScrolling',
+                start: 'top',
+                end:  '+=400',
+                scrub: 0.5,
                 
-                markers: {startColor: "green", endColor: "red", fontSize: "12px"}
+                pin: true,
+                
             },
         });
-
+ 
        
-        tl.fromTo(
-            ImageRef.current,
-            {width: '80%',ease: 'none'},
-            {width: '100%',ease: 'none'}
-        )
+        tl.to(ImageRef.current,
+            {transform: "scaleX(1)"})
+           
         .fromTo(
             TextRef.current,
             { opacity: 0, ease: 'none' },
@@ -106,9 +133,26 @@ const SecondAnimation = () => {
         <DummySection></DummySection>
        
         <Heading><span>Podbijaj świat</span>Projektami.</Heading>
+        <ImageAndTextContainer>
         <Image ref={ImageRef} src={ImageSrc}></Image>
-        <Text ref={TextRef}>Smart Oak to innowacyjna platforma dla społeczności projektowych, która ułatwi poszerzanie kompetencji oraz da możliwość brania udziału w projektach społecznych, naukowych i komercyjnych. Mnogość narzędzi pozwoli na sprawną komunikację i zarządzanie. Na platformie dostępny będzie tasker, mapy myśli, dyski, ankiety, komunikator tekstowy, głosowy i videorozmowy. A to dopiero początek!</Text>
-     
+        <Text ref={TextRef}>
+        <p>
+        {intl.formatMessage({
+            id: `projectSection.block1`,
+        })}
+        </p>
+        <p>
+        {intl.formatMessage({
+            id: `projectSection.block2`,
+        })}
+        </p>
+        <p>
+        {intl.formatMessage({
+            id: `projectSection.block3`,
+        })}
+        </p>
+        </Text>
+        </ImageAndTextContainer> 
         <DummySection></DummySection>
         </Wrapper>
     );
