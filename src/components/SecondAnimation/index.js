@@ -46,7 +46,13 @@ const Image = styled.img`
   display: block;
   object-fit: none;
 
-    
+    &.fixedScrolling {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+      
+    }
 `;
 
 
@@ -73,7 +79,7 @@ const SecondAnimation = () => {
                 start: '-10% top',
                 end:  '+=600',
                 scrub: 0.3,
-                 
+                toggleClass: 'fixedScrolling',
                 
                 markers: {startColor: "green", endColor: "red", fontSize: "12px"}
             },
