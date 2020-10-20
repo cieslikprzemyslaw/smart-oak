@@ -4,7 +4,11 @@ import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import ImageSrc from '../../assets/images/some-dude-in-cafe.png';
 import { useIntl } from 'gatsby-plugin-intl';
- 
+import CSSRulePlugin from "gsap/CSSRulePlugin";
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(CSSRulePlugin);
+
 
 const DummySection = styled.section`
 
@@ -16,6 +20,15 @@ const DummySection = styled.section`
 
 const Wrapper = styled.div`
     height: 2000px;
+
+    .ImageAndTextContainer:before{
+        content: '';
+        display: block;
+        width: 550px;
+        height: 100%;
+        background: white;
+    }
+
          
 `;
 
@@ -40,27 +53,29 @@ const Heading = styled.h2`
 `;
 
 const ImageAndTextContainer = styled.div`
+    display: flex;
 
-    position: relative;
+    height: 700px;
+
+    
     
     .pin-spacer{
-        width: 100% !important;
+       
         margin: 0 auto !important;
     }
 
+  
+    margin: 0 auto;
+
+    background: url(${ImageSrc}) no-repeat;
+    background-size: 100%;
+ 
+    background-position: 0 0;
    
+    width: 100%
     
 `;
 
-const Image = styled.img`
-   
-    display: inline-block !important;
-    object-fit: none;
-    width: 100%;
-    margin: 0 auto !important;
-    max-width: none !important;
-    transform: scaleX(0.8);
-`;
 
 
 
@@ -68,10 +83,7 @@ const Text = styled.p`
 
     font-size: 20px;
     color: white;
-    position: absolute;
-    left: 130px;
-    bottom: 300px;
-    width: 800px;
+    
 
     font-style: normal;
     font-weight: normal;
@@ -91,34 +103,44 @@ const Text = styled.p`
 }
     
 `;
- 
 
+     
 const SecondAnimation = () => {
 
-    const intl = useIntl();
-    const ImageRef = useRef(null);
-    const TextRef = useRef(null);
   
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+    const intl = useIntl();
+    
+    const ImageAndTextRef = useRef(null);
+    const TextRef = useRef(null);
 
+    
+
+    useEffect(() => {
+       
+      
         const tl = gsap.timeline({
             scrollTrigger: {
-                trigger: ImageRef.current,
+                trigger: ImageAndTextRef.current,
                 start: 'top',
                 end:  '+=400',
                 scrub: 0.5,
-                
+                 
                 pin: true,
                 
             },
         });
- 
+        const beforeRef = CSSRulePlugin.getRule(".ImageAndTextContainer:before");  
+   
        
-        tl.to(ImageRef.current,
-            {transform: "scaleX(1)"})
-           
-        .fromTo(
+        tl.to(beforeRef, { duration: 1, cssRule: { backgroundColor: "#F43C09" }}); 
+ 
+        console.log('rule: '+ beforeRef );
+        tl.to( beforeRef,  {
+          cssRule: { width: 0 },
+          delay: 1
+        });
+        
+        tl.fromTo(
             TextRef.current,
             { opacity: 0, ease: 'none' },
             { opacity: 1, ease: 'none' },
@@ -133,8 +155,7 @@ const SecondAnimation = () => {
         <DummySection></DummySection>
        
         <Heading><span>Podbijaj świat</span>Projektami.</Heading>
-        <ImageAndTextContainer>
-        <Image ref={ImageRef} src={ImageSrc}></Image>
+        <ImageAndTextContainer ref={ImageAndTextRef} className="ImageAndTextContainer"> 
         <Text ref={TextRef}>
         <p>
         {intl.formatMessage({
