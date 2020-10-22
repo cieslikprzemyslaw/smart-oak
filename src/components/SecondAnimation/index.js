@@ -58,10 +58,10 @@ const ImageAndTextContainer = styled.div`
     }
     
     
-    .pin-spacer{
+    // .pin-spacer{
        
-        margin: 0 auto !important;
-    }
+    //     margin: 0 auto !important;
+    // }
 
   
     margin: 0 auto;
@@ -117,6 +117,7 @@ const SecondAnimation = () => {
     const WhiteBoxLeft = useRef(null);
     const ImageAndTextRef = useRef(null);
     const TextRef = useRef(null);
+    const animationWrapper = useRef(null);
 
     
 
@@ -125,12 +126,12 @@ const SecondAnimation = () => {
       
         const tl = gsap.timeline({
             scrollTrigger: {
-                trigger: ImageAndTextRef.current,
-                start: 'top',
+                trigger: animationWrapper.current,
+                start: '-20%',
                 end:  '+=400',
                 scrub: 0.5,
-                toggleActions: 'play restart none none',
-                pin: true,
+                
+                pin: false,
                 
             },
         });
@@ -151,7 +152,7 @@ const SecondAnimation = () => {
 
         <Wrapper>
         <DummySection></DummySection>
-       
+        <div ref={animationWrapper}>
         <Heading><span>Podbijaj świat</span>Projektami.</Heading>
         <ImageAndTextContainer ref={ImageAndTextRef} className="ImageAndTextContainer"> 
         <div className="WhiteBox" ref={WhiteBoxLeft}></div>
@@ -174,6 +175,7 @@ const SecondAnimation = () => {
         </Text>
         <div className="WhiteBox" ref={WhiteBoxRight}></div>
         </ImageAndTextContainer> 
+        </div>
         <DummySection></DummySection>
         </Wrapper>
     );
