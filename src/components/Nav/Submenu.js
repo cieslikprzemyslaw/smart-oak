@@ -3,13 +3,14 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
 const SubmenuWrapper = styled.ul`
-    width: 17rem;
 
+    width: 17rem;
     left: 48%;
+    margin-top:10px;
     transform: translateX(-50%);
     position: absolute;
     background-color: #0e0e0e;
-    z-index: 99999999999999999999999999999;
+    z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;

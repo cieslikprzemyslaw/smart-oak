@@ -14,14 +14,11 @@ const documentGlobal = typeof document !== 'undefined';
 const SearchBtn = styled.span`
     color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
-    padding: 1.2rem 1.4rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
-    svg {
-        margin-left: 1rem;
-    }
 `;
 
 const Container = styled.div`
@@ -37,14 +34,14 @@ const Container = styled.div`
         display: none;
     }
 `;
-const StyledLink = styled((props) => <Link {...props} />)`
+const StyledLink = styled((props) => <Link {...props} />)`  
     color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
     padding: 1.2rem ${(props) => (props.rightNav ? '1rem' : '1.4rem')};
     display: flex;
     align-items: center;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 15px;
     svg {
         margin-left: 1rem;
     }
@@ -56,18 +53,6 @@ const fadeIn = keyframes`
   100% {
     opacity: 1;
   }
-`;
-
-const MiddleNav = styled.div`
-    display: flex;
-    align-items: center;
-    margin-left: 5rem;
-    height: 100%;
-    animation: ${(props) => (props.anim ? '0.6' : '0')}s ${fadeIn} ease-out;
-
-    @media screen and (max-width: 1000px) {
-        margin-left: 0rem;
-    }
 `;
 
 const DropdownLinkItem = styled.div`
@@ -88,8 +73,9 @@ const DropdownLinkItem = styled.div`
 const RightNav = styled.div`
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 600px;
     height: 100%;
-    padding-right: 1.6rem;
     animation: ${(props) => (props.anim ? '0.6' : '0')}s ${fadeIn} ease-out;
 `;
 
@@ -97,7 +83,7 @@ const DropdownLink = styled.li`
     color: ${(props) => props.color};
     text-decoration: none;
     list-style-type: none;
-    font-size: 14px;
+    font-size: 15px;
     padding: 1.2rem ${(props) => (props.rightNav ? '1rem' : '1.4rem')};
     cursor: pointer;
     position: relative;
@@ -135,24 +121,7 @@ const NavPrimary = () => {
         <Container>
             {showSearch ? null : <SocialIcons navigation />}
 
-            {showSearch ? (
-                <Search onInputClose={onInputClose} isDesktop projectsList={projectsList} />
-            ) : (
-                <MiddleNav anim={firstLoad}>
-                    <StyledLink to="/download/">
-                        {intl.formatMessage({
-                            id: `navigation.download`,
-                        })}
-                        <FaDownload />
-                    </StyledLink>
-                    <SearchBtn onClick={() => setShowSearch(true)}>
-                        {intl.formatMessage({
-                            id: `navigation.search`,
-                        })}
-                        <FaSearch />
-                    </SearchBtn>
-                </MiddleNav>
-            )}
+    {showSearch ? (<Search onInputClose={onInputClose} isDesktop projectsList={projectsList} />):(<></>)}
             {showSearch ? null : (
                 <RightNav anim={firstLoad}>
                     <StyledLink rightNav to="/contact/">
@@ -174,11 +143,13 @@ const NavPrimary = () => {
                             {intl.formatMessage({
                                 id: `navigation.otherSites`,
                             })}
-                            <FaAngleDown />
+                            
                         </DropdownLinkItem>
                         {showProjectMenu && <Submenu data={allProjectsList} />}
                     </DropdownLink>
-
+                    <SearchBtn onClick={() => setShowSearch(true)}>
+                        <FaSearch />
+                    </SearchBtn>
                     <DropdownLink
                         rightNav
                         onMouseLeave={() => setShowLangMenu(false)}
@@ -190,10 +161,15 @@ const NavPrimary = () => {
                                     currentLocale.toUpperCase()
                                 }
                             </IntlContextConsumer>
-                            <FaAngleDown />
                         </DropdownLinkItem>
                         {showLangMenu && <LanguageSubmenu />}
                     </DropdownLink>
+                        <StyledLink to="/download/">
+                            {intl.formatMessage({
+                                id: `navigation.download`,
+                            })}
+                            <FaDownload />
+                        </StyledLink>
                 </RightNav>
             )}
         </Container>
