@@ -1,14 +1,11 @@
 import React, { useRef, useEffect } from 'react';
 import styled, { css } from 'styled-components';
-import { FaFacebookSquare, FaLinkedin, FaYoutube } from 'react-icons/fa';
-import { AiFillInstagram } from 'react-icons/ai';
+import { FaFacebookSquare, FaLinkedin, FaYoutube, FaTwitter,FaInstagram } from 'react-icons/fa';
 import { gsap } from 'gsap';
 
 const Container = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 30.5rem;
 
     @media only screen and (max-width: 600px) {
         width: 80%;
@@ -23,8 +20,9 @@ const Container = styled.div`
     ${({ navigation }) =>
         navigation &&
         css`
-            width: 20rem;
-            padding-left: 1.6rem;
+            width: 260px;
+            justify-content: space-evenly;
+            margin-left: 3rem
         `}
 `;
 
@@ -33,12 +31,13 @@ const ExternalLink = styled.a`
     transition: all 0.15s ease;
     font-size: ${({ footer }) => (footer ? '2.4rem' : '3.2rem')};
     color: white;
-    margin-right: 0;
 
     ${({ navigation }) =>
         navigation &&
         css`
-            font-size: 1.6rem;
+            margin-top: 5px;
+            font-size: 1.8rem;
+            padding: .3rem .8rem;
         `}
 `;
 
@@ -55,17 +54,21 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
             icon: FaFacebookSquare,
         },
         {
-            href: 'https://www.linkedin.com/company/smartoakproject/',
-            icon: FaLinkedin,
+            href: 'https://www.facebook.com/smartoakproject/',
+            icon: FaTwitter,
+        },
+        {
+            href: 'https://www.instagram.com/smartoakproject/',
+            icon: FaInstagram
         },
         {
             href: 'https://www.youtube.com/c/SmartOakProject/featured',
             icon: FaYoutube,
         },
         {
-            href: 'https://www.instagram.com/smartoakproject/',
-            icon: AiFillInstagram,
-        },
+            href: 'https://www.linkedin.com/company/smartoakproject/',
+            icon: FaLinkedin,
+        }
     ];
     const mapIcons = Icons.map(({ href, icon: Icon }) => (
         <ExternalLink
