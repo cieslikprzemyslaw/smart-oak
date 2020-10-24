@@ -53,16 +53,11 @@ const ImageAndTextContainer = styled.div`
     .WhiteBox{
         display: block;
         height: 100%;
-        width: 400px;
+        width: 35vw;
         background: #F9F7F6;
     }
     
     
-    // .pin-spacer{
-       
-    //     margin: 0 auto !important;
-    // }
-
   
     margin: 0 auto;
 
@@ -115,7 +110,7 @@ const SecondAnimation = () => {
     const intl = useIntl();
     const WhiteBoxRight = useRef(null);
     const WhiteBoxLeft = useRef(null);
-    const ImageAndTextRef = useRef(null);
+     
     const TextRef = useRef(null);
     const animationWrapper = useRef(null);
 
@@ -154,7 +149,7 @@ const SecondAnimation = () => {
         <DummySection></DummySection>
         <div ref={animationWrapper}>
         <Heading><span>Podbijaj świat</span>Projektami.</Heading>
-        <ImageAndTextContainer ref={ImageAndTextRef} className="ImageAndTextContainer"> 
+        <ImageAndTextContainer className="ImageAndTextContainer"> 
         <div className="WhiteBox" ref={WhiteBoxLeft}></div>
         <Text ref={TextRef}>
         <p>
