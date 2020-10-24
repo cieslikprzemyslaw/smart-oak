@@ -6,7 +6,7 @@ import ProjetsSection from '../components/ProjectsSection';
 import Footer from '../components/Footer';
 
 import Opportunities from '../components/OpportunitiesSection';
-import Describtion from '../components/DescriptionSection';
+import DescriptionSection from '../components/DescriptionSection';
 import { gsap } from 'gsap';
 
 const IndexPage = () => {
@@ -20,7 +20,7 @@ const IndexPage = () => {
             <VideoSection />
             <ProjetsSection />
             <Opportunities />
-            <Describtion />
+            <DescriptionSection />
             <Footer />
         </>
     );
