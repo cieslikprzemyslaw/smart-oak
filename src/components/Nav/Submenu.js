@@ -9,7 +9,7 @@ const SubmenuWrapper = styled.ul`
     margin-top:10px;
     transform: translateX(-50%);
     position: absolute;
-    background-color: #0e0e0e;
+    background-color: black;
     z-index: 9999;
     display: flex;
     justify-content: center;

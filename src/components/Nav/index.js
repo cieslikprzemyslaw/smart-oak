@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { IntlContextConsumer, Link, useIntl } from 'gatsby-plugin-intl';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { FaSearch, FaDownload, FaAngleDown } from 'react-icons/fa';
+import { BsSearch } from 'react-icons/bs';
 import LanguageSubmenu from './LanguageSubmenu';
 import Search from './Search';
 import Submenu from './Submenu';
@@ -25,7 +25,7 @@ const Container = styled.div`
     height: 5.5rem;
     min-height: 5rem;
     /* z-index: 20; */
-    background-color: #0e0e0e;
+    background-color: black;
     line-height: 1.5;
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,7 @@ const Container = styled.div`
     }
 `;
 const StyledLink = styled((props) => <Link {...props} />)`  
-    color: rgba(255, 255, 255, 0.85);
+    color: #fff;
     text-decoration: none;
     padding: 1.2rem ${(props) => (props.rightNav ? '1rem' : '1.4rem')};
     display: flex;
@@ -58,7 +58,8 @@ const fadeIn = keyframes`
 const DropdownLinkItem = styled.div`
     display: flex;
     align-items: center;
-    color: rgba(255, 255, 255, 0.85);
+    color: #fff;
+    font-size:15px;
     svg {
         margin-left: 0.5rem;
     }
@@ -124,6 +125,11 @@ const NavPrimary = () => {
     {showSearch ? (<Search onInputClose={onInputClose} isDesktop projectsList={projectsList} />):(<></>)}
             {showSearch ? null : (
                 <RightNav anim={firstLoad}>
+                    <StyledLink to="/download/">
+                            {intl.formatMessage({
+                                id: `navigation.download`,
+                            })}
+                        </StyledLink>
                     <StyledLink rightNav to="/contact/">
                         {intl.formatMessage({
                             id: `navigation.contact`,
@@ -148,7 +154,7 @@ const NavPrimary = () => {
                         {showProjectMenu && <Submenu data={allProjectsList} />}
                     </DropdownLink>
                     <SearchBtn onClick={() => setShowSearch(true)}>
-                        <FaSearch />
+                        <BsSearch/>
                     </SearchBtn>
                     <DropdownLink
                         rightNav
@@ -164,12 +170,6 @@ const NavPrimary = () => {
                         </DropdownLinkItem>
                         {showLangMenu && <LanguageSubmenu />}
                     </DropdownLink>
-                        <StyledLink to="/download/">
-                            {intl.formatMessage({
-                                id: `navigation.download`,
-                            })}
-                            <FaDownload />
-                        </StyledLink>
                 </RightNav>
             )}
         </Container>
