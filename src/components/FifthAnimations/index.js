@@ -1,3 +1,3 @@
-import FifthAnimation from './FifthAnimation';
+import FourthAnimation from './FourthAnimation';
 
 export default FourthAnimation;

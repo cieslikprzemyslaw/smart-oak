@@ -1,5 +1,6 @@
 import React from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
+import { useIntl } from 'gatsby-plugin-intl';
 
 const FifthAnimation = () => {
   return (
