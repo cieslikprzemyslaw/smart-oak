@@ -30,7 +30,7 @@ const MobileBtn = styled.div`
         animation: ${fadeInFromNone} 0.7s linear;
     }
 `;
-const MobileNavBtn = ({ open, onClick, homeBtn }) => {
+const MobileNavBtn = ({ open, onClick }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {

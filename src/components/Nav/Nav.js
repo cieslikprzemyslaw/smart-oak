@@ -186,9 +186,7 @@ const NavPrimary = () => {
                     >
                         <DropdownLinkItem>
                             <IntlContextConsumer>
-                                {({ languages, language: currentLocale }) =>
-                                    currentLocale.toUpperCase()
-                                }
+                                {({ language: currentLocale }) => currentLocale.toUpperCase()}
                             </IntlContextConsumer>
                             <FaAngleDown />
                         </DropdownLinkItem>

@@ -173,7 +173,7 @@ const MobileNav = () => {
                 >
                     <DropDownButton open={langMenu}>
                         <IntlContextConsumer>
-                            {({ languages, language: currentLocale }) => {
+                            {({ language: currentLocale }) => {
                                 return <DropDownLink>{currentLocale.toUpperCase()} </DropDownLink>;
                             }}
                         </IntlContextConsumer>
@@ -192,6 +192,7 @@ const MobileNav = () => {
                                     .map((language) => (
                                         <MobileNavItem
                                             dropdown
+                                            key={language}
                                             onClick={() => {
                                                 setHomeMenu(false);
                                                 changeLocale(language);

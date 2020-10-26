@@ -130,7 +130,7 @@ const InputSearch = ({ isDesktop, handleRef }) => {
 
     useEffect(() => {
         handleRef(childRef);
-    }, []);
+    }, [handleRef]);
 
     const inputPlaceholder = `${intl.formatMessage({
         id: 'navigation.searchIn',
@@ -172,7 +172,7 @@ export default class Search extends Component {
                 this.searchInMenu,
             );
         } else {
-            this.setState((prevState) => ({
+            this.setState(() => ({
                 searchedLinks: this.props.projectsList,
             }));
         }
