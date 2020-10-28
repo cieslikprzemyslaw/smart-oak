@@ -54,7 +54,7 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
             icon: FaFacebookSquare,
         },
         {
-            href: 'https://www.facebook.com/smartoakproject/',
+            href: 'https://twitter.com/smart_oak',
             icon: FaTwitter,
         },
         {
