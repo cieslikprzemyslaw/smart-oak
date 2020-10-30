@@ -48,7 +48,7 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
         if (mobileNav) {
             gsap.to(containerRef.current, { opacity: 1, delay: 0.2, duration: 0.6 });
         }
-    }, []);
+    }, [mobileNav]);
     const Icons = [
         {
             href: 'https://www.facebook.com/smartoakproject/',
