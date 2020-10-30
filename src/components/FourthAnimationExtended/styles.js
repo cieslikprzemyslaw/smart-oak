@@ -8,7 +8,7 @@ const FourthAnimationExtended = styled.div`
     background-attachment: fixed;
 `;
 
-const StyledImg = styled.img`
+const AnimationImg = styled.img`
     width: 100%;
 `;
 
@@ -55,7 +55,7 @@ const AfterAnimationContentHeader = styled.h2`
 `;
 
 export {
-    StyledImg,
+    AnimationImg,
     AnimationContainer,
     AnimationContent,
     AnimationContentHeader,

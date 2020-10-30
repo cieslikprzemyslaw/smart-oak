@@ -5,7 +5,7 @@ import { scaleImgOnScroll, pinContent } from './Animate';
 import {
     AnimationContentParagraph,
     AnimationContainer,
-    StyledImg,
+    AnimationImg,
     AnimationContent,
     AnimationContentHeader,
     AfterAnimationContainer,
@@ -26,7 +26,7 @@ const FourthAnimation = () => {
     return (
         <FourthAnimationExtended>
             <AnimationContainer>
-                <StyledImg src={ImageSrc} ref={imgRef} />
+                <AnimationImg src={ImageSrc} ref={imgRef} />
                 <AnimationContent id="fourth-animation-content">
                     <AnimationContentHeader>
                         <h2>
