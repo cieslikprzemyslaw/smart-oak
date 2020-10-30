@@ -25,6 +25,7 @@ const VideoWrapper = styled.video`
 `;
 
 const StyledLogo = styled.img`
+    will-change: opacity, scale;
     width: 90rem;
     position: absolute;
     top: 40%;
@@ -45,17 +46,30 @@ const VideoSection = ({ navRef }) => {
     useEffect(() => {
         const tl = gsap.timeline();
 
-        tl.from(imgRef.current, { opacity: 0, y: '+=15' })
-            .to(imgRef.current, {
+        tl
+            .from(imgRef.current, {
+                skewX:0.01,
+                transformOrigin: "center",
+                scale: .6,
                 opacity: 0,
-                y: '-=15',
-                duration: 1.5,
+                duration: 3,
+                delay: .5
+            })
+            .to(imgRef.current, {
+                skewX:0.01,
+                scale: .95,
+                opacity: 0,
+                duration:1.5,
                 delay: 2,
             })
             .from(descRef.current.children, {
+                skewX:0.01,
+                transformOrigin: "center",
+                duration: 1,
+                x: '-=40',
                 opacity: 0,
-                y: '+=50',
-            });
+                stagger: .1
+            })
     }, []);
 
     return (
