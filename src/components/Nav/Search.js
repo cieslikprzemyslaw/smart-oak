@@ -2,6 +2,7 @@ import React, { Component, useRef, useEffect } from 'react';
 import styled, { keyframes, css } from 'styled-components';
 import { Link, useIntl } from 'gatsby-plugin-intl';
 import { AiOutlineSearch, AiOutlineClose } from 'react-icons/ai';
+import {gsap} from 'gsap';
 
 const fadeIn = keyframes`
   0% {
@@ -64,6 +65,8 @@ const DropdownLink = styled(Link)`
     color: #000;
     position: relative;
     text-decoration: none;
+    transform: translateX(30%);
+    opacity: 0;
 
     &:hover {
         &:last-child {
@@ -115,6 +118,8 @@ const Input = styled.input`
             color: rgba(255, 255, 255, 0.85);
             outline: none;
             animation: 0.6s ${fadeIn} ease-out;
+            transform: translateX(30%);
+            opacity: 0;
             &::-webkit-search-decoration,
             &::-webkit-search-cancel-button,
             &::-webkit-search-results-button,
@@ -129,6 +134,12 @@ const InputSearch = ({ isDesktop, handleRef }) => {
     const childRef = useRef(null);
 
     useEffect(() => {
+            gsap.to(childRef.current, 1, {
+                    transform: 'translateX(0)',
+                    duration: 0.5,
+                    opacity: 1,
+                    ease: 'none',
+                });
         handleRef(childRef);
     }, []);
 
@@ -157,6 +168,13 @@ export default class Search extends Component {
     };
     componentDidMount = () => {
         document.addEventListener('mousedown', this.handleClickOutside);
+        gsap.to(this.wrapperRef.children, {
+            transform: 'translateX(0)',
+            opacity: 1,
+            duration: 0.3,
+            stagger: 0.2,
+            ease: 'none',
+        })
     };
 
     componentWillUnmount() {
@@ -236,6 +254,7 @@ export default class Search extends Component {
                             this.clearIfEmpty();
                         }}
                         value={this.state.searchedPhrase}
+                    ref={InputSearch => (this.searchbar =InputSearch)}
                     />
 
                     <DropDown ref={(node) => (this.wrapperRef = node)}>
@@ -255,7 +274,7 @@ export default class Search extends Component {
                     </DropDown>
 
                     <AiOutlineClose
-                        style={{ fontSize: '1.9rem' }}
+                        style={{ fontSize: '1.9rem', zIndex: '10' }}
                         onClick={this.props.isDesktop ? this.props.onInputClose : this.props}
                     />
                 </SearchWrapper>

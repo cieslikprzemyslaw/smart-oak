@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { IntlContextConsumer, Link, useIntl } from 'gatsby-plugin-intl';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -8,6 +8,7 @@ import Search from './Search';
 import Submenu from './Submenu';
 import SocialIcons from '../common/SocialMedia';
 import { allProjectsList, projectsList } from '../common/commonData';
+import {gsap} from 'gsap';
 
 const documentGlobal = typeof document !== 'undefined';
 
@@ -96,6 +97,8 @@ const NavPrimary = () => {
     const [showSearch, setShowSearch] = useState(false);
     const [firstLoad, setFirstLoad] = useState(false);
 
+     const rightNavAnimation = useRef(null);
+
     useEffect(() => {
         setTimeout(() => {
             setFirstLoad(true);
@@ -114,6 +117,26 @@ const NavPrimary = () => {
         }
     }
 
+    const menuHidenDelay = () => {
+        setTimeout(() => {
+            setShowSearch(true)
+            console.log(showSearch)
+        }, 800);
+    }
+
+    const menuAnimation = (refElement) => {
+        gsap.to(refElement.current, {
+            opacity: 0,
+            duration: 0.8,
+            ease: 'none',
+        })
+    }
+
+    const openSearchbar = () => {
+        menuAnimation(rightNavAnimation);
+        menuHidenDelay();
+    }
+
     function onInputClose() {
         setShowSearch(false);
     }
@@ -124,7 +147,7 @@ const NavPrimary = () => {
 
     {showSearch ? (<Search onInputClose={onInputClose} isDesktop projectsList={projectsList} />):(<></>)}
             {showSearch ? null : (
-                <RightNav anim={firstLoad}>
+                <RightNav anim={firstLoad} ref={rightNavAnimation}>
                     <StyledLink to="/download/">
                             {intl.formatMessage({
                                 id: `navigation.download`,
@@ -153,7 +176,7 @@ const NavPrimary = () => {
                         </DropdownLinkItem>
                         {showProjectMenu && <Submenu data={allProjectsList} />}
                     </DropdownLink>
-                    <SearchBtn onClick={() => setShowSearch(true)}>
+                    <SearchBtn onClick={openSearchbar}>
                         <BsSearch/>
                     </SearchBtn>
                     <DropdownLink
