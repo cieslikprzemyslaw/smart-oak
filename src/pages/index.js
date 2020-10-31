@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import Opportunities from '../components/OpportunitiesSection';
 import DescriptionSection from '../components/DescriptionSection';
 import { gsap } from 'gsap';
+import ThirdAnimation from '../components/ThirdAnimation';
 
 const IndexPage = () => {
     useEffect(() => {
@@ -19,8 +20,9 @@ const IndexPage = () => {
             <MobileNav />
             <VideoSection />
             <ProjetsSection />
-            <Opportunities />
+            {false && <Opportunities />}
             <DescriptionSection />
+            <ThirdAnimation></ThirdAnimation>
             <Footer />
         </>
     );
