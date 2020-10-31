@@ -21,7 +21,6 @@ export const pinContent = (elem) => {
         trigger: elem,
         start: 'top',
         end: 'bottom 100%',
-        markers: true,
         pin: '#fourth-animation-content',
     });
 };
