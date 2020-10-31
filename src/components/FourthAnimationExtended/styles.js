@@ -14,6 +14,7 @@ const AnimationImg = styled.img`
 
 const AnimationContainer = styled.div`
     position: relative;
+    overflow: hidden;
 `;
 
 const AnimationContent = styled.div`
@@ -47,11 +48,31 @@ const AfterAnimationContentParagraph = styled.p`
     margin-top: 40px;
     font-size: 24px;
     line-height: 1.5;
+
+    @media screen and (max-width: 900px) {
+        font-size: 22px;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 21px;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 20px;
+    }
 `;
 
 const AfterAnimationContentHeader = styled.h2`
-    font-size: 44px;
+    font-size: 37px;
     line-height: 1.2;
+
+    @media screen and (max-width: 900px) {
+        font-size: 33px;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 27px;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 22px;
+    }
 `;
 
 export {
