@@ -11,7 +11,7 @@ const Container = styled.div`
 `;
 
 const ImageWithAnimation = styled.img`
-    height: auto;
+    min-height: 100%;
     min-width: 50vw;
     max-width: ${(props) => props.maxWidth || '50vw'};
 `;

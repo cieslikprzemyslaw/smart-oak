@@ -60,7 +60,34 @@
     },
     "thirdAnimation": {
         "firstSection": { "headerFirstPart": "Korzystaj z", "headerSecondPart": "Możliwości." },
-        "secondSection": { "header": "Stypendia i punkty" }
+        "secondSection": {
+            "firstPoint": {
+                "header": "Stypendia i punkty",
+                "content": " Stypendia i punkty zdobywane podczas realizacji projektów pomogą w dalszym motywowaniu i szkoleniu się. Fundacja oferuje granty dla najbardziej zaangażowanych uczestników oraz możliwość uzyskania referencji, co ma realny wpływ na zaistnienie w wybranym zawodzie."
+            },
+            "secondPoint": {
+                "header": "Kontakt z partnerami i współorganizatorami",
+                "content": " Kontakt z partnerami i współorganizatorami nie zawsze jest ogólnodostępny, a platforma online wychodzi temu problemowi naprzeciw. Bezpośredni kontakt z partnerami podczas wspólnej pracy jest kluczowym elementem usprawniającym realizację projektu."
+            },
+            "thirdPoint": {
+                "header": "Narzędzia projektowe",
+                "content": " Narzędzia projektowe dostępne w jednym miejscu razem z zaawansowanym komunikatorem. Doceni to każdy, kto już miał okazję brać udział w realizacji projektów. Nasz system posiada dyski z możliwością tworzenia dokumentów i ankiet, taskery, mapy myśli i wiele innych przydatnych rozwiązań."
+            }
+        },
+        "thirdSection": {
+            "firstPoint": {
+                "header": "Wzrost kompetencji zawodowych",
+                "content": "Wzrost kompetencji zawodowych a także innych umiejętności miękkich takich jak komunikacja czy inteligencja emocjonalna, są istotne w przyszłej pracy, niezależnie od stanowiska czy rodzaju zatrudnienia."
+            },
+            "secondPoint": {
+                "header": "Aniołowie biznesu i sponsorzy",
+                "content": "Aniołowie biznesu i sponsorzy obecni na platformie chętnie zainteresują się twoimi projektami. W grupach można na bieżąco informować o postępach za pomocą postów publicznych. Daj się zauważyć! To szansa na wsparcie nie tylko merytoryczne, ale i finansowe."
+            },
+            "thirdPoint": {
+                "header": "Szkolenia i wydarzenia",
+                "content": "Szkolenia i wydarzenia, które będą znajdować się na platformie, nie tylko ułatwią kontakt z partnerami, ale przede wszystkim pomogą zdobyć cenną wiedzę i umiejętności. Zwykle są to szkolenia płatne, jednak uczestnicy platformy mają prawie wszystkie szkolenia za darmo."
+            }
+        }
     },
     "descriptionSection": "Smart Oak to przede wszystkim przestrzeń dla społeczeństwa projektowego. Znajdzie się tu miejsce dla społecznych wilków, fanów startupów, naukowców, organizatorów wydarzeń, a także przedsiębiorców. Inwestorzy, sponsorzy i aniołowie biznesu również znajdą tu ciekawe możliwości. Każdy projekt można w łatwy sposób wspierać finansowo. Platforma pozwala każdemu aktywnie udzielać się w grupach informacyjnych. Przyczyni się to do poznania innych pasjonatów, z którymi wspólnie można rozwijając swoje zainteresowania i realizować nowe projekty. System stwarza też możliwość brania działu w e-wolontariacie – każdy z odpowiednimi kompetencjami będzie mógł się zaangażować w pomoc młodzieży. Dzięki takiemu rozwiązaniu swoimi kompetencjami będzie mógł wspierać każdy, kto posiada doświadczenie projektowe. Użytkownicy naszego portalu będą mogli personalizować swoje profile, czyniąc je atrakcyjniejszymi dla innych. Zwiększy to szansę na otrzymanie zaproszeń do uczestnictwa w projektach od innych grup projektowych lub pomoże znaleźć pracę marzeń. Ocena wszystkich podjętych działań na platformie będzie kończyć się z początkiem wakacji, natomiast podsumowanie odbędzie się podczas kilkudniowego wydarzenia w sierpniu. Rozdamy wtedy stypendia i wyróżnienia. Konferencja Smart Oak Projects pozwoli przedstawić ranking najlepszych projektów i szkół oraz zaprezentować najlepsze projekty od strony ich realizacji. Do zobaczenia na naszym portalu. Łap motywację i podbijaj świat projektami!",
     "general": {

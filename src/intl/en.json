@@ -58,8 +58,36 @@
             "description": "will help you keep your finger on the pulse. Thanks to our sources, the platform makes it possible to get valuable relevant, personalized information from the worlds of business, start-ups, and community initiatives. Stay updated – information is usually what can give you a head start!"
         }
     },
-    "ThirdAnimation": {
-        "firstSection": { "headerFirstPart": "Korzystaj z", "headerSecondPart": "Możliwości." }
+    "thirdAnimation": {
+        "firstSection": { "headerFirstPart": "Korzystaj z", "headerSecondPart": "Możliwości." },
+        "secondSection": {
+            "firstPoint": {
+                "header": "Stypendia i punkty",
+                "content": " Stypendia i punkty zdobywane podczas realizacji projektów pomogą w dalszym motywowaniu i szkoleniu się. Fundacja oferuje granty dla najbardziej zaangażowanych uczestników oraz możliwość uzyskania referencji, co ma realny wpływ na zaistnienie w wybranym zawodzie."
+            },
+            "secondPoint": {
+                "header": "Kontakt z partnerami i współorganizatorami",
+                "content": " Kontakt z partnerami i współorganizatorami nie zawsze jest ogólnodostępny, a platforma online wychodzi temu problemowi naprzeciw. Bezpośredni kontakt z partnerami podczas wspólnej pracy jest kluczowym elementem usprawniającym realizację projektu."
+            },
+            "thirdPoint": {
+                "header": "Narzędzia projektowe",
+                "content": " Narzędzia projektowe dostępne w jednym miejscu razem z zaawansowanym komunikatorem. Doceni to każdy, kto już miał okazję brać udział w realizacji projektów. Nasz system posiada dyski z możliwością tworzenia dokumentów i ankiet, taskery, mapy myśli i wiele innych przydatnych rozwiązań."
+            }
+        },
+        "thirdSection": {
+            "firstPoint": {
+                "header": "Wzrost kompetencji zawodowych",
+                "content": "Wzrost kompetencji zawodowych a także innych umiejętności miękkich takich jak komunikacja czy inteligencja emocjonalna, są istotne w przyszłej pracy, niezależnie od stanowiska czy rodzaju zatrudnienia."
+            },
+            "secondPoint": {
+                "header": "Aniołowie biznesu i sponsorzy",
+                "content": "Aniołowie biznesu i sponsorzy obecni na platformie chętnie zainteresują się twoimi projektami. W grupach można na bieżąco informować o postępach za pomocą postów publicznych. Daj się zauważyć! To szansa na wsparcie nie tylko merytoryczne, ale i finansowe."
+            },
+            "thirdPoint": {
+                "header": "Szkolenia i wydarzenia",
+                "content": "Szkolenia i wydarzenia, które będą znajdować się na platformie, nie tylko ułatwią kontakt z partnerami, ale przede wszystkim pomogą zdobyć cenną wiedzę i umiejętności. Zwykle są to szkolenia płatne, jednak uczestnicy platformy mają prawie wszystkie szkolenia za darmo."
+            }
+        }
     },
     "descriptionSection": "Smart Oak is mainly a space for project-oriented communities. It’s a place for social wolves, start-up fans, scientists event organizers, and businesspeople alike. Investors, sponsors, and business angels will find some interesting opportunities here as well Every project can be supported financially in a really easy way. The platform lets everyone actively engage in the activity of informatio groups. This will make it possible for people with particular passions to get to know each other and then cultivate their interests and work o projects together. The system offers also a possibility to engage in e-volunteering – anyone with the right skills and abilities will be abl to get involved in helping the youth. This will make it possible for anyone with project experience to contribute with their competence an expertise. Platform users will be also able to customize their profiles to make them more attractive to others. This will increase thei chances of receiving an invitation to take part in projects from other project groups or help them land their dream job. All activities an initiatives undertaken on the platform will be assessed at the beginning of summer vacation, and the official summary will take place during  several-day event in August. This will also be when we award scholarships and give honorable mentions. The Smart Oak Projects conference wil be an occasion to present the ranking of the best projects and schools and to showcase the details of the best projects. See you on ou platform. Get motivated and conquer the world with your projects!",
     "general": {

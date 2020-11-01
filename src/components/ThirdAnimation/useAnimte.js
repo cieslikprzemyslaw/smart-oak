@@ -5,11 +5,10 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 const useAnimate = (type, ref) => {
     useEffect(() => {
         const animation = animationByType(type);
-        if (type === 'test') console.log('type');
         ScrollTrigger.create({
             trigger: ref.current,
-            start: 'top 10%',
-            end: '"bottom bottom",',
+            start: 'top top',
+            end: 'bottom bottom',
             onUpdate: (self) => {
                 animation(self, ref);
             },

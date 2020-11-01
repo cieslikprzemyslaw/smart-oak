@@ -58,9 +58,9 @@ const ThirdAnimation = () => {
                     {intl.formatMessage({
                         id: `thirdAnimation.firstSection.headerFirstPart`,
                     })}
-                    <br />{' '}
+                    <br />
                     {intl.formatMessage({
-                        id: `thirdAnimation.firstSection.secondPart`,
+                        id: `thirdAnimation.firstSection.headerSecondPart`,
                     })}
                 </FirstSection>
             </Section>
@@ -68,37 +68,38 @@ const ThirdAnimation = () => {
                 <InfoSection>
                     <InfoSectionContainer>
                         <InfoSectionHeader>
-                            {' '}
                             {intl.formatMessage({
-                                id: `thirdAnimation.secondSection.header`,
+                                id: `thirdAnimation.secondSection.firstPoint.header`,
                             })}
                         </InfoSectionHeader>
                         <InfoSectionContent>
-                            Stypendia i punkty zdobywane podczas realizacji projektów pomogą w
-                            dalszym motywowaniu i szkoleniu się. Fundacja oferuje granty dla
-                            najbardziej zaangażowanych uczestników oraz możliwość uzyskania
-                            referencji, co ma realny wpływ na zaistnienie w wybranym zawodzie.
+                            {intl.formatMessage({
+                                id: `thirdAnimation.secondSection.firstPoint.content`,
+                            })}
                         </InfoSectionContent>
                     </InfoSectionContainer>
                     <InfoSectionContainer>
                         <InfoSectionHeader>
-                            Kontakt z partnerami i współorganizatorami
+                            {intl.formatMessage({
+                                id: `thirdAnimation.secondSection.secondPoint.header`,
+                            })}
                         </InfoSectionHeader>
                         <InfoSectionContent>
-                            Kontakt z partnerami i współorganizatorami nie zawsze jest
-                            ogólnodostępny, a platforma online wychodzi temu problemowi naprzeciw.
-                            Bezpośredni kontakt z partnerami podczas wspólnej pracy jest kluczowym
-                            elementem usprawniającym realizację projektu.
+                            {intl.formatMessage({
+                                id: `thirdAnimation.secondSection.secondPoint.content`,
+                            })}
                         </InfoSectionContent>
                     </InfoSectionContainer>
                     <InfoSectionContainer>
-                        <InfoSectionHeader>Narzędzia projektowe</InfoSectionHeader>
+                        <InfoSectionHeader>
+                            {intl.formatMessage({
+                                id: `thirdAnimation.secondSection.thirdPoint.header`,
+                            })}
+                        </InfoSectionHeader>
                         <InfoSectionContent>
-                            Narzędzia projektowe dostępne w jednym miejscu razem z zaawansowanym
-                            komunikatorem. Doceni to każdy, kto już miał okazję brać udział w
-                            realizacji projektów. Nasz system posiada dyski z możliwością tworzenia
-                            dokumentów i ankiet, taskery, mapy myśli i wiele innych przydatnych
-                            rozwiązań.
+                            {intl.formatMessage({
+                                id: `thirdAnimation.secondSection.thirdPoint.content`,
+                            })}
                         </InfoSectionContent>
                     </InfoSectionContainer>
                 </InfoSection>
@@ -107,29 +108,39 @@ const ThirdAnimation = () => {
                 {' '}
                 <InfoSection>
                     <InfoSectionContainer>
-                        <InfoSectionHeader>Wzrost kompetencji zawodowych</InfoSectionHeader>
+                        <InfoSectionHeader>
+                            {intl.formatMessage({
+                                id: `thirdAnimation.thirdSection.firstPoint.header`,
+                            })}
+                        </InfoSectionHeader>
                         <InfoSectionContent>
-                            Wzrost kompetencji zawodowych a także innych umiejętności miękkich
-                            takich jak komunikacja czy inteligencja emocjonalna, są istotne w
-                            przyszłej pracy, niezależnie od stanowiska czy rodzaju zatrudnienia.
+                            {intl.formatMessage({
+                                id: `thirdAnimation.thirdSection.firstPoint.content`,
+                            })}
                         </InfoSectionContent>
                     </InfoSectionContainer>
                     <InfoSectionContainer>
-                        <InfoSectionHeader>Aniołowie biznesu i sponsorzy</InfoSectionHeader>
+                        <InfoSectionHeader>
+                            {intl.formatMessage({
+                                id: `thirdAnimation.thirdSection.secondPoint.header`,
+                            })}
+                        </InfoSectionHeader>
                         <InfoSectionContent>
-                            Aniołowie biznesu i sponsorzy obecni na platformie chętnie zainteresują
-                            się twoimi projektami. W grupach można na bieżąco informować o postępach
-                            za pomocą postów publicznych. Daj się zauważyć! To szansa na wsparcie
-                            nie tylko merytoryczne, ale i finansowe.
+                            {intl.formatMessage({
+                                id: `thirdAnimation.thirdSection.secondPoint.content`,
+                            })}
                         </InfoSectionContent>
                     </InfoSectionContainer>
                     <InfoSectionContainer>
-                        <InfoSectionHeader>Szkolenia i wydarzenia</InfoSectionHeader>
+                        <InfoSectionHeader>
+                            {intl.formatMessage({
+                                id: `thirdAnimation.thirdSection.thirdPoint.header`,
+                            })}
+                        </InfoSectionHeader>
                         <InfoSectionContent>
-                            Szkolenia i wydarzenia, które będą znajdować się na platformie, nie
-                            tylko ułatwią kontakt z partnerami, ale przede wszystkim pomogą zdobyć
-                            cenną wiedzę i umiejętności. Zwykle są to szkolenia płatne, jednak
-                            uczestnicy platformy mają prawie wszystkie szkolenia za darmo.
+                            {intl.formatMessage({
+                                id: `thirdAnimation.thirdSection.thirdPoint.content`,
+                            })}
                         </InfoSectionContent>
                     </InfoSectionContainer>
                 </InfoSection>
