@@ -29,13 +29,13 @@ const animationByType = (type = 'rightToLeft') => {
 
 const zoomIn = (self, ref) => {
     gsap.to(ref.current, {
-        scale: 1 + 0.3 * self.progress,
+        scale: 1 + 0.1 * self.progress,
     });
 };
 
 const zoomOut = (self, ref) => {
     gsap.to(ref.current, {
-        scale: 1.3 - 0.3 * self.progress,
+        scale: 1.1 - 0.1 * self.progress,
     });
 };
 
