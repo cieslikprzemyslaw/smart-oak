@@ -172,7 +172,7 @@ export default class Search extends Component {
                 this.searchInMenu,
             );
         } else {
-            this.setState((prevState) => ({
+            this.setState(() => ({
                 searchedLinks: this.props.projectsList,
             }));
         }

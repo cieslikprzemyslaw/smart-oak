@@ -1,5 +1,5 @@
 import React from 'react';
-import { useIntl, Link } from 'gatsby-plugin-intl';
+import { Link } from 'gatsby-plugin-intl';
 import styled from 'styled-components';
 import background from '../assets/images/background.png';
 const Container = styled.div`
@@ -64,7 +64,7 @@ const StyledLink = styled(Link)`
     }
 `;
 const NotFoundPage = () => {
-    const intl = useIntl();
+    // const intl = useIntl();
     // to translate. waiting for translations from Paweł
     return (
         <Container>
