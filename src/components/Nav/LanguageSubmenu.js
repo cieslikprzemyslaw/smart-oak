@@ -19,7 +19,7 @@ const SubmenuListItem = styled.li`
     list-style-type: none;
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    padding: .8rem 4rem;
+    padding: 0.8rem 4rem;
 
     cursor: pointer;
     &:first-child {

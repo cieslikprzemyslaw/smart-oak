@@ -8,7 +8,7 @@ import Search from './Search';
 import Submenu from './Submenu';
 import SocialIcons from '../common/SocialMedia';
 import { allProjectsList, projectsList } from '../common/commonData';
-import {gsap} from 'gsap';
+import { gsap } from 'gsap';
 
 const documentGlobal = typeof document !== 'undefined';
 
@@ -35,7 +35,7 @@ const Container = styled.div`
         display: none;
     }
 `;
-const StyledLink = styled((props) => <Link {...props} />)`  
+const StyledLink = styled((props) => <Link {...props} />)`
     color: #fff;
     text-decoration: none;
     padding: 1.2rem ${(props) => (props.rightNav ? '1rem' : '1.4rem')};
@@ -60,7 +60,7 @@ const DropdownLinkItem = styled.div`
     display: flex;
     align-items: center;
     color: #fff;
-    font-size:15px;
+    font-size: 15px;
     svg {
         margin-left: 0.5rem;
     }
@@ -97,7 +97,7 @@ const NavPrimary = () => {
     const [showSearch, setShowSearch] = useState(false);
     const [firstLoad, setFirstLoad] = useState(false);
 
-     const rightNavAnimation = useRef(null);
+    const rightNavAnimation = useRef(null);
 
     useEffect(() => {
         setTimeout(() => {
@@ -119,23 +119,23 @@ const NavPrimary = () => {
 
     const menuHidenDelay = () => {
         setTimeout(() => {
-            setShowSearch(true)
-            console.log(showSearch)
+            setShowSearch(true);
+            console.log(showSearch);
         }, 800);
-    }
+    };
 
     const menuAnimation = (refElement) => {
         gsap.to(refElement.current, {
             opacity: 0,
             duration: 0.8,
             ease: 'none',
-        })
-    }
+        });
+    };
 
     const openSearchbar = () => {
         menuAnimation(rightNavAnimation);
         menuHidenDelay();
-    }
+    };
 
     function onInputClose() {
         setShowSearch(false);
@@ -145,14 +145,18 @@ const NavPrimary = () => {
         <Container>
             {showSearch ? null : <SocialIcons navigation />}
 
-    {showSearch ? (<Search onInputClose={onInputClose} isDesktop projectsList={projectsList} />):(<></>)}
+            {showSearch ? (
+                <Search onInputClose={onInputClose} isDesktop projectsList={projectsList} />
+            ) : (
+                <></>
+            )}
             {showSearch ? null : (
                 <RightNav anim={firstLoad} ref={rightNavAnimation}>
                     <StyledLink to="/download/">
-                            {intl.formatMessage({
-                                id: `navigation.download`,
-                            })}
-                        </StyledLink>
+                        {intl.formatMessage({
+                            id: `navigation.download`,
+                        })}
+                    </StyledLink>
                     <StyledLink rightNav to="/contact/">
                         {intl.formatMessage({
                             id: `navigation.contact`,
@@ -172,12 +176,11 @@ const NavPrimary = () => {
                             {intl.formatMessage({
                                 id: `navigation.otherSites`,
                             })}
-                            
                         </DropdownLinkItem>
                         {showProjectMenu && <Submenu data={allProjectsList} />}
                     </DropdownLink>
                     <SearchBtn onClick={openSearchbar}>
-                        <BsSearch/>
+                        <BsSearch />
                     </SearchBtn>
                     <DropdownLink
                         rightNav
@@ -186,9 +189,7 @@ const NavPrimary = () => {
                     >
                         <DropdownLinkItem>
                             <IntlContextConsumer>
-                                {({ languages, language: currentLocale }) =>
-                                    currentLocale.toUpperCase()
-                                }
+                                {({ language: currentLocale }) => currentLocale.toUpperCase()}
                             </IntlContextConsumer>
                         </DropdownLinkItem>
                         {showLangMenu && <LanguageSubmenu />}

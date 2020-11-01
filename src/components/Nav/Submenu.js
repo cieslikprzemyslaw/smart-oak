@@ -3,10 +3,9 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
 const SubmenuWrapper = styled.ul`
-
     width: 17rem;
     left: 48%;
-    margin-top:10px;
+    margin-top: 10px;
     transform: translateX(-50%);
     position: absolute;
     background-color: black;

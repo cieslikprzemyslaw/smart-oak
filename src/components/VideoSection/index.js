@@ -38,7 +38,7 @@ const StyledLogo = styled.img`
     }
 `;
 
-const VideoSection = ({ navRef }) => {
+const VideoSection = () => {
     const imgRef = useRef(null);
     const descRef = useRef(null);
 

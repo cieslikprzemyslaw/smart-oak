@@ -2,7 +2,7 @@ import React, { Component, useRef, useEffect } from 'react';
 import styled, { keyframes, css } from 'styled-components';
 import { Link, useIntl } from 'gatsby-plugin-intl';
 import { AiOutlineSearch, AiOutlineClose } from 'react-icons/ai';
-import {gsap} from 'gsap';
+import { gsap } from 'gsap';
 
 const fadeIn = keyframes`
   0% {
@@ -134,12 +134,12 @@ const InputSearch = ({ isDesktop, handleRef }) => {
     const childRef = useRef(null);
 
     useEffect(() => {
-            gsap.to(childRef.current, 1, {
-                    transform: 'translateX(0)',
-                    duration: 0.5,
-                    opacity: 1,
-                    ease: 'none',
-                });
+        gsap.to(childRef.current, 1, {
+            transform: 'translateX(0)',
+            duration: 0.5,
+            opacity: 1,
+            ease: 'none',
+        });
         handleRef(childRef);
     }, []);
 
@@ -174,7 +174,7 @@ export default class Search extends Component {
             duration: 0.3,
             stagger: 0.2,
             ease: 'none',
-        })
+        });
     };
 
     componentWillUnmount() {
@@ -190,7 +190,7 @@ export default class Search extends Component {
                 this.searchInMenu,
             );
         } else {
-            this.setState((prevState) => ({
+            this.setState(() => ({
                 searchedLinks: this.props.projectsList,
             }));
         }
@@ -254,7 +254,7 @@ export default class Search extends Component {
                             this.clearIfEmpty();
                         }}
                         value={this.state.searchedPhrase}
-                    ref={InputSearch => (this.searchbar =InputSearch)}
+                        ref={(InputSearch) => (this.searchbar = InputSearch)}
                     />
 
                     <DropDown ref={(node) => (this.wrapperRef = node)}>

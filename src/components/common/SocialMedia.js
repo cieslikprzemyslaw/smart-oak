@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import styled, { css } from 'styled-components';
-import { FaFacebookSquare, FaLinkedin, FaYoutube, FaTwitter,FaInstagram } from 'react-icons/fa';
+import { FaFacebookSquare, FaLinkedin, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { gsap } from 'gsap';
 
 const Container = styled.div`
@@ -22,7 +22,7 @@ const Container = styled.div`
         css`
             width: 260px;
             justify-content: space-evenly;
-            margin-left: 3rem
+            margin-left: 3rem;
         `}
 `;
 
@@ -37,7 +37,7 @@ const ExternalLink = styled.a`
         css`
             margin-top: 5px;
             font-size: 1.8rem;
-            padding: .3rem .8rem;
+            padding: 0.3rem 0.8rem;
         `}
 `;
 
@@ -59,7 +59,7 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
         },
         {
             href: 'https://www.instagram.com/smartoakproject/',
-            icon: FaInstagram
+            icon: FaInstagram,
         },
         {
             href: 'https://www.youtube.com/c/SmartOakProject/featured',
@@ -68,7 +68,7 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
         {
             href: 'https://www.linkedin.com/company/smartoakproject/',
             icon: FaLinkedin,
-        }
+        },
     ];
     const mapIcons = Icons.map(({ href, icon: Icon }) => (
         <ExternalLink
