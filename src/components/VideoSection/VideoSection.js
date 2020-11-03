@@ -74,7 +74,7 @@ const VideoSection = ({ navRef }) => {
 
     return (
         <Container>
-            <VideoWrapper muted autoPlay preload="auto" playsinline>
+            <VideoWrapper muted autoPlay preload="auto" loop playsinline>
                 <source src={videoSrc} type="video/mp4" />
             </VideoWrapper>
             <TextContainer>
