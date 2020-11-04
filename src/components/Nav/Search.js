@@ -134,7 +134,7 @@ const InputSearch = ({ isDesktop, handleRef }) => {
     const childRef = useRef(null);
 
     useEffect(() => {
-        gsap.to(childRef.current, 0.5,{
+        gsap.to(childRef.current, 0.5, {
             transform: 'translateX(0)',
             opacity: 1,
             ease: 'none',
