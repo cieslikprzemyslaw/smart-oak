@@ -243,7 +243,7 @@ export default class Search extends Component {
             <>
                 <SearchWrapper>
                     {this.props.isDesktop ? (
-                        <AiOutlineSearch style={{ cursor: 'default' }} />
+                        <AiOutlineSearch style={{ cursor: 'default', fontSize: "3rem" }} />
                     ) : null}
                     <InputSearch
                         handleRef={this.handleRef}
@@ -273,7 +273,7 @@ export default class Search extends Component {
                     </DropDown>
 
                     <AiOutlineClose
-                        style={{ fontSize: '1.9rem', zIndex: '10' }}
+                        style={{ fontSize: '2.2rem', zIndex: '10' }}
                         onClick={this.props.isDesktop ? this.props.onInputClose : this.props}
                     />
                 </SearchWrapper>
