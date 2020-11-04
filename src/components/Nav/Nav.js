@@ -121,13 +121,13 @@ const NavPrimary = () => {
         setTimeout(() => {
             setShowSearch(true);
             console.log(showSearch);
-        }, 800);
+        }, 500);
     };
 
     const menuAnimation = (refElement) => {
         gsap.to(refElement.current, {
             opacity: 0,
-            duration: 0.8,
+            duration: 0.5,
             ease: 'none',
         });
     };
