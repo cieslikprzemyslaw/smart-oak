@@ -38,11 +38,11 @@ const SearchWrapper = styled.div`
 `;
 const DropDown = styled.div`
     background-color: #fff;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 18px 18px;
     padding-top: 2vh;
     position: absolute;
     right: 0;
-    top: 5rem;
+    top: 55px;
     width: 35vw;
     z-index: 100010123312;
     display: flex;
@@ -65,7 +65,7 @@ const DropdownLink = styled(Link)`
     color: #000;
     position: relative;
     text-decoration: none;
-    transform: translateX(30%);
+    transform: translateX(20%);
     opacity: 0;
 
     &:hover {
@@ -118,7 +118,7 @@ const Input = styled.input`
             color: rgba(255, 255, 255, 0.85);
             outline: none;
             animation: 0.6s ${fadeIn} ease-out;
-            transform: translateX(30%);
+            transform: translateX(10%);
             opacity: 0;
             &::-webkit-search-decoration,
             &::-webkit-search-cancel-button,
@@ -134,9 +134,8 @@ const InputSearch = ({ isDesktop, handleRef }) => {
     const childRef = useRef(null);
 
     useEffect(() => {
-        gsap.to(childRef.current, 1, {
+        gsap.to(childRef.current, 0.5,{
             transform: 'translateX(0)',
-            duration: 0.5,
             opacity: 1,
             ease: 'none',
         });
@@ -171,8 +170,8 @@ export default class Search extends Component {
         gsap.to(this.wrapperRef.children, {
             transform: 'translateX(0)',
             opacity: 1,
-            duration: 0.3,
-            stagger: 0.2,
+            duration: 0.5,
+            stagger: 0.03,
             ease: 'none',
         });
     };
