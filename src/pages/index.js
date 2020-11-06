@@ -4,6 +4,7 @@ import MobileNav from '../components/MobileNav';
 import VideoSection from '../components/VideoSection';
 import ProjetsSection from '../components/ProjectsSection';
 import Footer from '../components/Footer';
+import FourthAnimationExtended from '../components/FourthAnimationExtended';
 
 import Opportunities from '../components/OpportunitiesSection';
 import DescriptionSection from '../components/DescriptionSection';
@@ -21,6 +22,7 @@ const IndexPage = () => {
             <ProjetsSection />
             <Opportunities />
             <DescriptionSection />
+            <FourthAnimationExtended />
             <Footer />
         </>
     );
