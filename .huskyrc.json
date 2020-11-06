@@ -1,5 +1,5 @@
 {
     "hooks": {
-        "pre-push": "yarn format:strict"
+        "pre-push": "npm run format:strict"
     }
 }
