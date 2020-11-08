@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Nav from '../components/Nav';
 import MobileNav from '../components/MobileNav';
 import VideoSection from '../components/VideoSection';
-import ProjetsSection from '../components/ProjectsSection';
+import SecondAnimation from '../components/SecondAnimation';
 import Footer from '../components/Footer';
 import FourthAnimationExtended from '../components/FourthAnimationExtended';
 
@@ -20,7 +20,7 @@ const IndexPage = () => {
             <Nav />
             <MobileNav />
             <VideoSection />
-            <ProjetsSection />
+            <SecondAnimation />
             <Opportunities />
             <DescriptionSection />
             <FourthAnimationExtended />
