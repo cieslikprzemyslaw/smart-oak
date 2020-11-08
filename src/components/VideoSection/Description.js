@@ -6,6 +6,8 @@ import { useIntl } from 'gatsby-plugin-intl';
 const Section = styled.div`
     object-fit: fill;
     height: 100vh;
+    position: relative;
+    z-index: 3;
 
     @media only screen and (min-width: 900px) {
         position: absolute;

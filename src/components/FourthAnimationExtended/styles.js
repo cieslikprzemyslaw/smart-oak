@@ -6,6 +6,7 @@ const FourthAnimationExtended = styled.div`
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
+    
 `;
 
 const AnimationImg = styled.img`
@@ -13,17 +14,17 @@ const AnimationImg = styled.img`
 `;
 
 const AnimationContainer = styled.div`
-    position: relative;
-    overflow: hidden;
+
 `;
 
 const AnimationContent = styled.div`
-    position: absolute;
+    position: fixed;
     width: 75%;
-    top: 10%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
     color: white;
+    z-index:2;
 `;
 
 const AnimationContentParagraph = styled.p`
@@ -95,6 +96,12 @@ const AfterAnimationContentHeader = styled.h2`
     }
 `;
 
+const Wrapper = styled.div`
+    background-color: white;
+    position: relative;
+    z-index: 3;
+`;
+
 export {
     AnimationImg,
     AnimationContainer,
@@ -105,4 +112,5 @@ export {
     AfterAnimationContentParagraph,
     AfterAnimationContentHeader,
     FourthAnimationExtended,
+    Wrapper,
 };
