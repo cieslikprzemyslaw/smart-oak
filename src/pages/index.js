@@ -12,7 +12,7 @@ import { gsap } from 'gsap';
 
 const IndexPage = () => {
     useEffect(() => {
-        gsap.to('body', 0, { css: { visibility: 'visible', backgroundColor: '#303030' } });
+        gsap.to('body', 0, { css: { visibility: 'visible'} });
     }, []);
 
     return (
