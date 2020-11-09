@@ -59,33 +59,36 @@
         }
     },
     "thirdAnimation": {
-        "firstSection": { "headerFirstPart": "Korzystaj z", "headerSecondPart": "Możliwości." },
+        "firstSection": {
+            "headerFirstPart": "Make the most",
+            "headerSecondPart": "of the available opportunities."
+        },
         "secondSection": {
             "firstPoint": {
-                "header": "Stypendia i punkty",
-                "content": " Stypendia i punkty zdobywane podczas realizacji projektów pomogą w dalszym motywowaniu i szkoleniu się. Fundacja oferuje granty dla najbardziej zaangażowanych uczestników oraz możliwość uzyskania referencji, co ma realny wpływ na zaistnienie w wybranym zawodzie."
+                "header": "Scholarships and points",
+                "content": "The  scholarships and points  obtained   during   project   implementation   will   be   goodincentives, useful in further learning. The foundation offers grants to the most engagedusers   as   well   as   credentials,   which   will   be   a   great   advantage   in   the   pursuit   of   one’sprofession."
             },
             "secondPoint": {
-                "header": "Kontakt z partnerami i współorganizatorami",
-                "content": " Kontakt z partnerami i współorganizatorami nie zawsze jest ogólnodostępny, a platforma online wychodzi temu problemowi naprzeciw. Bezpośredni kontakt z partnerami podczas wspólnej pracy jest kluczowym elementem usprawniającym realizację projektu."
+                "header": "Getting in touch with partners and co-organizers",
+                "content": "Getting in touch with partners and co-organizers  is not always easy but our onlineplatform addresses this issue. Contacting partners directly during joint projects is the keyto making a project run smoothly and effectively."
             },
             "thirdPoint": {
-                "header": "Narzędzia projektowe",
-                "content": " Narzędzia projektowe dostępne w jednym miejscu razem z zaawansowanym komunikatorem. Doceni to każdy, kto już miał okazję brać udział w realizacji projektów. Nasz system posiada dyski z możliwością tworzenia dokumentów i ankiet, taskery, mapy myśli i wiele innych przydatnych rozwiązań."
+                "header": "Project tools",
+                "content": "Project tools  available in one place, along with an advanced messaging app.  Anyonehaving taken part in a project before will surely find it much useful. Our system featurestwo drives where you can create documents and surveys. There are also Taskers, mindmaps, and many other practical solutions."
             }
         },
         "thirdSection": {
             "firstPoint": {
-                "header": "Wzrost kompetencji zawodowych",
-                "content": "Wzrost kompetencji zawodowych a także innych umiejętności miękkich takich jak komunikacja czy inteligencja emocjonalna, są istotne w przyszłej pracy, niezależnie od stanowiska czy rodzaju zatrudnienia."
+                "header": "Improving your professional competence",
+                "content": "Improving your professional competence  and soft skills  such as communication  oremotional intelligence is important to your future career, no matter the position  or thetype of employment."
             },
             "secondPoint": {
-                "header": "Aniołowie biznesu i sponsorzy",
-                "content": "Aniołowie biznesu i sponsorzy obecni na platformie chętnie zainteresują się twoimi projektami. W grupach można na bieżąco informować o postępach za pomocą postów publicznych. Daj się zauważyć! To szansa na wsparcie nie tylko merytoryczne, ale i finansowe."
+                "header": "Business angels and sponsorsy",
+                "content": "The business angels and sponsors who have joined the platform will be interested tohear about your projects. You can post regular public updates to your groups to informothers   about   the   progress   you’ve   made.   Make   yourself   noticed!   It’s   a   chance   to   getsupport including not only professional advice but also finance."
             },
             "thirdPoint": {
-                "header": "Szkolenia i wydarzenia",
-                "content": "Szkolenia i wydarzenia, które będą znajdować się na platformie, nie tylko ułatwią kontakt z partnerami, ale przede wszystkim pomogą zdobyć cenną wiedzę i umiejętności. Zwykle są to szkolenia płatne, jednak uczestnicy platformy mają prawie wszystkie szkolenia za darmo."
+                "header": "Training courses and events",
+                "content": "The training courses and events found on the platform will not only facilitate getting intouch   with   partners   but   also   help   you   acquire   valuable   knowledge   and   skills.  Theseusually include paid training courses, but platform participants get access to almost allsuch courses free of charge."
             }
         }
     },
