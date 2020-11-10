@@ -63,7 +63,7 @@ const FourthAnimation = () => {
                         </AfterAnimationContentParagraph>
                     </AfterAnimationContainer>
                 </FourthAnimationExtended>
-            </Wrapper> 
+            </Wrapper>
         </FourthAnimationExtended>
     );
 };

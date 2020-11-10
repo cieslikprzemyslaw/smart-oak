@@ -6,16 +6,13 @@ const FourthAnimationExtended = styled.div`
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
-    
 `;
 
 const AnimationImg = styled.img`
     width: 100%;
 `;
 
-const AnimationContainer = styled.div`
-
-`;
+const AnimationContainer = styled.div``;
 
 const AnimationContent = styled.div`
     position: fixed;
@@ -24,7 +21,7 @@ const AnimationContent = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    z-index:2;
+    z-index: 2;
 `;
 
 const AnimationContentParagraph = styled.p`

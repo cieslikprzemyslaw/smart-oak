@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 
 const IndexPage = () => {
     useEffect(() => {
-        gsap.to('body', 0, { css: { visibility: 'visible'} });
+        gsap.to('body', 0, { css: { visibility: 'visible' } });
     }, []);
 
     return (
