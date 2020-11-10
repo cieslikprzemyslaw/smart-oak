@@ -9,6 +9,7 @@ import logoSrc from '../../assets/images/smart-oak-platform-logo.svg';
 const Container = styled.div`
     position: relative;
     height: calc(100vh - 5.5rem);
+    z-index: 3;
 `;
 const TextContainer = styled.div`
     position: relative;
@@ -22,6 +23,7 @@ const VideoWrapper = styled.video`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 3;
 `;
 
 const StyledLogo = styled.img`

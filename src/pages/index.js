@@ -7,25 +7,30 @@ import Footer from '../components/Footer';
 import FourthAnimationExtended from '../components/FourthAnimationExtended';
 
 import Opportunities from '../components/OpportunitiesSection';
-import DescriptionSection from '../components/DescriptionSection';
 import { gsap } from 'gsap';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+    position: relative;
+    z-index: 3;
+    background-color: white;
+`;
 
 const IndexPage = () => {
     useEffect(() => {
-        gsap.to('body', 0, { css: { visibility: 'visible'} });
+        gsap.to('body', 0, { css: { visibility: 'visible' } });
     }, []);
 
     return (
-        <>
+        <Wrapper>
             <Nav />
             <MobileNav />
             <VideoSection />
             <SecondAnimation />
             <Opportunities />
-            <DescriptionSection />
             <FourthAnimationExtended />
             <Footer />
-        </>
+        </Wrapper>
     );
 };
 

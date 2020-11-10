@@ -7,9 +7,13 @@ const Section = styled.footer`
     width: 100%;
     background: #0e0e0e;
     padding: 17px 0;
+    position: relative;
+    z-index: 3;
 `;
 
 const Container = styled.div`
+    position: relative;
+    z-index: 3;
     width: 80%;
     margin: 0 auto;
     height: 100%;

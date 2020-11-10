@@ -11,6 +11,8 @@ const SectionContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 3;
     /* margin: 7rem 0 20rem; */
 
     height: 100vh;
