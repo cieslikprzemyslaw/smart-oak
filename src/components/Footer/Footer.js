@@ -29,7 +29,7 @@ const Container = styled.div`
 
 const Copy = styled.div`
     display: flex;
-    @media screen and (max-width: 600px) {
+    git pull @media screen and (max-width: 600px) {
         order: 5;
         margin-top: 2rem;
     }
