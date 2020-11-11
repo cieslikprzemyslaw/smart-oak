@@ -19,13 +19,13 @@ const ImageWithAnimation = styled.img`
 const Text = styled.div`
     width: 50%;
     background-color: #ffffff;
-    z-index: 1;
+    z-index: 101;
 `;
 
 const ImageContainer = styled.div`
     width: 50%;
     max-width: 50vw;
-    z-index: 0;
+    z-index: 100;
     overflow: hidden;
     display: inline-block;
 `;

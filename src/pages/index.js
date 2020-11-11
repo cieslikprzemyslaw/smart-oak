@@ -6,7 +6,7 @@ import SecondAnimation from '../components/SecondAnimation';
 import Footer from '../components/Footer';
 import FourthAnimationExtended from '../components/FourthAnimationExtended';
 
-import Opportunities from '../components/OpportunitiesSection';
+import ThirdAnimation from '../components/ThirdAnimation';
 import { gsap } from 'gsap';
 import styled from 'styled-components';
 
@@ -27,7 +27,7 @@ const IndexPage = () => {
             <MobileNav />
             <VideoSection />
             <SecondAnimation />
-            <Opportunities />
+            <ThirdAnimation />
             <FourthAnimationExtended />
             <Footer />
         </Wrapper>
