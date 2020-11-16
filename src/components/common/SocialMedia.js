@@ -1,7 +1,16 @@
 import React, { useRef, useEffect } from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import { FaFacebookSquare, FaLinkedin, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { gsap } from 'gsap';
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 
 const Container = styled.div`
     display: flex;
@@ -20,7 +29,7 @@ const Container = styled.div`
     ${({ navigation }) =>
         navigation &&
         css`
-            width: 260px;
+            width: 220px;
             justify-content: space-evenly;
             margin-left: 3rem;
         `}
@@ -36,18 +45,21 @@ const ExternalLink = styled.a`
         navigation &&
         css`
             margin-top: 5px;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             padding: 0.3rem 0.8rem;
+            animation: 0.4s ${fadeIn} ease-out;
         `}
 `;
 
 const SocialMedia = ({ footer, navigation, mobileNav }) => {
     const containerRef = useRef();
+
     useEffect(() => {
         if (mobileNav) {
             gsap.to(containerRef.current, { opacity: 1, delay: 0.2, duration: 0.6 });
         }
     }, [mobileNav]);
+
     const Icons = [
         {
             href: 'https://www.facebook.com/smartoakproject/',

@@ -1,8 +1,9 @@
 import React, { Component, useRef, useEffect } from 'react';
 import styled, { keyframes, css } from 'styled-components';
 import { Link, useIntl } from 'gatsby-plugin-intl';
-import { AiOutlineSearch, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineClose } from 'react-icons/ai';
 import { gsap } from 'gsap';
+import { BsSearch } from 'react-icons/bs';
 
 const fadeIn = keyframes`
   0% {
@@ -10,6 +11,15 @@ const fadeIn = keyframes`
   }
   100% {
     opacity: 1;
+  }
+`;
+
+const fadeInBackDrop = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .6;
   }
 `;
 
@@ -39,10 +49,10 @@ const SearchWrapper = styled.div`
 const DropDown = styled.div`
     background-color: #fff;
     border-radius: 0 0 18px 18px;
-    padding-top: 2vh;
+    padding-top: 1.5vh;
     position: absolute;
     right: 0;
-    top: 55px;
+    top: 45px;
     width: 35vw;
     z-index: 100010123312;
     display: flex;
@@ -82,10 +92,11 @@ const Backdrop = styled.div`
     opacity: 0.6;
     position: absolute;
     left: 0;
-    top: 5.5rem;
+    top: 4.5rem;
     width: 100vw;
-    height: calc(100vh - 5.5rem);
+    height: calc(100vh - 4.5rem);
     z-index: 10000143;
+    animation: 0.6s ${fadeInBackDrop} ease-in;
 `;
 
 const Input = styled.input`
@@ -243,7 +254,7 @@ export default class Search extends Component {
             <>
                 <SearchWrapper>
                     {this.props.isDesktop ? (
-                        <AiOutlineSearch style={{ cursor: 'default', fontSize: '3rem' }} />
+                        <BsSearch style={{ cursor: 'default', fontSize: '17px' }} />
                     ) : null}
                     <InputSearch
                         handleRef={this.handleRef}
@@ -273,7 +284,7 @@ export default class Search extends Component {
                     </DropDown>
 
                     <AiOutlineClose
-                        style={{ fontSize: '2.2rem', zIndex: '10' }}
+                        style={{ fontSize: '22px', zIndex: '10' }}
                         onClick={this.props.isDesktop ? this.props.onInputClose : this.props}
                     />
                 </SearchWrapper>

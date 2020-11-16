@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { IntlContextConsumer, changeLocale } from 'gatsby-plugin-intl';
 
 const SubmenuWrapper = styled.ul`
-    width: 120%;
-    left: -5px;
+    width: 100%;
+    left: -10px;
     position: absolute;
     background-color: black;
     z-index: 99;

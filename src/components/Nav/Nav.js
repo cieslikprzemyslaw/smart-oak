@@ -28,16 +28,15 @@ const SearchBtn = styled.span`
 `;
 
 const Container = styled.div`
-    height: 5.5rem;
-    min-height: 5rem;
+    height: 45px;
     background-color: black;
-    line-height: 1.5;
     display: flex;
     justify-content: space-between;
     @media screen and (max-width: 900px) {
         display: none;
     }
 `;
+
 const StyledLink = styled((props) => <Link {...props} />)`
     color: #fff;
     text-decoration: none;
@@ -45,7 +44,7 @@ const StyledLink = styled((props) => <Link {...props} />)`
     display: flex;
     align-items: center;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
     svg {
         margin-left: 1rem;
     }
@@ -63,7 +62,7 @@ const DropdownLinkItem = styled.div`
     display: flex;
     align-items: center;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     svg {
         margin-left: 0.5rem;
     }
@@ -88,7 +87,7 @@ const DropdownLink = styled.li`
     color: ${(props) => props.color};
     text-decoration: none;
     list-style-type: none;
-    font-size: 15px;
+    font-size: 14px;
     padding: 1.2rem ${(props) => (props.rightNav ? '1rem' : '1.4rem')};
     cursor: pointer;
     position: relative;
@@ -146,7 +145,7 @@ const NavPrimary = () => {
     const intl = useIntl();
     return (
         <Container>
-            {showSearch ? null : <SocialIcons navigation />}
+            {showSearch ? null : <SocialIcons navigation/> }
             {showSearch ? (
                 <Search onInputClose={onInputClose} isDesktop projectsList={projectsList} />
             ) : null}
