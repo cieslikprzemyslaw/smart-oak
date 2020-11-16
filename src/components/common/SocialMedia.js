@@ -49,6 +49,14 @@ const ExternalLink = styled.a`
             padding: 0.3rem 0.8rem;
             animation: 0.4s ${fadeIn} ease-out;
         `}
+
+        ${({ footer }) =>
+        footer&&
+        css`
+            font-size: 1.8rem;
+            padding:  0.6rem;
+            margin:0 2px
+        `}    
 `;
 
 const SocialMedia = ({ footer, navigation, mobileNav }) => {
