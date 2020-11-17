@@ -17,7 +17,10 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-    width: 59vw;
+    width: 85vw;
+    >* {
+        will-change: opacity, scale, transform;
+    }
     @media only screen and (max-width: 1250px) {
         width: 80vw;
     }
