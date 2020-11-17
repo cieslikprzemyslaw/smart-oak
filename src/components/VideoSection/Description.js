@@ -132,9 +132,6 @@ const DescriptionSection = ({ forwardRef }) => {
                         id: `videoSection.joinEnvironment`,
                     })}
                 </Description>
-                <SocialMedia />
-                {/* todo: to translate. Waiting for translation from Paweł Starczewski */}
-                <Button>dowiedz się wiecej</Button>
             </Container>
         </Section>
     );
