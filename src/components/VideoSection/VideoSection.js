@@ -49,30 +49,29 @@ const VideoSection = () => {
     useEffect(() => {
         const tl = gsap.timeline();
 
-        tl
-            .from(imgRef.current, {
-                skewX:0.01,
-                transformOrigin: "center",
-                scale: .6,
-                opacity: 0,
-                duration: 3,
-                delay: .5
-            })
+        tl.from(imgRef.current, {
+            skewX: 0.01,
+            transformOrigin: 'center',
+            scale: 0.6,
+            opacity: 0,
+            duration: 3,
+            delay: 0.5,
+        })
             .to(imgRef.current, {
-                skewX:0.01,
-                scale: .95,
+                skewX: 0.01,
+                scale: 0.95,
                 opacity: 0,
-                duration:1.5,
+                duration: 1.5,
                 delay: 2,
             })
             .from(descRef.current.children, {
-                skewX:0.01,
-                transformOrigin: "center",
+                skewX: 0.01,
+                transformOrigin: 'center',
                 duration: 1,
                 x: '-=40',
                 opacity: 0,
-                stagger: .1
-            })
+                stagger: 0.1,
+            });
     }, []);
 
     return (
