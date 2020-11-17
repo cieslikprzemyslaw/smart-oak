@@ -62,7 +62,7 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
 
     const Icons = [
         {
-            href: 'https://www.facebook.com/smartoakproject/',
+            href: 'https://www.facebook.com/Smartoakprojects',
             icon: FaFacebookSquare,
         },
         {
@@ -70,7 +70,7 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
             icon: FaTwitter,
         },
         {
-            href: 'https://www.instagram.com/smartoakproject/',
+            href: 'https://www.instagram.com/smartoakprojects/',
             icon: FaInstagram,
         },
         {
