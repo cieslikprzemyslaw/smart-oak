@@ -29,7 +29,7 @@ const Container = styled.div`
 
 const Copy = styled.div`
     display: flex;
-    git pull @media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
         order: 5;
         margin-top: 2rem;
     }
@@ -38,6 +38,7 @@ const Copy = styled.div`
 const CopyCompany = styled.h2`
     font-style: normal;
     font-weight: normal;
+    margin-top: 2px;
     font-size: 12px;
     line-height: 15px;
     color: #ffffff;
@@ -53,11 +54,11 @@ const Footer = () => {
     return (
         <Section>
             <Container>
+                <SocialMedia footer />
                 <Copy>
                     <StyledCopyLogo className="copyright" />
-                    <CopyCompany>Smart Oak System 2020</CopyCompany>
+                    <CopyCompany>2020 Smart Oak Project. Wszelkie prawa zastrzeżone.</CopyCompany>
                 </Copy>
-                <SocialMedia footer />
             </Container>
         </Section>
     );

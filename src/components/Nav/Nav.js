@@ -145,7 +145,7 @@ const NavPrimary = () => {
     const intl = useIntl();
     return (
         <Container>
-            {showSearch ? null : <SocialIcons navigation/> }
+            {showSearch ? null : <SocialIcons navigation />}
             {showSearch ? (
                 <Search onInputClose={onInputClose} isDesktop projectsList={projectsList} />
             ) : null}
