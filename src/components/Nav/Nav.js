@@ -13,6 +13,15 @@ import { gsap } from 'gsap';
 
 const documentGlobal = typeof document !== 'undefined';
 
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
 const SearchBtn = styled.span`
     color: rgba(255, 255, 255, 0.85);
     text-decoration: none;
@@ -37,6 +46,14 @@ const Container = styled.div`
     }
 `;
 
+const NavContent= styled.div`
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    animation: ${(props) => (props.anim ? '0.6' : '0')}s ${fadeIn} ease-out;
+`;
+
 const StyledLink = styled((props) => <Link {...props} />)`
     color: #fff;
     text-decoration: none;
@@ -48,14 +65,6 @@ const StyledLink = styled((props) => <Link {...props} />)`
     svg {
         margin-left: 1rem;
     }
-`;
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 `;
 
 const DropdownLinkItem = styled.div`
@@ -80,7 +89,6 @@ const RightNav = styled.div`
     justify-content: space-evenly;
     width: 600px;
     height: 100%;
-    animation: ${(props) => (props.anim ? '0.6' : '0')}s ${fadeIn} ease-out;
 `;
 
 const DropdownLink = styled.li`
@@ -99,7 +107,7 @@ const NavPrimary = () => {
     const [showSearch, setShowSearch] = useState(false);
     const [firstLoad, setFirstLoad] = useState(false);
 
-    const rightNavAnimation = useRef(null);
+    const NavAnimation = useRef(null);
 
     useEffect(() => {
         setTimeout(() => {
@@ -135,7 +143,7 @@ const NavPrimary = () => {
     };
 
     const openSearchbar = () => {
-        menuAnimation(rightNavAnimation);
+        menuAnimation(NavAnimation);
         menuHidenDelay();
     };
 
@@ -145,56 +153,58 @@ const NavPrimary = () => {
     const intl = useIntl();
     return (
         <Container>
-            {showSearch ? null : <SocialIcons navigation />}
             {showSearch ? (
                 <Search onInputClose={onInputClose} isDesktop projectsList={projectsList} />
             ) : null}
             {showSearch ? null : (
-                <RightNav anim={firstLoad} ref={rightNavAnimation}>
-                    <StyledLink to="/download/">
-                        {intl.formatMessage({
-                            id: `navigation.download`,
-                        })}
-                    </StyledLink>
-                    <StyledLink rightNav to="/contact/">
-                        {intl.formatMessage({
-                            id: `navigation.contact`,
-                        })}
-                    </StyledLink>
-                    <StyledLink rightNav to="/about-us/">
-                        {intl.formatMessage({
-                            id: `navigation.aboutUs`,
-                        })}
-                    </StyledLink>
-                    <DropdownLink
-                        rightNav
-                        onMouseLeave={() => setShowProjectMenu(false)}
-                        onMouseEnter={() => setShowProjectMenu(true)}
-                    >
-                        <DropdownLinkItem>
+                <NavContent ref={NavAnimation}  anim={firstLoad}>
+                    <SocialIcons navigation />
+                    <RightNav>
+                        <StyledLink to="/download/">
                             {intl.formatMessage({
-                                id: `navigation.otherSites`,
+                                id: `navigation.download`,
                             })}
-                        </DropdownLinkItem>
-                        {showProjectMenu && <Submenu data={allProjectsList} />}
-                    </DropdownLink>
-                    <SearchBtn onClick={openSearchbar}>
-                        <BsSearch />
-                    </SearchBtn>
-                    <DropdownLink
-                        rightNav
-                        onMouseLeave={() => setShowLangMenu(false)}
-                        onMouseEnter={() => setShowLangMenu(true)}
-                    >
-                        <DropdownLinkItem>
-                            <IntlContextConsumer>
-                                {({ language: currentLocale }) => currentLocale.toUpperCase()}
-                            </IntlContextConsumer>
-                            <FaAngleDown />
-                        </DropdownLinkItem>
-                        {showLangMenu && <LanguageSubmenu />}
-                    </DropdownLink>
-                </RightNav>
+                        </StyledLink>
+                        <StyledLink rightNav to="/contact/">
+                            {intl.formatMessage({
+                                id: `navigation.contact`,
+                            })}
+                        </StyledLink>
+                        <StyledLink rightNav to="/about-us/">
+                            {intl.formatMessage({
+                                id: `navigation.aboutUs`,
+                            })}
+                        </StyledLink>
+                        <DropdownLink
+                            rightNav
+                            onMouseLeave={() => setShowProjectMenu(false)}
+                            onMouseEnter={() => setShowProjectMenu(true)}
+                        >
+                            <DropdownLinkItem>
+                                {intl.formatMessage({
+                                    id: `navigation.otherSites`,
+                                })}
+                            </DropdownLinkItem>
+                            {showProjectMenu && <Submenu data={allProjectsList} />}
+                        </DropdownLink>
+                        <SearchBtn onClick={openSearchbar}>
+                            <BsSearch />
+                        </SearchBtn>
+                        <DropdownLink
+                            rightNav
+                            onMouseLeave={() => setShowLangMenu(false)}
+                            onMouseEnter={() => setShowLangMenu(true)}
+                        >
+                            <DropdownLinkItem>
+                                <IntlContextConsumer>
+                                    {({ language: currentLocale }) => currentLocale.toUpperCase()}
+                                </IntlContextConsumer>
+                                <FaAngleDown />
+                            </DropdownLinkItem>
+                            {showLangMenu && <LanguageSubmenu />}
+                        </DropdownLink>
+                    </RightNav>
+                </NavContent>
             )}
         </Container>
     );

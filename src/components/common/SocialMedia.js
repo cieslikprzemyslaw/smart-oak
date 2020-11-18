@@ -1,16 +1,16 @@
-import React, { useRef, useEffect } from 'react';
-import styled, { css, keyframes } from 'styled-components';
+import React, { useRef, useEffect} from 'react';
+import styled, { css } from 'styled-components';
 import { FaFacebookSquare, FaLinkedin, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { gsap } from 'gsap';
 
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
+// const fadeIn = keyframes`
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// `;
 
 const Container = styled.div`
     display: flex;
@@ -47,11 +47,10 @@ const ExternalLink = styled.a`
             margin-top: 5px;
             font-size: 1.6rem;
             padding: 0.3rem 0.8rem;
-            animation: 0.4s ${fadeIn} ease-out;
         `}
 
         ${({ footer }) =>
-        footer&&
+        footer &&
         css`
             font-size: 1.8rem;
             padding:  0.6rem;
@@ -61,12 +60,19 @@ const ExternalLink = styled.a`
 
 const SocialMedia = ({ footer, navigation, mobileNav }) => {
     const containerRef = useRef();
+    // const [firstLoad, setFirstLoad] = useState(false);
 
     useEffect(() => {
         if (mobileNav) {
             gsap.to(containerRef.current, { opacity: 1, delay: 0.2, duration: 0.6 });
         }
     }, [mobileNav]);
+
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setFirstLoad(true);
+    //     }, 800);
+    // }, []);
 
     const Icons = [
         {
@@ -103,7 +109,13 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
         </ExternalLink>
     ));
     return (
-        <Container ref={containerRef} footer={footer} navigation={navigation} mobileNav={mobileNav}>
+        <Container
+            ref={containerRef}
+            footer={footer}
+            navigation={navigation}
+            mobileNav={mobileNav}
+            // anim={firstLoad}
+        >
             {mapIcons}
         </Container>
     );
