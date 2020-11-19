@@ -64,6 +64,7 @@ const StyledLink = styled(Link)`
     }
 `;
 const NotFoundPage = () => {
+    // const intl = useIntl();
     // to translate. waiting for translations from Paweł
     return (
         <Container>

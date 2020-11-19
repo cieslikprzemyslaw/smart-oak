@@ -1,14 +1,20 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect} from 'react';
 import styled, { css } from 'styled-components';
-import { FaFacebookSquare, FaLinkedin, FaYoutube } from 'react-icons/fa';
-import { AiFillInstagram } from 'react-icons/ai';
+import { FaFacebookSquare, FaLinkedin, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { gsap } from 'gsap';
+
+// const fadeIn = keyframes`
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// `;
 
 const Container = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 30.5rem;
 
     @media only screen and (max-width: 600px) {
         width: 80%;
@@ -23,8 +29,9 @@ const Container = styled.div`
     ${({ navigation }) =>
         navigation &&
         css`
-            width: 20rem;
-            padding-left: 1.6rem;
+            width: 220px;
+            justify-content: space-evenly;
+            margin-left: 3rem;
         `}
 `;
 
@@ -33,38 +40,60 @@ const ExternalLink = styled.a`
     transition: all 0.15s ease;
     font-size: ${({ footer }) => (footer ? '2.4rem' : '3.2rem')};
     color: white;
-    margin-right: 0;
 
     ${({ navigation }) =>
         navigation &&
         css`
+            margin-top: 5px;
             font-size: 1.6rem;
+            padding: 0.3rem 0.8rem;
         `}
+
+        ${({ footer }) =>
+        footer &&
+        css`
+            font-size: 1.8rem;
+            padding:  0.6rem;
+            margin:0 2px
+        `}    
 `;
 
 const SocialMedia = ({ footer, navigation, mobileNav }) => {
     const containerRef = useRef();
+    // const [firstLoad, setFirstLoad] = useState(false);
+
     useEffect(() => {
         if (mobileNav) {
             gsap.to(containerRef.current, { opacity: 1, delay: 0.2, duration: 0.6 });
         }
     }, [mobileNav]);
+
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setFirstLoad(true);
+    //     }, 800);
+    // }, []);
+
     const Icons = [
         {
-            href: 'https://www.facebook.com/smartoakproject/',
+            href: 'https://www.facebook.com/Smartoakprojects',
             icon: FaFacebookSquare,
         },
         {
-            href: 'https://www.linkedin.com/company/smartoakproject/',
-            icon: FaLinkedin,
+            href: 'https://twitter.com/smart_oak',
+            icon: FaTwitter,
+        },
+        {
+            href: 'https://www.instagram.com/smartoakprojects/',
+            icon: FaInstagram,
         },
         {
             href: 'https://www.youtube.com/c/SmartOakProject/featured',
             icon: FaYoutube,
         },
         {
-            href: 'https://www.instagram.com/smartoakproject/',
-            icon: AiFillInstagram,
+            href: 'https://www.linkedin.com/company/smartoakproject/',
+            icon: FaLinkedin,
         },
     ];
     const mapIcons = Icons.map(({ href, icon: Icon }) => (
@@ -80,7 +109,13 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
         </ExternalLink>
     ));
     return (
-        <Container ref={containerRef} footer={footer} navigation={navigation} mobileNav={mobileNav}>
+        <Container
+            ref={containerRef}
+            footer={footer}
+            navigation={navigation}
+            mobileNav={mobileNav}
+            // anim={firstLoad}
+        >
             {mapIcons}
         </Container>
     );

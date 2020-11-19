@@ -7,9 +7,13 @@ const Section = styled.footer`
     width: 100%;
     background: #0e0e0e;
     padding: 17px 0;
+    position: relative;
+    z-index: 3;
 `;
 
 const Container = styled.div`
+    position: relative;
+    z-index: 3;
     width: 80%;
     margin: 0 auto;
     height: 100%;
@@ -34,6 +38,7 @@ const Copy = styled.div`
 const CopyCompany = styled.h2`
     font-style: normal;
     font-weight: normal;
+    margin-top: 2px;
     font-size: 12px;
     line-height: 15px;
     color: #ffffff;
@@ -49,11 +54,11 @@ const Footer = () => {
     return (
         <Section>
             <Container>
+                <SocialMedia footer />
                 <Copy>
                     <StyledCopyLogo className="copyright" />
-                    <CopyCompany>Smart Oak System 2020</CopyCompany>
+                    <CopyCompany>2020 Smart Oak Project. Wszelkie prawa zastrzeżone.</CopyCompany>
                 </Copy>
-                <SocialMedia footer />
             </Container>
         </Section>
     );
