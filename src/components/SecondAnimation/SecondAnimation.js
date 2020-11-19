@@ -105,13 +105,13 @@ const SecondAnimation = () => {
             <div ref={animationWrapper}>
                 <Heading>
                     <span>
-                    {intl.formatMessage({
-                                id: `projectSection.title1`,
-                            })}
+                        {intl.formatMessage({
+                            id: `projectSection.title1`,
+                        })}
                     </span>
                     {intl.formatMessage({
-                                id: `projectSection.title2`,
-                            })}
+                        id: `projectSection.title2`,
+                    })}
                 </Heading>
                 <ImageAndTextContainer className="ImageAndTextContainer">
                     <div className="WhiteBox" ref={WhiteBoxLeft}></div>
