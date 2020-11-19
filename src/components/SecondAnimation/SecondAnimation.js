@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import ImageSrc from '../../assets/images/pexels-cottonbro-3584926.png';
+import ImageSrc from '../../assets/images/some-dude-in-cafe.png';
 import { useIntl } from 'gatsby-plugin-intl';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -104,7 +104,14 @@ const SecondAnimation = () => {
         <Wrapper>
             <div ref={animationWrapper}>
                 <Heading>
-                    <span>Podbijaj świat</span>Projektami.
+                    <span>
+                    {intl.formatMessage({
+                                id: `projectSection.title1`,
+                            })}
+                    </span>
+                    {intl.formatMessage({
+                                id: `projectSection.title2`,
+                            })}
                 </Heading>
                 <ImageAndTextContainer className="ImageAndTextContainer">
                     <div className="WhiteBox" ref={WhiteBoxLeft}></div>
