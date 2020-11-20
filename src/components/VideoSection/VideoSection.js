@@ -55,7 +55,7 @@ const VideoSection = () => {
             scale: 0.6,
             opacity: 0,
             duration: 3,
-            delay: 0.5,
+            delay: 1,
         })
             .to(imgRef.current, {
                 skewX: 0.01,
