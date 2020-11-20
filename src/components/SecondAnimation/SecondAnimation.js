@@ -2,15 +2,17 @@ import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import ImageSrc from '../../assets/images/pexels-cottonbro-3584926.png';
+import ImageSrc from '../../assets/images/some-dude-in-cafe.png';
 import { useIntl } from 'gatsby-plugin-intl';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Wrapper = styled.div`
-    padding-bottom: 100px;
+    padding: 100px 0;
     position: relative;
     z-index: 3;
+    
+     
 `;
 
 const Heading = styled.h2`
@@ -21,6 +23,7 @@ const Heading = styled.h2`
     width: 80%;
     margin: 100px auto 0;
 
+    font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 52px;
@@ -33,17 +36,17 @@ const Heading = styled.h2`
 
 const ImageAndTextContainer = styled.div`
     display: flex;
-
+    
     height: 960px;
 
     .WhiteBox {
         display: block;
         height: 100%;
         width: 35vw;
-        background: #f9f7f6;
+        background: white;
     }
 
-    margin: 0 auto;
+    margin: 80px auto 0;
 
     background: url(${ImageSrc}) no-repeat;
     background-size: 100%;
@@ -56,6 +59,7 @@ const Text = styled.p`
     font-size: 20px;
     color: white;
 
+    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -67,10 +71,11 @@ const Text = styled.p`
     }
 
     & p:first-of-type {
+        font-family: Open Sans;
+        font-style: normal;
         font-weight: 600;
         font-size: 23px;
         line-height: 152%;
-        color: #f9f9f9;
     }
 `;
 
@@ -104,7 +109,14 @@ const SecondAnimation = () => {
         <Wrapper>
             <div ref={animationWrapper}>
                 <Heading>
-                    <span>Podbijaj świat</span>Projektami.
+                    <span>
+                        {intl.formatMessage({
+                            id: `projectSection.title1`,
+                        })}
+                    </span>
+                    {intl.formatMessage({
+                        id: `projectSection.title2`,
+                    })}
                 </Heading>
                 <ImageAndTextContainer className="ImageAndTextContainer">
                     <div className="WhiteBox" ref={WhiteBoxLeft}></div>

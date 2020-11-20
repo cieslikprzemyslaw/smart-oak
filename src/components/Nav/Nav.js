@@ -46,7 +46,7 @@ const Container = styled.div`
     }
 `;
 
-const NavContent= styled.div`
+const NavContent = styled.div`
     height: 100%;
     width: 100%;
     display: flex;
@@ -157,7 +157,7 @@ const NavPrimary = () => {
                 <Search onInputClose={onInputClose} isDesktop projectsList={projectsList} />
             ) : null}
             {showSearch ? null : (
-                <NavContent ref={NavAnimation}  anim={firstLoad}>
+                <NavContent ref={NavAnimation} anim={firstLoad}>
                     <SocialIcons navigation />
                     <RightNav>
                         <StyledLink to="/download/">
