@@ -6,8 +6,8 @@ gsap.registerPlugin(ScrollTrigger);
 export const scaleImgOnScroll = (elem) => {
     ScrollTrigger.create({
         trigger: elem,
-        start: '30%',
-        end: '60%',
+        start: 'top 10%',
+        end: 'bottom 90%',
         onUpdate: (self) => {
             gsap.to(elem, {
                 scaleX: 1 - self.progress / 10,
@@ -19,7 +19,7 @@ export const scaleImgOnScroll = (elem) => {
 export const pinContent = (elem) => {
     ScrollTrigger.create({
         trigger: elem,
-        start: 'top',
+        start: 'top -50',
         end: 'bottom 100%',
         pin: '#fourth-animation-content',
     });
