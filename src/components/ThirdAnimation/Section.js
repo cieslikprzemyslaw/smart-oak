@@ -1,4 +1,4 @@
-import useAnimate from './useAnimte';
+import useAnimate from './useAnimate';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import React, { useRef } from 'react';
@@ -11,9 +11,13 @@ const Container = styled.div`
 `;
 
 const ImageWithAnimation = styled.img`
-    min-height: 100%;
-    min-width: 50vw;
-    max-width: ${(props) => props.maxWidth || '50vw'};
+    min-height: 100vh;
+    min-width: 85vw;
+    max-width: ${(props) => props.maxWidth || '75vw'};
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 `;
 
 const Text = styled.div`
@@ -23,6 +27,7 @@ const Text = styled.div`
 `;
 
 const ImageContainer = styled.div`
+    position: relative;
     width: 50%;
     max-width: 50vw;
     z-index: 100;

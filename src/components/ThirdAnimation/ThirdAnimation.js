@@ -8,8 +8,8 @@ import { useIntl } from 'gatsby-plugin-intl';
 const FirstSection = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    align-content: center;
+    height: 100vh;
     white-space: pre;
     text-align: right;
     color: #7e7e7e;
@@ -17,7 +17,7 @@ const FirstSection = styled.div`
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
-    line-height: 136%;
+    flex-wrap: wrap;
 `;
 
 const InfoSection = styled.div`
@@ -49,22 +49,40 @@ const InfoSectionContent = styled.h4`
     text-align: left;
 `;
 
+const Title1 = styled.h2`
+    font-family: Open Sans Bold;
+    font-size: 52px;
+    color: #7e7e7e;
+    width:55%;
+`;
+
+const Title2 = styled.h2`
+    font-family: Open Sans Bold;
+    font-size: 52px;
+    color: #000;
+    width:55%;
+`;
+
 const ThirdAnimation = () => {
     const intl = useIntl();
     return (
         <>
-            <Section imageOnLeft type={'zoomIn'} src={firstImage}>
+            <Section imageOnLeft type={'rightToLeft'} src={firstImage}>
                 <FirstSection>
-                    {intl.formatMessage({
-                        id: `thirdAnimation.firstSection.headerFirstPart`,
-                    })}
-                    <br />
-                    {intl.formatMessage({
-                        id: `thirdAnimation.firstSection.headerSecondPart`,
-                    })}
+                    <Title1>
+                        {intl.formatMessage({
+                            id: `thirdAnimation.firstSection.headerFirstPart`,
+                        })}
+                    </Title1>
+                    <br/>
+                    <Title2>
+                        {intl.formatMessage({
+                            id: `thirdAnimation.firstSection.headerSecondPart`,
+                        })}
+                    </Title2>
                 </FirstSection>
             </Section>
-            <Section type={'zoomOut'} src={secondImage}>
+            <Section type={'leftToRight'} src={secondImage}>
                 <InfoSection>
                     <InfoSectionContainer>
                         <InfoSectionHeader>
