@@ -50,17 +50,19 @@ const InfoSectionContent = styled.h4`
 `;
 
 const Title1 = styled.h2`
+    text-align: left;
     font-family: Open Sans Bold;
     font-size: 52px;
     color: #7e7e7e;
-    width:55%;
+    width: 55%;
 `;
 
 const Title2 = styled.h2`
+    text-align: left;
     font-family: Open Sans Bold;
     font-size: 52px;
     color: #000;
-    width:55%;
+    width: 55%;
 `;
 
 const ThirdAnimation = () => {
@@ -74,7 +76,7 @@ const ThirdAnimation = () => {
                             id: `thirdAnimation.firstSection.headerFirstPart`,
                         })}
                     </Title1>
-                    <br/>
+                    <br />
                     <Title2>
                         {intl.formatMessage({
                             id: `thirdAnimation.firstSection.headerSecondPart`,
