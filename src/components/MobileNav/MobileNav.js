@@ -30,6 +30,7 @@ const MobileNavMenu = styled.div`
     display: none;
     padding: 0 1rem;
     height: 5rem;
+    font-family: Open Sans;
 
     @media screen and (max-width: 900px) {
         display: flex;

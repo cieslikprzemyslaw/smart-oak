@@ -13,8 +13,6 @@ const SectionContainer = styled.div`
     align-items: center;
     position: relative;
     z-index: 3;
-    /* margin: 7rem 0 20rem; */
-
     height: 100vh;
     @media screen and (max-width: 900px) {
         display: block;

@@ -6,6 +6,7 @@ const FourthAnimationExtended = styled.div`
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
+    font-family: Open Sans;
 `;
 
 const AnimationImg = styled.img`
@@ -22,6 +23,7 @@ const AnimationContent = styled.div`
     transform: translate(-50%, -50%);
     color: white;
     z-index: 2;
+    font-family: Open Sans;
 `;
 
 const AnimationContentParagraph = styled.p`

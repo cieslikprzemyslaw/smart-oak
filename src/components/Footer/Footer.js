@@ -9,6 +9,7 @@ const Section = styled.footer`
     padding: 17px 0;
     position: relative;
     z-index: 3;
+    font-family: Open Sans;
 `;
 
 const Container = styled.div`
