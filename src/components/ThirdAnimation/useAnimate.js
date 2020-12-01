@@ -28,11 +28,11 @@ const animationByType = (type = 'rightToLeft') => {
 };
 
 const leftToRight = (self, ref) => {
-    gsap.to(ref.current, { x: -(250 * self.progress) });
+    gsap.to(ref.current, { x: -(200 * self.progress) });
 };
 
 const rightToLeft = (self, ref) => {
-    gsap.to(ref.current, { x: 250 * self.progress });
+    gsap.to(ref.current, { x: (200 * self.progress) });
 };
 
 export default useAnimate;

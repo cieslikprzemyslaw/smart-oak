@@ -7,7 +7,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     flex-flow: ${(props) => (props.imageOnLeft ? 'row' : 'row-reverse')};
-    height: 15000;
+    min-height: 100vh;
 `;
 
 const ImageWithAnimation = styled.img`
@@ -17,7 +17,7 @@ const ImageWithAnimation = styled.img`
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
 `;
 
 const Text = styled.div`

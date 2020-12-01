@@ -19,7 +19,7 @@ export const scaleImgOnScroll = (elem) => {
 export const pinContent = (elem) => {
     ScrollTrigger.create({
         trigger: elem,
-        start: 'top -50%',
+        start: 'top -50',
         end: 'bottom 100%',
         pin: '#fourth-animation-content',
     });

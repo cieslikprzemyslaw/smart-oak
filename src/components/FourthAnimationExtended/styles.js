@@ -110,7 +110,7 @@ const TitleWrapper = styled.div`
 const Title1 = styled.h2`
     font-size: 52px;
     margin: 10vh 0 0 10vw;
-    color: #7e7e7e;
+    color: #7E7E7E;
 `;
 
 const Title2 = styled.h2`
