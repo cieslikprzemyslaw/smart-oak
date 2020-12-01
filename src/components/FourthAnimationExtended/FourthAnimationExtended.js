@@ -13,6 +13,9 @@ import {
     AfterAnimationContentHeader,
     FourthAnimationExtended,
     Wrapper,
+    TitleWrapper,
+    Title1,
+    Title2,
 } from './styles.js';
 
 const FourthAnimation = () => {
@@ -24,47 +27,61 @@ const FourthAnimation = () => {
     }, []);
 
     return (
-        <FourthAnimationExtended>
-            <AnimationContainer>
-                <AnimationImg src={ImageSrc} ref={imgRef} />
-                <AnimationContent>
-                    <AnimationContentHeader>
-                        <h2>
-                            {intl.formatMessage({
-                                id: `fourthAnimationExtendedSection.title1`,
-                            })}
-                        </h2>
-                    </AnimationContentHeader>
-                    <AnimationContentParagraph>
-                        <p>
-                            {intl.formatMessage({
-                                id: `fourthAnimationExtendedSection.block1`,
-                            })}
-                        </p>
-                    </AnimationContentParagraph>
-                </AnimationContent>
-            </AnimationContainer>
-            <Wrapper>
-                <FourthAnimationExtended>
-                    <AfterAnimationContainer>
-                        <AfterAnimationContentHeader>
+        <>
+            <TitleWrapper>
+                <Title1>
+                    {intl.formatMessage({
+                        id: `fourthAnimationTitle.title1`,
+                    })}
+                </Title1>
+                <Title2>
+                    {intl.formatMessage({
+                        id: `fourthAnimationTitle.title2`,
+                    })}
+                </Title2>
+            </TitleWrapper>
+            <FourthAnimationExtended>
+                <AnimationContainer>
+                    <AnimationImg src={ImageSrc} ref={imgRef} />
+                    <AnimationContent>
+                        <AnimationContentHeader>
                             <h2>
                                 {intl.formatMessage({
-                                    id: `fourthAnimationExtendedSection.title2`,
+                                    id: `fourthAnimationExtendedSection.title1`,
                                 })}
                             </h2>
-                        </AfterAnimationContentHeader>
-                        <AfterAnimationContentParagraph>
+                        </AnimationContentHeader>
+                        <AnimationContentParagraph>
                             <p>
                                 {intl.formatMessage({
-                                    id: `fourthAnimationExtendedSection.block2`,
+                                    id: `fourthAnimationExtendedSection.block1`,
                                 })}
                             </p>
-                        </AfterAnimationContentParagraph>
-                    </AfterAnimationContainer>
-                </FourthAnimationExtended>
-            </Wrapper>
-        </FourthAnimationExtended>
+                        </AnimationContentParagraph>
+                    </AnimationContent>
+                </AnimationContainer>
+                <Wrapper>
+                    <FourthAnimationExtended>
+                        <AfterAnimationContainer>
+                            <AfterAnimationContentHeader>
+                                <h2>
+                                    {intl.formatMessage({
+                                        id: `fourthAnimationExtendedSection.title2`,
+                                    })}
+                                </h2>
+                            </AfterAnimationContentHeader>
+                            <AfterAnimationContentParagraph>
+                                <p>
+                                    {intl.formatMessage({
+                                        id: `fourthAnimationExtendedSection.block2`,
+                                    })}
+                                </p>
+                            </AfterAnimationContentParagraph>
+                        </AfterAnimationContainer>
+                    </FourthAnimationExtended>
+                </Wrapper>
+            </FourthAnimationExtended>
+        </>
     );
 };
 

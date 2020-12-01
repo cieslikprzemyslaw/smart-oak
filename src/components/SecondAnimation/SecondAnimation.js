@@ -11,8 +11,6 @@ const Wrapper = styled.div`
     padding: 100px 0;
     position: relative;
     z-index: 3;
-    
-     
 `;
 
 const Heading = styled.h2`
@@ -36,7 +34,7 @@ const Heading = styled.h2`
 
 const ImageAndTextContainer = styled.div`
     display: flex;
-    
+
     height: 960px;
 
     .WhiteBox {

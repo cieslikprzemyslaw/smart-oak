@@ -12,7 +12,6 @@ const MobileListWrapper = styled.ul`
     background: #0e0e0e;
     color: #fff;
     z-index: 999999999;
-    font-family: Open Sans;
     padding-top: ${(props) => (props.dropdown ? '0rem' : '5rem')};
 
     @media screen and (max-width: 900px) {

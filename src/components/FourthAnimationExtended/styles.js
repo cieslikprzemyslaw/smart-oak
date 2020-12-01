@@ -6,7 +6,6 @@ const FourthAnimationExtended = styled.div`
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
-    font-family: Open Sans;
 `;
 
 const AnimationImg = styled.img`
@@ -23,7 +22,6 @@ const AnimationContent = styled.div`
     transform: translate(-50%, -50%);
     color: white;
     z-index: 2;
-    font-family: Open Sans;
 `;
 
 const AnimationContentParagraph = styled.p`
@@ -101,6 +99,25 @@ const Wrapper = styled.div`
     z-index: 3;
 `;
 
+const TitleWrapper = styled.div`
+    font-family: Open Sans Bold;
+    font-size: 52px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 3;
+`;
+
+const Title1 = styled.h2`
+    font-size: 52px;
+    margin: 10vh 0 0 10vw;
+    color: #7e7e7e;
+`;
+
+const Title2 = styled.h2`
+    font-size: 52px;
+    margin: 0 0 10vh 10vw;
+`;
+
 export {
     AnimationImg,
     AnimationContainer,
@@ -112,4 +129,7 @@ export {
     AfterAnimationContentHeader,
     FourthAnimationExtended,
     Wrapper,
+    TitleWrapper,
+    Title1,
+    Title2,
 };

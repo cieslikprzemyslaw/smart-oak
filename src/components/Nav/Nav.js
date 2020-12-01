@@ -41,7 +41,6 @@ const Container = styled.div`
     background-color: black;
     display: flex;
     justify-content: space-between;
-    font-family: Open Sans;
     @media screen and (max-width: 900px) {
         display: none;
     }

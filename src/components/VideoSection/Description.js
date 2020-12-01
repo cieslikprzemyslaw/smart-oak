@@ -7,7 +7,7 @@ const Section = styled.div`
     height: 100vh;
     position: relative;
     z-index: 3;
-    font-family: Open Sans;
+
     @media only screen and (min-width: 900px) {
         position: absolute;
         left: 70px;
@@ -68,6 +68,7 @@ const Description = styled.p`
     font-size: 20px;
     line-height: 136%;
     color: #fff;
+    text-transform: uppercase;
     @media only screen and (max-width: 900px) {
         font-size: 16px;
         line-height: 125%;
