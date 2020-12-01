@@ -29,7 +29,7 @@ const InfoSectionContainer = styled.div`
     margin: 60px;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
 `;
 
 const InfoSectionHeader = styled.h4`
