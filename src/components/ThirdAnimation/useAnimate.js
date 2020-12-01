@@ -32,7 +32,7 @@ const leftToRight = (self, ref) => {
 };
 
 const rightToLeft = (self, ref) => {
-    gsap.to(ref.current, { x: (200 * self.progress) });
+    gsap.to(ref.current, { x: 200 * self.progress });
 };
 
 export default useAnimate;
