@@ -4,9 +4,9 @@ import styled, { keyframes } from 'styled-components';
 import { FaAngleDown } from 'react-icons/fa';
 import MobileList from './MobileList';
 import MobileNavBtn from './MobileNavBtn';
-import SocialMedia from '../common/SocialMedia';
-import { allProjectsList } from '../common/commonData';
-import logoSrc from '../../assets/images/smart-oak-platform-logo.svg';
+import SocialMedia from '../../common/SocialMedia';
+import { allProjectsList } from '../../common/commonData';
+import logoSrc from '../../../assets/images/smart-oak-platform-logo.svg';
 
 const documentGlobal = typeof document !== 'undefined';
 
