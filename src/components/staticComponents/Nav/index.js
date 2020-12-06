@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 import { IntlContextConsumer, useIntl } from 'gatsby-plugin-intl';
-import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { FaAngleDown } from 'react-icons/fa';
 import { BsSearch } from 'react-icons/bs';
@@ -12,6 +11,7 @@ import Submenu from './Submenu';
 import SocialIcons from '../../common/SocialMedia';
 import { allProjectsList, projectsList } from '../../common/commonData';
 import {Container, NavContent, RightNav, StyledLink, DropdownLink, DropdownLinkItem, SearchBtn } from './styles';
+import {menuAnimation} from './useAnimate';
 
 const Nav = () => {
     const [showLangMenu, setShowLangMenu] = useState(false);
@@ -45,14 +45,6 @@ const Nav = () => {
             setShowSearch(true);
             console.log(showSearch);
         }, 500);
-    };
-
-    const menuAnimation = (refElement) => {
-        gsap.to(refElement.current, {
-            opacity: 0,
-            duration: 0.5,
-            ease: 'none',
-        });
     };
 
     const openSearchbar = () => {

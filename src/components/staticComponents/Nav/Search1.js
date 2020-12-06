@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import { gsap } from 'gsap';
 import { BsSearch } from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
 
 import InputSearch from './InputSearch';
 import {SearchWrapper, DropDown, DropdownSearchLink, Backdrop} from './styles';
+import { showMenuChildren } from './useAnimate';
 
 const Search = ({projectsList, isDesktop, onInputClose}) => {
     const [searchPhrase, setSearchPhrase] = useState('');
@@ -16,13 +16,7 @@ const Search = ({projectsList, isDesktop, onInputClose}) => {
 
     useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside);
-        gsap.to(wrapperRef.children, {
-            transform: 'translateX(0)',
-            opacity: 1,
-            duration: 0.5,
-            stagger: 0.03,
-            ease: 'none',
-        });
+        showMenuChildren(wrapperRef.children)
     }, );
     
     const handleRef = ref => (setChildRef(ref));

@@ -1,35 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import styled, { keyframes } from 'styled-components';
+
 import { IoMdMenu, IoMdClose } from 'react-icons/io';
 import PropTypes from 'prop-types';
 
-const fadeInFromNone = keyframes`
-    0% {
+import {MobileBtn} from './styles';
 
-       opacity: 0;
-   }
-   100% {
-
-       opacity: 1;
-   }
-`;
-const MobileBtn = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    outline-style: none;
-    padding: 4px;
-    outline: none;
-    transition: all 1s ease;
-    svg {
-        fill: #fff;
-        height: 26px;
-        width: 26px;
-        animation: ${fadeInFromNone} 0.7s linear;
-    }
-`;
 const MobileNavBtn = ({ open, onClick }) => {
     const [isOpen, setIsOpen] = useState(false);
 
