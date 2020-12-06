@@ -10,8 +10,16 @@ import Search from './Search1';
 import Submenu from './Submenu';
 import SocialIcons from '../../common/SocialMedia';
 import { allProjectsList, projectsList } from '../../common/commonData';
-import {Container, NavContent, RightNav, StyledLink, DropdownLink, DropdownLinkItem, SearchBtn } from './styles';
-import {menuAnimation} from './useAnimate';
+import {
+    Container,
+    NavContent,
+    RightNav,
+    StyledLink,
+    DropdownLink,
+    DropdownLinkItem,
+    SearchBtn,
+} from './styles';
+import { menuAnimation } from './useAnimate';
 
 const Nav = () => {
     const [showLangMenu, setShowLangMenu] = useState(false);

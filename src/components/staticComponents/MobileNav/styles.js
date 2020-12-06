@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link } from 'gatsby-plugin-intl';
+import { Link } from 'gatsby-plugin-intl';
 
 import styled, { keyframes } from 'styled-components';
 
@@ -11,7 +11,6 @@ const appear = keyframes`
         opacity: 1;
     }
 `;
-
 
 const fadeInFromNone = keyframes`
     0% {
@@ -131,4 +130,13 @@ const MobileBtn = styled.div`
     }
 `;
 
-export { MobileNavMenu, DropDownButton, DropDownLink, MobileNavItem, StyledLink, MobileListWrapper, ListWrapper, MobileBtn}
+export {
+    MobileNavMenu,
+    DropDownButton,
+    DropDownLink,
+    MobileNavItem,
+    StyledLink,
+    MobileListWrapper,
+    ListWrapper,
+    MobileBtn,
+};

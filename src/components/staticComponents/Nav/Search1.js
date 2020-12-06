@@ -4,49 +4,57 @@ import { BsSearch } from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
 
 import InputSearch from './InputSearch';
-import {SearchWrapper, DropDown, DropdownSearchLink, Backdrop} from './styles';
+import { SearchWrapper, DropDown, DropdownSearchLink, Backdrop } from './styles';
 import { showMenuChildren } from './useAnimate';
 
-const Search = ({projectsList, isDesktop, onInputClose}) => {
+const Search = ({ projectsList, isDesktop, onInputClose }) => {
     const [searchPhrase, setSearchPhrase] = useState('');
     const [searchLinks, setSearchLinks] = useState(projectsList);
     const [childRef, setChildRef] = useState(null);
 
-    let wrapperRef = useRef(null)
+    let wrapperRef = useRef(null);
 
     useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside);
-        showMenuChildren(wrapperRef.children)
-    }, );
-    
-    const handleRef = ref => (setChildRef(ref));
+        showMenuChildren(wrapperRef.children);
+    });
 
-    const handleSearchInputChange = e => {
-        if(e){
+    const handleRef = (ref) => setChildRef(ref);
+
+    const handleSearchInputChange = (e) => {
+        if (e) {
             setSearchPhrase(e.target.value);
             searchInMenu;
-        }else (setSearchLinks(projectsList));
+        } else setSearchLinks(projectsList);
     };
 
     const clearIfEmpty = () => {
-        if(searchPhrase === '')(setSearchLinks([]));
+        if (searchPhrase === '') setSearchLinks([]);
     };
 
-    const searchInMenu = () =>{
+    const searchInMenu = () => {
         let links = [];
         projectsList.forEach((link) => {
             if (link.text.toLowerCase().includes(searchPhrase)) {
                 links.push(link);
-                links = links.filter((e, i) => links.findIndex((a) => a['text'] === e['text']) === i,);
+                links = links.filter(
+                    (e, i) => links.findIndex((a) => a['text'] === e['text']) === i,
+                );
                 setSearchLinks(links);
             }
         });
     };
 
-    const handleClickOutside = e => {
-        if (wrapperRef && childRef.current && !childRef.current.contains(e.target) && !wrapperRef.contains(e.target)) {
-            if (isDesktop) {onInputClose()} 
-            else {
+    const handleClickOutside = (e) => {
+        if (
+            wrapperRef &&
+            childRef.current &&
+            !childRef.current.contains(e.target) &&
+            !wrapperRef.contains(e.target)
+        ) {
+            if (isDesktop) {
+                onInputClose();
+            } else {
                 setSearchLinks([]);
                 setSearchPhrase('');
             }
@@ -54,9 +62,9 @@ const Search = ({projectsList, isDesktop, onInputClose}) => {
     };
 
     return (
-        <section style={{width: "100%"}}>
+        <section style={{ width: '100%' }}>
             <SearchWrapper>
-                {isDesktop ? (<BsSearch style={{ cursor: 'default', fontSize: '17px' }} />) : null}
+                {isDesktop ? <BsSearch style={{ cursor: 'default', fontSize: '17px' }} /> : null}
                 <InputSearch
                     handleRef={handleRef}
                     isDesktop={isDesktop}

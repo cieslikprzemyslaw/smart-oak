@@ -318,4 +318,23 @@ const SubmenuStyledLink = styled.a`
         `}
 `;
 
-export { SearchBtn, Container, NavContent, StyledLink, DropdownLinkItem, RightNav, DropdownLink, SearchWrapper, DropDown, DropdownSearchLink, Backdrop, Input, LanguageSubmenuWrapper, LanguageSubmenuListItem, SubmenuWrapper, SubmenuListItem, StyledText, SubmenuStyledLink}
+export {
+    SearchBtn,
+    Container,
+    NavContent,
+    StyledLink,
+    DropdownLinkItem,
+    RightNav,
+    DropdownLink,
+    SearchWrapper,
+    DropDown,
+    DropdownSearchLink,
+    Backdrop,
+    Input,
+    LanguageSubmenuWrapper,
+    LanguageSubmenuListItem,
+    SubmenuWrapper,
+    SubmenuListItem,
+    StyledText,
+    SubmenuStyledLink,
+};

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import PropTypes from 'prop-types';
 
-import {MobileListWrapper, ListWrapper} from './styles';
+import { MobileListWrapper, ListWrapper } from './styles';
 
 const MobileList = ({ open, dropdown, children }) => {
     const [isOpen, setIsOpen] = useState(false);

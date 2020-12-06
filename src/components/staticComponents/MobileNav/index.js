@@ -8,7 +8,7 @@ import MobileNavBtn from './MobileNavBtn';
 import SocialMedia from '../../common/SocialMedia';
 import { allProjectsList } from '../../common/commonData';
 import logoSrc from '../../../assets/images/smart-oak-platform-logo.svg';
-import {MobileNavMenu, MobileNavItem, StyledLink, DropDownButton, DropDownLink} from './styles';
+import { MobileNavMenu, MobileNavItem, StyledLink, DropDownButton, DropDownLink } from './styles';
 
 const documentGlobal = typeof document !== 'undefined';
 
@@ -68,7 +68,8 @@ const MobileNav = () => {
                     onClick={() => {
                         setLangMenu(false);
                         setOtherWebsitesMenu(!otherWebsitesMenu);
-                    }}>
+                    }}
+                >
                     <DropDownButton open={otherWebsitesMenu}>
                         <DropDownLink>
                             {intl.formatMessage({
@@ -78,7 +79,8 @@ const MobileNav = () => {
                         <FaAngleDown
                             style={{
                                 transform: otherWebsitesMenu ? 'rotate(180deg)' : 'rotate(0)',
-                            }}/>
+                            }}
+                        />
                     </DropDownButton>
 
                     <MobileList open={otherWebsitesMenu} dropdown>

@@ -2,8 +2,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-import {SubmenuWrapper, SubmenuListItem, StyledText, StyledLink} from './styles';
-
+import { SubmenuWrapper, SubmenuListItem, StyledText, StyledLink } from './styles';
 
 const Submenu = ({ krs, data }) => {
     if (krs) {

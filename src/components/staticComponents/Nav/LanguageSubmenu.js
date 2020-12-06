@@ -1,6 +1,6 @@
 import React from 'react';
 import { IntlContextConsumer, changeLocale } from 'gatsby-plugin-intl';
-import {LanguageSubmenuWrapper, LanguageSubmenuListItem} from './styles'
+import { LanguageSubmenuWrapper, LanguageSubmenuListItem } from './styles';
 
 const LanguageSubmenu = () => {
     return (
@@ -10,7 +10,10 @@ const LanguageSubmenu = () => {
                     languages
                         .filter((e) => e !== currentLocale)
                         .map((language) => (
-                            <LanguageSubmenuListItem key={language} onClick={() => changeLocale(language)}>
+                            <LanguageSubmenuListItem
+                                key={language}
+                                onClick={() => changeLocale(language)}
+                            >
                                 {language.toUpperCase()}
                             </LanguageSubmenuListItem>
                         ))

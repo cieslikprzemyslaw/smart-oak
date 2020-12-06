@@ -3,7 +3,7 @@ import { useIntl } from 'gatsby-plugin-intl';
 
 import { gsap } from 'gsap';
 
-import {Input} from './styles'
+import { Input } from './styles';
 
 const InputSearch = ({ isDesktop, handleRef }) => {
     const intl = useIntl();

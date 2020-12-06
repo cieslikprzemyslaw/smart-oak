@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { IoMdMenu, IoMdClose } from 'react-icons/io';
 import PropTypes from 'prop-types';
 
-import {MobileBtn} from './styles';
+import { MobileBtn } from './styles';
 
 const MobileNavBtn = ({ open, onClick }) => {
     const [isOpen, setIsOpen] = useState(false);

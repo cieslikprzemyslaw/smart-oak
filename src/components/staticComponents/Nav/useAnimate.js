@@ -1,6 +1,6 @@
 import { gsap } from 'gsap';
 
-const menuAnimation = refElement => {
+const menuAnimation = (refElement) => {
     gsap.to(refElement.current, {
         opacity: 0,
         duration: 0.5,
@@ -8,8 +8,8 @@ const menuAnimation = refElement => {
     });
 };
 
-const showMenuChildren = refElement => {
-        gsap.to(refElement, {
+const showMenuChildren = (refElement) => {
+    gsap.to(refElement, {
         transform: 'translateX(0)',
         opacity: 1,
         duration: 0.5,
@@ -18,4 +18,4 @@ const showMenuChildren = refElement => {
     });
 };
 
-export {menuAnimation, showMenuChildren};
+export { menuAnimation, showMenuChildren };
