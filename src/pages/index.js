@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Nav from '../components/staticComponents/Nav';
 import MobileNav from '../components/staticComponents/MobileNav';
-import VideoSection from '../components/VideoSection';
+import VideoSection from '../components/pages/homePage/VideoSection';
 import SecondAnimation from '../components/SecondAnimation';
 import Footer from '../components/staticComponents/Footer';
 import FourthAnimationExtended from '../components/FourthAnimationExtended';

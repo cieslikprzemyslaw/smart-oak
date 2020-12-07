@@ -1,6 +1,40 @@
-import React from 'react';
 import styled from 'styled-components';
-import { useIntl } from 'gatsby-plugin-intl';
+
+const Container = styled.div`
+position: relative;
+height: calc(100vh - 4.5rem);
+z-index: 3;
+`;
+const TextContainer = styled.div`
+position: relative;
+height: 100%;
+`;
+
+const VideoWrapper = styled.video`
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: 3;
+`;
+
+const StyledLogo = styled.img`
+z-index: 3;
+will-change: opacity, scale;
+width: 90rem;
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+@media screen and (max-width: 1100px) {
+    width: 70rem;
+}
+@media screen and (max-width: 600px) {
+    width: 90%;
+}
+`;
 
 const Section = styled.div`
     object-fit: fill;
@@ -16,7 +50,7 @@ const Section = styled.div`
     }
 `;
 
-const Container = styled.div`
+const DescriptionContainer = styled.div`
     width: 85vw;
     > * {
         will-change: opacity, scale, transform;
@@ -38,7 +72,7 @@ const Container = styled.div`
         width: 90vw;
     }
 `;
-const Title = styled.h2`
+const DescriptionTitle = styled.h2`
     font-style: normal;
     font-weight: bold;
     margin-bottom: 3rem;
@@ -85,23 +119,5 @@ const Description = styled.p`
     }
 `;
 
-const DescriptionSection = ({ forwardRef }) => {
-    const intl = useIntl();
-    return (
-        <Section>
-            <Container ref={forwardRef}>
-                <Title>
-                    {intl.formatMessage({
-                        id: `videoSection.downloadPlatform`,
-                    })}
-                </Title>
-                <Description>
-                    {intl.formatMessage({
-                        id: `videoSection.joinEnvironment`,
-                    })}
-                </Description>
-            </Container>
-        </Section>
-    );
-};
-export default DescriptionSection;
+
+export {Container, TextContainer, VideoWrapper, StyledLogo, Section, DescriptionContainer, DescriptionTitle, Description }
