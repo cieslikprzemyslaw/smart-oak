@@ -1,6 +1,4 @@
-import React from 'react';
 import styled from 'styled-components';
-import SocialMedia from '../common/SocialMedia';
 import { MdCopyright } from 'react-icons/md';
 
 const Section = styled.footer`
@@ -50,18 +48,4 @@ const StyledCopyLogo = styled(MdCopyright)`
     margin-right: 8px;
 `;
 
-const Footer = () => {
-    return (
-        <Section>
-            <Container>
-                <SocialMedia footer />
-                <Copy>
-                    <StyledCopyLogo className="copyright" />
-                    <CopyCompany>2020 Smart Oak Project. Wszelkie prawa zastrzeżone.</CopyCompany>
-                </Copy>
-            </Container>
-        </Section>
-    );
-};
-
-export default Footer;
+export { Section, Container, Copy, CopyCompany, StyledCopyLogo }

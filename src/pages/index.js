@@ -3,7 +3,7 @@ import Nav from '../components/staticComponents/Nav';
 import MobileNav from '../components/staticComponents/MobileNav';
 import VideoSection from '../components/VideoSection';
 import SecondAnimation from '../components/SecondAnimation';
-import Footer from '../components/Footer';
+import Footer from '../components/staticComponents/Footer';
 import FourthAnimationExtended from '../components/FourthAnimationExtended';
 
 import ThirdAnimation from '../components/ThirdAnimation';
