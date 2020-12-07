@@ -1,39 +1,39 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-position: relative;
-height: calc(100vh - 4.5rem);
-z-index: 3;
+    position: relative;
+    height: calc(100vh - 4.5rem);
+    z-index: 3;
 `;
 const TextContainer = styled.div`
-position: relative;
-height: 100%;
+    position: relative;
+    height: 100%;
 `;
 
 const VideoWrapper = styled.video`
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
-z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
 `;
 
 const StyledLogo = styled.img`
-z-index: 3;
-will-change: opacity, scale;
-width: 90rem;
-position: absolute;
-top: 30%;
-left: 50%;
-transform: translate(-50%, -50%);
-@media screen and (max-width: 1100px) {
-    width: 70rem;
-}
-@media screen and (max-width: 600px) {
-    width: 90%;
-}
+    z-index: 3;
+    will-change: opacity, scale;
+    width: 90rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 1100px) {
+        width: 70rem;
+    }
+    @media screen and (max-width: 600px) {
+        width: 90%;
+    }
 `;
 
 const Section = styled.div`
@@ -119,5 +119,13 @@ const Description = styled.p`
     }
 `;
 
-
-export {Container, TextContainer, VideoWrapper, StyledLogo, Section, DescriptionContainer, DescriptionTitle, Description }
+export {
+    Container,
+    TextContainer,
+    VideoWrapper,
+    StyledLogo,
+    Section,
+    DescriptionContainer,
+    DescriptionTitle,
+    Description,
+};
