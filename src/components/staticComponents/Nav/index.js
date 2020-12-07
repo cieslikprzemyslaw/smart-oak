@@ -6,7 +6,7 @@ import { FaAngleDown } from 'react-icons/fa';
 import { BsSearch } from 'react-icons/bs';
 import LanguageSubmenu from './LanguageSubmenu';
 
-import Search from './Search1';
+import Search from './Search';
 import Submenu from './Submenu';
 import SocialIcons from '../../common/SocialMedia';
 import { allProjectsList, projectsList } from '../../common/commonData';
