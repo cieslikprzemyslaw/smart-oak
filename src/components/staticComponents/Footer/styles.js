@@ -48,4 +48,4 @@ const StyledCopyLogo = styled(MdCopyright)`
     margin-right: 8px;
 `;
 
-export { Section, Container, Copy, CopyCompany, StyledCopyLogo }
+export { Section, Container, Copy, CopyCompany, StyledCopyLogo };

@@ -2,7 +2,7 @@ import React from 'react';
 import { useIntl } from 'gatsby-plugin-intl';
 
 import SocialMedia from '../../common/SocialMedia';
-import {Section, Container , Copy, StyledCopyLogo, CopyCompany} from './styles'
+import { Section, Container, Copy, StyledCopyLogo, CopyCompany } from './styles';
 
 const Footer = () => {
     const intl = useIntl();
@@ -13,7 +13,9 @@ const Footer = () => {
                 <SocialMedia footer />
                 <Copy>
                     <StyledCopyLogo className="copyright" />
-                    <CopyCompany>2020 Smart Oak Project. {intl.formatMessage({id: `general.rights`})}</CopyCompany>
+                    <CopyCompany>
+                        2020 Smart Oak Project. {intl.formatMessage({ id: `general.rights` })}
+                    </CopyCompany>
                 </Copy>
             </Container>
         </Section>
