@@ -25,8 +25,8 @@ const Content = styled.div`
 `;
 
 const Title = styled.h1`
-    font-size: clamp(3rem, 5vw, 6rem);
-    font-weight: 300;
+    font-size: clamp(3rem, 5vw, 6.4rem);
+    font-weight: 400;
 `;
 
 const Subtitle = styled.p`
@@ -43,6 +43,7 @@ const Subtitle = styled.p`
 const Logo = styled.img`
     width: 45%;
     margin: 20px;
+    opacity: 0.2;
 `;
 
 const WorkInProgress = () => {
