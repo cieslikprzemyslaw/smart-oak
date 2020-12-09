@@ -104,5 +104,9 @@
         "rights": "Wszelkie prawa zastrzeżone",
         "websiteMadeBy": "Strona zeralizowana przez firmę",
         "privacyPolicy": "Polityka prywatności"
+    },
+    "workInProgress": {
+        "title": "Strona w budowie...",
+        "subtitle": "Mamy 74 genialnych wolontariuszy, ale ta strona jeszcze musi poczekać na swoją kolej ;)"
     }
 }

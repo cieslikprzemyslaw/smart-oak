@@ -107,5 +107,9 @@
         "rights": "All rights reserved",
         "websiteMadeBy": "Website made by the company",
         "privacyPolicy": "Privacy policy"
+    },
+    "workInProgress": {
+        "title": "Site under construction...",
+        "subtitle": "We have 74 brilliant volunteers, but this site has yet to wait its turn ;)"
     }
 }
