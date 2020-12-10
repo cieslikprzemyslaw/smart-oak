@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import ImageSrc from '../../assets/images/pexels-cottonbro.png';
+
+import ImageSrc from '../../../../assets/images/pexels-cottonbro.png';
 
 const FourthAnimationExtended = styled.div`
     background-image: url(${ImageSrc});

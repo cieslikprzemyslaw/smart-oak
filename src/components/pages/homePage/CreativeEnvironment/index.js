@@ -1,7 +1,8 @@
 import React, { useRef, useEffect } from 'react';
-import ImageSrc from '../../assets/images/forest-background-cropped.png';
 import { useIntl } from 'gatsby-plugin-intl';
-import { scaleImgOnScroll } from './Animate';
+
+import ImageSrc from '../../../../assets/images/forest-background-cropped.png';
+import { scaleImgOnScroll } from './useAnimate';
 import {
     AnimationContentParagraph,
     AnimationContainer,

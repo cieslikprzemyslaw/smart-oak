@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
+
+import { gsap } from 'gsap';
+import styled from 'styled-components';
+
 import Nav from '../components/staticComponents/Nav';
 import MobileNav from '../components/staticComponents/MobileNav';
 import VideoSection from '../components/pages/homePage/VideoSection';
-import SecondAnimation from '../components/SecondAnimation';
+import ConquerTheWorld from '../components/pages/homePage/ConquerTheWorld';
+import CreativeEnvironment from '../components/pages/homePage/CreativeEnvironment';
+import EnjoyTheOportunities from '../components/pages/homePage/EnjoyTheOportunities';
 import Footer from '../components/staticComponents/Footer';
-import FourthAnimationExtended from '../components/FourthAnimationExtended';
-
-import ThirdAnimation from '../components/ThirdAnimation';
-import { gsap } from 'gsap';
-import styled from 'styled-components';
 
 const Wrapper = styled.div`
     position: relative;
@@ -26,9 +27,9 @@ const IndexPage = () => {
             <Nav />
             <MobileNav />
             <VideoSection />
-            <SecondAnimation />
-            <ThirdAnimation />
-            <FourthAnimationExtended />
+            <ConquerTheWorld />
+            <EnjoyTheOportunities />
+            <CreativeEnvironment />
             <Footer />
         </Wrapper>
     );
