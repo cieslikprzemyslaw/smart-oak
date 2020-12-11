@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Container, ImageWithAnimation, Text, ImageContainer } from './styles';
 import React, { useRef } from 'react';
 
-const Section = ({ imageOnLeft, src, children, type, maxWidth }) => {
+const Section = ({ imageOnLeft, src, children, shiftValue, maxWidth }) => {
     const imgRef = useRef(null);
 
-    useAnimate(type, imgRef);
+    useAnimate(shiftValue, imgRef);
 
     return (
         <Container imageOnLeft={imageOnLeft}>
@@ -20,7 +20,7 @@ const Section = ({ imageOnLeft, src, children, type, maxWidth }) => {
 
 Section.propTypes = {
     imageOnLeft: PropTypes.bool,
-    type: PropTypes.arrayOf(PropTypes.oneOf(['rightToLeft', 'zoomOut', 'zoomIn'])),
+    shiftValue: PropTypes.number,
 };
 
 export default Section;
