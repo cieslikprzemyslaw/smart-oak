@@ -1,12 +1,14 @@
-import useAnimate from './useAnimate';
+import slideAnimation from './useAnimate';
 import PropTypes from 'prop-types';
 import { Container, ImageWithAnimation, Text, ImageContainer } from './styles';
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 const Section = ({ imageOnLeft, src, children, shiftValue, maxWidth }) => {
     const imgRef = useRef(null);
 
-    useAnimate(shiftValue, imgRef);
+    useEffect(() => {
+        slideAnimation(shiftValue, imgRef);
+    }, [imgRef, shiftValue]);
 
     return (
         <Container imageOnLeft={imageOnLeft}>
