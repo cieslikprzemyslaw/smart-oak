@@ -1,83 +1,56 @@
 import React from 'react';
 import Section from './Section';
-import Description from './Description';
 
 import firstImage from '../../../../assets/images/third-animation-first-section.png';
 import secondImage from '../../../../assets/images/third-animation-second-section.png';
 import thirdImage from '../../../../assets/images/third-animation-third-section.png';
 import { useIntl } from 'gatsby-plugin-intl';
-import { FirstSection, Title1, Title2 } from './styles';
+import { FirstSection, Title1, Title2, InfoSectionContainer, InfoSectionHeader, InfoSectionContent, InfoSection } from './styles';
+
+/** [ "SECTION_NAME", SECTION_IMAGE, ["SECTION_POINT", ...] ] */
+const contentSection = [
+    ["secondSection", secondImage, ["firstPoint", "secondPoint", "thirdPoint"]],
+    ["thirdSection", thirdImage, ["firstPoint", "secondPoint", "thirdPoint"]]
+];
 
 const ThirdAnimation = () => {
     const intl = useIntl();
+
     const firstPartTitile = intl.formatMessage({
         id: `thirdAnimation.firstSection.headerFirstPart`,
     });
     const secondPartTitle = intl.formatMessage({
         id: `thirdAnimation.firstSection.headerSecondPart`,
     });
-    const headersSecondSection = [
-        intl.formatMessage({
-            id: `thirdAnimation.secondSection.firstPoint.header`,
-        }),
-        intl.formatMessage({
-            id: `thirdAnimation.secondSection.secondPoint.header`,
-        }),
-        intl.formatMessage({
-            id: `thirdAnimation.secondSection.thirdPoint.header`,
-        }),
-    ];
-    const headersThirdSection = [
-        intl.formatMessage({
-            id: `thirdAnimation.thirdSection.firstPoint.header`,
-        }),
-        intl.formatMessage({
-            id: `thirdAnimation.thirdSection.secondPoint.header`,
-        }),
-        intl.formatMessage({
-            id: `thirdAnimation.thirdSection.thirdPoint.header`,
-        }),
-    ];
 
-    const contentSecondSection = [
-        intl.formatMessage({
-            id: `thirdAnimation.secondSection.firstPoint.content`,
-        }),
-        intl.formatMessage({
-            id: `thirdAnimation.secondSection.secondPoint.content`,
-        }),
-        intl.formatMessage({
-            id: `thirdAnimation.secondSection.thirdPoint.content`,
-        }),
-    ];
-    const contentThirdSection = [
-        intl.formatMessage({
-            id: `thirdAnimation.thirdSection.firstPoint.content`,
-        }),
-        intl.formatMessage({
-            id: `thirdAnimation.thirdSection.secondPoint.content`,
-        }),
-        intl.formatMessage({
-            id: `thirdAnimation.thirdSection.thirdPoint.content`,
-        }),
-    ];
+    const formatMessage = (section, point, isHeader) =>
+        intl.formatMessage({ id: `thirdAnimation.${section}.${point}.${isHeader ? "header" : "content"}` })
 
     return (
         <>
-            <Section imageOnLeft shiftValue={-200} src={firstImage}>
+            <Section imageOnLeft src={firstImage}>
                 <FirstSection>
                     <Title1>{firstPartTitile}</Title1>
-                    <br />
                     <Title2>{secondPartTitle}</Title2>
-                </FirstSection>
+                </FirstSection>  
             </Section>
-            <Section shiftValue={-200} src={secondImage}>
-                <Description headers={headersSecondSection} content={contentSecondSection} />
-            </Section>
-            <Section imageOnLeft shiftValue={200} src={thirdImage} maxWidth={'1396px'}>
-                {' '}
-                <Description headers={headersThirdSection} content={contentThirdSection} />
-            </Section>
+
+            {
+                contentSection.map((section, index) =>
+                    <Section key={section} src={section[1]} imageOnLeft={!!index % 2}>
+                        <InfoSection>
+                            {
+                                section[2].map(point =>
+                                    <InfoSectionContainer key={point}>
+                                        <InfoSectionHeader>{formatMessage(section[0], point, true)}</InfoSectionHeader>
+                                        <InfoSectionContent>{formatMessage(section[0], point, false)}</InfoSectionContent>
+                                    </InfoSectionContainer>)
+
+                            }
+                        </InfoSection>
+                    </Section>)
+            }
+
         </>
     );
 };
