@@ -28,16 +28,16 @@ const ThirdAnimation = () => {
 
     return (
         <>
-            <Section imageOnLeft src={firstImage}>
+            <Section imageOnLeft src={firstImage} shiftValue={-200}>
                 <FirstSection>
                     <Title1>{firstPartTitile}</Title1>
                     <Title2>{secondPartTitle}</Title2>
-                </FirstSection>  
+                </FirstSection>
             </Section>
 
             {
                 contentSection.map((section, index) =>
-                    <Section key={section} src={section[1]} imageOnLeft={!!index % 2}>
+                    <Section key={section} src={section[1]} imageOnLeft={!!index % 2} shiftValue={!!index % 2 ? -200 :200}>
                         <InfoSection>
                             {
                                 section[2].map(point =>
