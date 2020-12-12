@@ -11,9 +11,16 @@ const FourthAnimationExtended = styled.div`
 
 const AnimationImg = styled.img`
     width: 100%;
+    @media (max-width: 1224px) {
+        transform: scale(1) !important;
+        width: auto;
+        height: 100%;
+    }
 `;
 
-const AnimationContainer = styled.div``;
+const AnimationContainer = styled.div`
+    position: relative;
+`;
 
 const AnimationContent = styled.div`
     position: fixed;
@@ -23,6 +30,14 @@ const AnimationContent = styled.div`
     transform: translate(-50%, -50%);
     color: white;
     z-index: 2;
+    @media (max-width: 1224px) {
+        position: absolute;
+        top: 0;
+        transform: translate(0, 0);
+        left: 0;
+        margin: 120px 15px 15px 15px;
+        width: auto;
+    }
 `;
 
 const AnimationContentParagraph = styled.p`
@@ -38,6 +53,10 @@ const AnimationContentParagraph = styled.p`
     }
     @media screen and (max-width: 600px) {
         font-size: 20px;
+    }
+
+    @media (max-width: 1224px) {
+        position: absolute;
     }
 `;
 

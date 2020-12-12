@@ -50,6 +50,10 @@ const Title1 = styled.h2`
     font-size: 52px;
     color: #7e7e7e;
     width: 55%;
+    @media (max-width: 1224px) {
+        font-size: 40px;
+        width: unset;
+    }
 `;
 
 const Title2 = styled.h2`
@@ -58,6 +62,11 @@ const Title2 = styled.h2`
     font-size: 52px;
     color: #000;
     width: 55%;
+    @media (max-width: 1224px) {
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+    }
 `;
 
 const Container = styled.div`
@@ -65,6 +74,11 @@ const Container = styled.div`
     flex-direction: row;
     flex-flow: ${(props) => (props.imageOnLeft ? 'row' : 'row-reverse')};
     min-height: 100vh;
+    @media (max-width: 1224px) {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
 `;
 
 const ImageWithAnimation = styled.img`
@@ -75,12 +89,29 @@ const ImageWithAnimation = styled.img`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media (max-width: 1224px) {
+        min-height: unset;
+        transform: translate(0%) !important;
+        background-size: auto;
+        max-width: 100vw;
+        width: 100vw;
+        height: auto !important;
+        top: unset;
+        left: unset;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 `;
 
 const Text = styled.div`
     width: 50%;
     background-color: #ffffff;
     z-index: 101;
+
+    @media (max-width: 1224px) {
+        width: 100%;
+    }
 `;
 
 const ImageContainer = styled.div`
@@ -90,6 +121,12 @@ const ImageContainer = styled.div`
     z-index: 100;
     overflow: hidden;
     display: inline-block;
+    @media (max-width: 1224px) {
+        max-width: 100vw;
+        width: 100%;
+        height: 100vh;
+        left: 0 !important;
+    }
 `;
 
 export {

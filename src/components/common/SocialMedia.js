@@ -33,6 +33,9 @@ const Container = styled.div`
             justify-content: space-evenly;
             margin-left: 3rem;
         `}
+        @media (max-width: 1224px) {
+        justify-content: center;
+    }
 `;
 
 const ExternalLink = styled.a`

@@ -35,7 +35,9 @@ const ImageAndTextContainer = styled.div`
     .WhiteBox {
         display: block;
         height: 100%;
+
         width: 35vw;
+
         background: white;
     }
 
@@ -45,6 +47,10 @@ const ImageAndTextContainer = styled.div`
     background-size: 100%;
 
     background-position: 0 0;
+
+    @media (max-width: 1224px) {
+        background-size: auto;
+    }
 `;
 
 const Text = styled.p`
@@ -61,6 +67,9 @@ const Text = styled.p`
     p {
         width: 60%;
         margin: 28px 0;
+        @media (max-width: 1224px) {
+            width: 100%;
+        }
     }
 
     & p:first-of-type {
@@ -69,6 +78,19 @@ const Text = styled.p`
         font-weight: 600;
         font-size: 23px;
         line-height: 152%;
+    }
+    @media (max-width: 1224px) {
+        padding-top: 0px;
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 22px;
+    }
+    @media screen and (max-width: 800px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 12px;
     }
 `;
 
