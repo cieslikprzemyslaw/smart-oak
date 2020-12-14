@@ -13,9 +13,6 @@ import {
     AfterAnimationContentHeader,
     FourthAnimationExtended,
     Wrapper,
-    TitleWrapper,
-    Title1,
-    Title2,
 } from './styles.js';
 
 const FourthAnimation = () => {
@@ -28,18 +25,6 @@ const FourthAnimation = () => {
 
     return (
         <>
-            <TitleWrapper>
-                <Title1>
-                    {intl.formatMessage({
-                        id: `fourthAnimationTitle.title1`,
-                    })}
-                </Title1>
-                <Title2>
-                    {intl.formatMessage({
-                        id: `fourthAnimationTitle.title2`,
-                    })}
-                </Title2>
-            </TitleWrapper>
             <FourthAnimationExtended>
                 <AnimationContainer>
                     <AnimationImg src={ImageSrc} ref={imgRef} />
