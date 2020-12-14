@@ -218,7 +218,9 @@ const Input = styled.input`
 
 const LanguageSubmenuWrapper = styled.ul`
     width: 100%;
-    left: -10px;
+    height: 130%;
+    left: 0px;
+    top: 30px;
     position: absolute;
     background-color: black;
     z-index: 99;
