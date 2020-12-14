@@ -51,7 +51,12 @@ const Section = styled.div`
 `;
 
 const DescriptionContainer = styled.div`
-    width: 85vw;
+    position: absolute;
+    width: 980px;
+    height: 180px;
+    left: 100px;
+    top: 128px;
+    font-family: Open Sans, sans-serif;
     > * {
         will-change: opacity, scale, transform;
     }
@@ -74,7 +79,7 @@ const DescriptionContainer = styled.div`
 `;
 const DescriptionTitle = styled.h2`
     font-style: normal;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 3rem;
     font-size: 48px;
     line-height: 111.5%;
@@ -96,13 +101,13 @@ const DescriptionTitle = styled.h2`
 `;
 const Description = styled.p`
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 7.8rem;
     width: 830px;
     font-size: 20px;
-    line-height: 136%;
+    line-height: 32.6px;
+    letter-spacing: 0.01em;
     color: #fff;
-    text-transform: uppercase;
     @media only screen and (max-width: 900px) {
         font-size: 16px;
         line-height: 125%;
