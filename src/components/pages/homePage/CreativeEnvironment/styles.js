@@ -101,7 +101,8 @@ const Wrapper = styled.div`
 `;
 
 const TitleWrapper = styled.div`
-    font-family: Open Sans Bold;
+    font-family: Open Sans;
+    font-weight: bold;
     font-size: 52px;
     margin-top: 100px;
     position: relative;
