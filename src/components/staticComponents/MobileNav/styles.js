@@ -80,6 +80,7 @@ const MobileNavItem = styled.li`
         padding: 1rem;
     }
 `;
+
 const StyledLink = styled((props) => <Link {...props} />)`
     display: block;
     color: rgba(255, 255, 255, 0.85);
@@ -107,8 +108,7 @@ const MobileListWrapper = styled.ul`
 const ListWrapper = styled.ul`
     flex-direction: column;
     display: flex;
-    overflow: ${(props) => (props.dropdown ? 'visible' : 'auto')};
-
+    height: 100vh;
     position: relative;
 `;
 
