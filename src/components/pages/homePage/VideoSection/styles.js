@@ -20,8 +20,18 @@ const VideoWrapper = styled.video`
     z-index: 3;
 `;
 
+const VideoOverlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 4;
+`;
+
 const StyledLogo = styled.img`
-    z-index: 3;
+    z-index: 4;
     will-change: opacity, scale;
     width: 90rem;
     position: absolute;
@@ -40,7 +50,7 @@ const Section = styled.div`
     object-fit: fill;
     height: 100vh;
     position: relative;
-    z-index: 3;
+    z-index: 4;
 
     @media only screen and (min-width: 900px) {
         position: absolute;
@@ -128,4 +138,5 @@ export {
     DescriptionContainer,
     DescriptionTitle,
     Description,
+    VideoOverlay,
 };
