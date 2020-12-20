@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import styled, { css } from 'styled-components';
-import { FaFacebookSquare, FaLinkedin, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookSquare, FaLinkedin, FaYoutube, FaTwitter } from 'react-icons/fa';
+import { AiFillInstagram } from 'react-icons/ai';
 import { gsap } from 'gsap';
 
 // const fadeIn = keyframes`
@@ -85,7 +86,7 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
         },
         {
             href: 'https://www.instagram.com/smartoakprojects/',
-            icon: FaInstagram,
+            icon: AiFillInstagram,
         },
         {
             href: 'https://www.youtube.com/c/SmartOakProject/featured',
