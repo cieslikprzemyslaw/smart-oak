@@ -18,7 +18,7 @@ html {
 }
 
 body {
-   font-family: 'Muli', sans-serif ;
+   font-family: Open Sans;
   font-size: 1.6rem ;
   background-color: #F9F7F6;
   font-weight: 300 ;
