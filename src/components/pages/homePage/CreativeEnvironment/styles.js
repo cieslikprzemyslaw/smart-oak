@@ -45,6 +45,7 @@ const AnimationContentParagraph = styled.p`
     margin-top: 40px;
     font-size: 24px;
     line-height: 1.5;
+    font-weight: 400;
 
     @media screen and (max-width: 950px) {
         font-size: 22px;
@@ -64,6 +65,7 @@ const AnimationContentParagraph = styled.p`
 const AnimationContentHeader = styled.h2`
     font-size: 44px;
     line-height: 1.2;
+    font-weight: 600;
 
     @media screen and (max-width: 950px) {
         font-size: 33px;
@@ -87,6 +89,7 @@ const AfterAnimationContentParagraph = styled.p`
     margin-top: 40px;
     font-size: 24px;
     line-height: 1.5;
+    font-weight: 400;
 
     @media screen and (max-width: 900px) {
         font-size: 18px;
@@ -103,6 +106,7 @@ const AfterAnimationContentParagraph = styled.p`
 const AfterAnimationContentHeader = styled.h2`
     font-size: 37px;
     line-height: 1.2;
+    font-weight: 600;
 
     @media screen and (max-width: 900px) {
         font-size: 28px;
@@ -122,26 +126,6 @@ const Wrapper = styled.div`
     z-index: 3;
 `;
 
-const TitleWrapper = styled.div`
-    font-family: Open Sans;
-    font-weight: bold;
-    font-size: 52px;
-    margin-top: 100px;
-    position: relative;
-    z-index: 3;
-`;
-
-const Title1 = styled.h2`
-    font-size: 52px;
-    margin: 10vh 0 0 10vw;
-    color: #7e7e7e;
-`;
-
-const Title2 = styled.h2`
-    font-size: 52px;
-    margin: 0 0 10vh 10vw;
-`;
-
 export {
     AnimationImg,
     AnimationContainer,
@@ -153,7 +137,4 @@ export {
     AfterAnimationContentHeader,
     FourthAnimationExtended,
     Wrapper,
-    TitleWrapper,
-    Title1,
-    Title2,
 };
