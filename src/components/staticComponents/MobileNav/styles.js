@@ -94,11 +94,6 @@ const MobileNavItemLast = styled.li`
     opacity: 0;
     animation: 0.5s ${appear} forwards;
     animation-delay: 0.2s;
-
-    @media only screen and (orientation: landscape) {
-        font-size: 1.4rem;
-        padding: 1rem;
-    }
 `;
 
 const StyledLink = styled((props) => <Link {...props} />)`
