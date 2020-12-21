@@ -51,6 +51,7 @@ const StyledLink = styled((props) => <Link {...props} />)`
     align-items: center;
     cursor: pointer;
     font-size: 14px;
+    font-weight: 400;
     svg {
         margin-left: 1rem;
     }
@@ -61,6 +62,7 @@ const DropdownLinkItem = styled.div`
     align-items: center;
     color: #fff;
     font-size: 14px;
+    font-weight: 400;
     svg {
         margin-left: 0.5rem;
     }
@@ -85,6 +87,7 @@ const DropdownLink = styled.li`
     text-decoration: none;
     list-style-type: none;
     font-size: 14px;
+    font-weight: 400;
     padding: 1.2rem ${(props) => (props.rightNav ? '1rem' : '1.4rem')};
     cursor: pointer;
     position: relative;

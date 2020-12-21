@@ -42,6 +42,7 @@ const InfoSectionContent = styled.h4`
     font-size: 18px;
     line-height: 152%;
     text-align: left;
+    margin-top: 14px;
 `;
 
 const Title1 = styled.h2`

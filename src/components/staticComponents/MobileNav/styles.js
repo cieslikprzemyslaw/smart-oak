@@ -65,6 +65,7 @@ const DropDownLink = styled.div`
 
 const MobileNavItem = styled.li`
     position: relative;
+    font-weight: 400;
 
     margin-left: ${(props) => (props.dropdown ? '0rem' : '2rem')};
     list-style-type: none;

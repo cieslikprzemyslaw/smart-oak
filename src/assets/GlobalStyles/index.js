@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import './index.css';
 
 export default createGlobalStyle`
 * {
@@ -18,14 +19,18 @@ html {
 }
 
 body {
-   font-family: Open Sans;
+  font-family: 'Open Sans';
   font-size: 1.6rem ;
   background-color: #F9F7F6;
   font-weight: 300 ;
   touch-action: manipulation;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   overflow-x: hidden;   
   visibility: hidden;
+}
+
+h2 { 
+  font-weight: 600;
 }
 
 img {
