@@ -15,9 +15,8 @@ import { gsap } from 'gsap';
 const Container = styled.div`
     display: flex;
     align-items: center;
-    position: absolute;
     width: 100%;
-    bottom: ${(props) => (props.dropdown ? '0rem' : '7rem')};
+
     @media only screen and (max-width: 600px) {
         margin: 0 auto;
     }

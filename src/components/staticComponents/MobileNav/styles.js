@@ -81,6 +81,25 @@ const MobileNavItem = styled.li`
     }
 `;
 
+const MobileNavItemLast = styled.li`
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 7rem;
+    margin-left: ${(props) => (props.dropdown ? '0rem' : '2rem')};
+    list-style-type: none;
+
+    width: ${(props) => (props.dropdown ? '100%' : '90%')};
+
+    opacity: 0;
+    animation: 0.5s ${appear} forwards;
+    animation-delay: 0.2s;
+
+    @media only screen and (orientation: landscape) {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+`;
+
 const StyledLink = styled((props) => <Link {...props} />)`
     display: block;
     color: rgba(255, 255, 255, 0.85);
@@ -108,7 +127,7 @@ const MobileListWrapper = styled.ul`
 const ListWrapper = styled.ul`
     flex-direction: column;
     display: flex;
-    height: 100vh;
+    height: ${(props) => (props.dropdown ? 'auto' : '100vh')};
     position: relative;
 `;
 
@@ -139,4 +158,5 @@ export {
     MobileListWrapper,
     ListWrapper,
     MobileBtn,
+    MobileNavItemLast,
 };
