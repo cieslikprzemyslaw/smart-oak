@@ -16,11 +16,10 @@ import { gsap } from 'gsap';
 const Container = styled.div`
     display: flex;
     align-items: center;
+    width: 100%;
 
     @media only screen and (max-width: 600px) {
-        width: 80%;
         margin: 0 auto;
-        margin-top: 3rem;
     }
     ${({ mobileNav }) =>
         mobileNav &&
@@ -37,6 +36,15 @@ const Container = styled.div`
         @media (max-width: 1224px) {
         justify-content: center;
     }
+`;
+
+const LinksWrapper = styled.div`
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0 auto;
 `;
 
 const ExternalLink = styled.a`
@@ -120,7 +128,7 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
             mobileNav={mobileNav}
             // anim={firstLoad}
         >
-            {mapIcons}
+            <LinksWrapper>{mapIcons}</LinksWrapper>
         </Container>
     );
 };

@@ -81,6 +81,22 @@ const MobileNavItem = styled.li`
         padding: 1rem;
     }
 `;
+
+const MobileNavItemLast = styled.li`
+    position: relative;
+    margin-top: auto;
+    padding-bottom: 7rem;
+    padding-top: 7rem;
+    margin-left: ${(props) => (props.dropdown ? '0rem' : '2rem')};
+    list-style-type: none;
+
+    width: ${(props) => (props.dropdown ? '100%' : '90%')};
+
+    opacity: 0;
+    animation: 0.5s ${appear} forwards;
+    animation-delay: 0.2s;
+`;
+
 const StyledLink = styled((props) => <Link {...props} />)`
     display: block;
     color: rgba(255, 255, 255, 0.85);
@@ -109,7 +125,7 @@ const ListWrapper = styled.ul`
     flex-direction: column;
     display: flex;
     overflow: ${(props) => (props.dropdown ? 'visible' : 'auto')};
-
+    height: ${(props) => (props.dropdown ? 'auto' : '100vh')};
     position: relative;
 `;
 
@@ -140,4 +156,5 @@ export {
     MobileListWrapper,
     ListWrapper,
     MobileBtn,
+    MobileNavItemLast,
 };

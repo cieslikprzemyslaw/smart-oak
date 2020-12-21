@@ -8,7 +8,14 @@ import MobileNavBtn from './MobileNavBtn';
 import SocialMedia from '../../common/SocialMedia';
 import { allProjectsList } from '../../common/commonData';
 import logoSrc from '../../../assets/images/smart-oak-platform-logo.svg';
-import { MobileNavMenu, MobileNavItem, StyledLink, DropDownButton, DropDownLink } from './styles';
+import {
+    MobileNavMenu,
+    MobileNavItem,
+    StyledLink,
+    DropDownButton,
+    DropDownLink,
+    MobileNavItemLast,
+} from './styles';
 
 const documentGlobal = typeof document !== 'undefined';
 
@@ -135,7 +142,9 @@ const MobileNav = () => {
                         </IntlContextConsumer>
                     </MobileList>
                 </MobileNavItem>
-                <SocialMedia mobileNav />
+                <MobileNavItemLast>
+                    <SocialMedia mobileNav dropdown />
+                </MobileNavItemLast>
             </MobileList>
         </>
     );
