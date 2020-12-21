@@ -46,7 +46,8 @@ const InfoSectionContent = styled.h4`
 
 const Title1 = styled.h2`
     text-align: left;
-    font-family: Open Sans Bold;
+    font-family: Open Sans;
+    font-weight: bold;
     font-size: 52px;
     color: #7e7e7e;
     width: 55%;
@@ -54,7 +55,8 @@ const Title1 = styled.h2`
 
 const Title2 = styled.h2`
     text-align: left;
-    font-family: Open Sans Bold;
+    font-family: Open Sans;
+    font-weight: bold;
     font-size: 52px;
     color: #000;
     width: 55%;
