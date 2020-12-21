@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 
 import { IntlContextConsumer, useIntl } from 'gatsby-plugin-intl';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { FaAngleDown } from 'react-icons/fa';
 import { BsSearch } from 'react-icons/bs';
 import LanguageSubmenu from './LanguageSubmenu';
 
@@ -112,7 +111,6 @@ const Nav = () => {
                                 <IntlContextConsumer>
                                     {({ language: currentLocale }) => currentLocale.toUpperCase()}
                                 </IntlContextConsumer>
-                                <FaAngleDown />
                             </DropdownLinkItem>
                             {showLangMenu && <LanguageSubmenu />}
                         </DropdownLink>

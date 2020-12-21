@@ -33,7 +33,7 @@ const ImageAndTextContainer = styled.div`
     display: flex;
 
     height: 960px;
-
+    width: 100%;
     .WhiteBox {
         display: block;
         height: 100%;
@@ -46,7 +46,7 @@ const ImageAndTextContainer = styled.div`
     margin: 80px auto 0;
 
     background: url(${ImageSrc}) no-repeat;
-    background-size: 100%;
+    background-size: cover;
 
     background-position: 0 0;
 
@@ -57,7 +57,7 @@ const ImageAndTextContainer = styled.div`
 
 const Text = styled.p`
     padding-top: 50px;
-    font-size: 20px;
+    padding-bottom: 50px;
     color: white;
 
     font-family: Open Sans;
@@ -65,6 +65,7 @@ const Text = styled.p`
     font-weight: normal;
     font-size: 18px;
     line-height: 152%;
+    overflow: hidden;
 
     p {
         width: 60%;

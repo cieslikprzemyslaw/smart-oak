@@ -4,7 +4,7 @@ import videoSrc from '../../../../assets/videos/video.mp4';
 import Description from './Description';
 import logoSrc from '../../../../assets/images/smart-oak-platform-logo.svg';
 import { animationForVideoSection } from './useAnimate';
-import { Container, VideoWrapper, TextContainer, StyledLogo } from './styles';
+import { Container, VideoWrapper, TextContainer, StyledLogo, VideoOverlay } from './styles';
 
 const VideoSection = () => {
     const imgRef = useRef(null);
@@ -16,6 +16,7 @@ const VideoSection = () => {
 
     return (
         <Container>
+            <VideoOverlay />
             <VideoWrapper muted autoPlay preload="auto" loop playsinline>
                 <source src={videoSrc} type="video/mp4" />
             </VideoWrapper>
