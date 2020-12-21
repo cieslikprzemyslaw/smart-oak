@@ -21,7 +21,9 @@ const Header = styled.h2`
     font-weight: bold;
     font-size: 52px;
     line-height: 136%;
-
+    @media (max-width: 1224px) {
+        margin-top: auto;
+    }
     span {
         color: gray;
     }

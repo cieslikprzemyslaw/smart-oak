@@ -33,6 +33,7 @@ const InfoSectionHeader = styled.h4`
     font-weight: 600;
     font-size: 38px;
     line-height: 125.5%;
+    text-align: left;
 `;
 
 const InfoSectionContent = styled.h4`
@@ -89,6 +90,7 @@ const ImageWithAnimation = styled.img`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     @media (max-width: 1224px) {
         min-height: unset;
         transform: translate(0%) !important;
@@ -101,6 +103,9 @@ const ImageWithAnimation = styled.img`
         position: absolute;
         bottom: 0;
         right: 0;
+        @media (min-width: 800px) {
+            bottom: -350px;
+        }
     }
 `;
 

@@ -15,6 +15,7 @@ const AnimationImg = styled.img`
         transform: scale(1) !important;
         width: auto;
         height: 100%;
+        max-width: unset;
     }
 `;
 
@@ -88,13 +89,14 @@ const AfterAnimationContentParagraph = styled.p`
     line-height: 1.5;
 
     @media screen and (max-width: 900px) {
-        font-size: 22px;
+        font-size: 18px;
     }
     @media screen and (max-width: 800px) {
-        font-size: 21px;
+        font-size: 17px;
     }
     @media screen and (max-width: 600px) {
-        font-size: 20px;
+        text-align: left;
+        font-size: 16px;
     }
 `;
 
@@ -103,13 +105,14 @@ const AfterAnimationContentHeader = styled.h2`
     line-height: 1.2;
 
     @media screen and (max-width: 900px) {
-        font-size: 33px;
+        font-size: 28px;
     }
     @media screen and (max-width: 800px) {
-        font-size: 27px;
+        font-size: 22px;
     }
     @media screen and (max-width: 600px) {
-        font-size: 22px;
+        text-align: left;
+        font-size: 16px;
     }
 `;
 
