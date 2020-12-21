@@ -84,7 +84,8 @@ const MobileNavItem = styled.li`
 const MobileNavItemLast = styled.li`
     position: relative;
     margin-top: auto;
-    margin-bottom: 7rem;
+    padding-bottom: 7rem;
+    padding-top: 7rem;
     margin-left: ${(props) => (props.dropdown ? '0rem' : '2rem')};
     list-style-type: none;
 
@@ -127,6 +128,7 @@ const MobileListWrapper = styled.ul`
 const ListWrapper = styled.ul`
     flex-direction: column;
     display: flex;
+    overflow: ${(props) => (props.dropdown ? 'visible' : 'auto')};
     height: ${(props) => (props.dropdown ? 'auto' : '100vh')};
     position: relative;
 `;
