@@ -9,11 +9,11 @@
     },
     "videoSection": {
         "downloadPlatform": "Download our platform and get actively involved in community, scientific, and commercial projects",
-        "joinEnvironment": "Join our project environment and compete for NeuroN Foundation scholarships. Develop your leadership skills, find sponsors and investors to support your ideas."
+        "joinEnvironment": "Join our project environment and compete for NeuroN Foundation scholarships. Develop your leadership skills, find sponsors and investors to support your ideas (available from 6.06.2021)."
     },
     "projectSection": {
         "title1": "Conquer the world with",
-        "title2": "your projects!",
+        "title2": "Your projects!",
         "block1": "Smart Oak is an innovative platform for project-oriented communities, which is to facilitate the development of skills and competencies as well as make it possible to take part in community, scientific, and commercial projects. The multitude of tools to choose from guarantees efficient communication and management. The platform will feature Tasker, mind maps, drives, surveys, a text/voice messaging solution and a video chat solution. And this is just the beginning!",
         "block2": "Using the platform and taking part in projects is absolutely free of charge. The platform is developed within the framework of NeuroN Foundation, and the specialists involved in it offer their support free of charge to all project groups. The system is a solution designed for those who create innovations in the community, scientific, and commercial sectors.",
         "block3": "Our goal is also to develop dialog between creative individuals, which will definitely contribute to an increase in the number of pursued projects. Every project group can be easily followed, which makes it possible to track their progress. If you’d like to follow other projects, this is also the place for you. Check the progress made by project groups, get updates from activities and entrepreneurs, meaning key players in the domain of community and profit-oriented projects."
@@ -107,5 +107,9 @@
         "rights": "All rights reserved",
         "websiteMadeBy": "Website made by the company",
         "privacyPolicy": "Privacy policy"
+    },
+    "workInProgress": {
+        "title": "Site under construction...",
+        "subtitle": "We have 74 brilliant volunteers, but this site has yet to wait its turn ;)"
     }
 }

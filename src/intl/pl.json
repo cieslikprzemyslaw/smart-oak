@@ -9,11 +9,11 @@
     },
     "videoSection": {
         "downloadPlatform": "Pobierz naszą platformę i bierz aktywny udział w realizacji projektów społecznych, naukowych i komercyjnych.",
-        "joinEnvironment": "Dołącz do naszego środowiska projektowego i zawalcz o stypendia od NeuroN Foundation. Rozwijaj umiejętności liderskie, znajdź sponsorów i inwestorów dla twoich projektów."
+        "joinEnvironment": "Dołącz do naszego środowiska projektowego i zawalcz o stypendia od NeuroN Foundation. Rozwijaj umiejętności liderskie, znajdź sponsorów i inwestorów dla twoich projektów (dostępna od 6.06.2021)."
     },
     "projectSection": {
         "title1": "Podbijaj świat",
-        "title2": "projektami!",
+        "title2": "Projektami!",
         "block1": "Smart Oak to innowacyjna platforma dla społeczności projektowych, która ułatwi poszerzanie kompetencji oraz da możliwość brania udziału w projektach społecznych, naukowych i komercyjnych. Mnogość narzędzi pozwoli na sprawną komunikację i zarządzanie. Na platformie dostępny będzie tasker, mapy myśli, dyski, ankiety, komunikator tekstowy, głosowy i videorozmowy. A to dopiero początek!",
         "block2": "Użytkowanie platformy, jak i udział w projektach, są całkowicie darmowe. Portal jest budowany w ramach NeuroN Foundation, a tworzący go specjaliści udzielają swojego wsparcia nieodpłatnie wszystkim grupom projektowym. System jest rozwiązaniem dla osób budujących innowacje w sektorze społecznym, naukowym i komercyjnym.",
         "block3": "Naszym celem jest też rozwijanie dialogu wśród osób kreatywnych, co zdecydowanie przełoży się na wzrost podejmowanych realizacji. Każdą grupę organizującą projekt można w łatwy sposób obserwować i dzięki temu śledzić jej postępy. Jeżeli interesuje cię śledzenie innych projektów, to również znajdziesz tu swoje miejsce. Sprawdzaj postępy grup projektowych, uzyskuj informacje od aktywistów i przedsiębiorców, czyli osób kluczowych względem projektów społecznie użytecznych, jak i tych nastawionych na zysk."
@@ -90,10 +90,6 @@
         }
     },
     "descriptionSection": "Smart Oak to przede wszystkim przestrzeń dla społeczeństwa projektowego. Znajdzie się tu miejsce dla społecznych wilków, fanów startupów, naukowców, organizatorów wydarzeń, a także przedsiębiorców. Inwestorzy, sponsorzy i aniołowie biznesu również znajdą tu ciekawe możliwości. Każdy projekt można w łatwy sposób wspierać finansowo. Platforma pozwala każdemu aktywnie udzielać się w grupach informacyjnych. Przyczyni się to do poznania innych pasjonatów, z którymi wspólnie można rozwijając swoje zainteresowania i realizować nowe projekty. System stwarza też możliwość brania działu w e-wolontariacie – każdy z odpowiednimi kompetencjami będzie mógł się zaangażować w pomoc młodzieży. Dzięki takiemu rozwiązaniu swoimi kompetencjami będzie mógł wspierać każdy, kto posiada doświadczenie projektowe. Użytkownicy naszego portalu będą mogli personalizować swoje profile, czyniąc je atrakcyjniejszymi dla innych. Zwiększy to szansę na otrzymanie zaproszeń do uczestnictwa w projektach od innych grup projektowych lub pomoże znaleźć pracę marzeń. Ocena wszystkich podjętych działań na platformie będzie kończyć się z początkiem wakacji, natomiast podsumowanie odbędzie się podczas kilkudniowego wydarzenia w sierpniu. Rozdamy wtedy stypendia i wyróżnienia. Konferencja Smart Oak Projects pozwoli przedstawić ranking najlepszych projektów i szkół oraz zaprezentować najlepsze projekty od strony ich realizacji. Do zobaczenia na naszym portalu. Łap motywację i podbijaj świat projektami!",
-    "fourthAnimationTitle": {
-        "title1": "Środowisko kreatywnego",
-        "title2": "Działania."
-    },
     "fourthAnimationExtendedSection": {
         "title1": "Smart Oak to przede wszystkim przestrzeń dla społeczeństwa projektowego.",
         "title2": "System stwarza też możliwość brania działu w e-wolontariacie – każdy z odpowiednimi kompetencjami będzie mógł się zaangażować w pomoc młodzieży.",
@@ -104,5 +100,9 @@
         "rights": "Wszelkie prawa zastrzeżone",
         "websiteMadeBy": "Strona zeralizowana przez firmę",
         "privacyPolicy": "Polityka prywatności"
+    },
+    "workInProgress": {
+        "title": "Strona w budowie...",
+        "subtitle": "Mamy 74 genialnych wolontariuszy, ale ta strona jeszcze musi poczekać na swoją kolej ;)"
     }
 }

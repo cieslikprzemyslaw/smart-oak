@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import ImageSrc from '../../assets/images/pexels-cottonbro.png';
+
+import ImageSrc from '../../../../assets/images/pexels-cottonbro.png';
 
 const FourthAnimationExtended = styled.div`
     background-image: url(${ImageSrc});
@@ -10,9 +11,17 @@ const FourthAnimationExtended = styled.div`
 
 const AnimationImg = styled.img`
     width: 100%;
+    @media (max-width: 1224px) {
+        transform: scale(1) !important;
+        width: auto;
+        height: 100%;
+        max-width: unset;
+    }
 `;
 
-const AnimationContainer = styled.div``;
+const AnimationContainer = styled.div`
+    position: relative;
+`;
 
 const AnimationContent = styled.div`
     position: fixed;
@@ -22,12 +31,21 @@ const AnimationContent = styled.div`
     transform: translate(-50%, -50%);
     color: white;
     z-index: 2;
+    @media (max-width: 1224px) {
+        position: absolute;
+        top: 0;
+        transform: translate(0, 0);
+        left: 0;
+        margin: 120px 15px 15px 15px;
+        width: auto;
+    }
 `;
 
 const AnimationContentParagraph = styled.p`
     margin-top: 40px;
     font-size: 24px;
     line-height: 1.5;
+    font-weight: 400;
 
     @media screen and (max-width: 950px) {
         font-size: 22px;
@@ -38,11 +56,16 @@ const AnimationContentParagraph = styled.p`
     @media screen and (max-width: 600px) {
         font-size: 20px;
     }
+
+    @media (max-width: 1224px) {
+        position: absolute;
+    }
 `;
 
 const AnimationContentHeader = styled.h2`
     font-size: 44px;
     line-height: 1.2;
+    font-weight: 600;
 
     @media screen and (max-width: 950px) {
         font-size: 33px;
@@ -66,30 +89,34 @@ const AfterAnimationContentParagraph = styled.p`
     margin-top: 40px;
     font-size: 24px;
     line-height: 1.5;
+    font-weight: 400;
 
     @media screen and (max-width: 900px) {
-        font-size: 22px;
+        font-size: 18px;
     }
     @media screen and (max-width: 800px) {
-        font-size: 21px;
+        font-size: 17px;
     }
     @media screen and (max-width: 600px) {
-        font-size: 20px;
+        text-align: left;
+        font-size: 16px;
     }
 `;
 
 const AfterAnimationContentHeader = styled.h2`
     font-size: 37px;
     line-height: 1.2;
+    font-weight: 600;
 
     @media screen and (max-width: 900px) {
-        font-size: 33px;
+        font-size: 28px;
     }
     @media screen and (max-width: 800px) {
-        font-size: 27px;
+        font-size: 22px;
     }
     @media screen and (max-width: 600px) {
-        font-size: 22px;
+        text-align: left;
+        font-size: 16px;
     }
 `;
 

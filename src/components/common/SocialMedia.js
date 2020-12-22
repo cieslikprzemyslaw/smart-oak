@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import styled, { css } from 'styled-components';
-import { FaFacebookSquare, FaLinkedin, FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookSquare, FaLinkedin, FaYoutube, FaTwitter } from 'react-icons/fa';
+import { AiFillInstagram } from 'react-icons/ai';
 import { gsap } from 'gsap';
 
 // const fadeIn = keyframes`
@@ -15,11 +16,10 @@ import { gsap } from 'gsap';
 const Container = styled.div`
     display: flex;
     align-items: center;
+    width: 100%;
 
     @media only screen and (max-width: 600px) {
-        width: 80%;
         margin: 0 auto;
-        margin-top: 3rem;
     }
     ${({ mobileNav }) =>
         mobileNav &&
@@ -33,6 +33,18 @@ const Container = styled.div`
             justify-content: space-evenly;
             margin-left: 3rem;
         `}
+        @media (max-width: 1224px) {
+        justify-content: center;
+    }
+`;
+
+const LinksWrapper = styled.div`
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0 auto;
 `;
 
 const ExternalLink = styled.a`
@@ -85,7 +97,7 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
         },
         {
             href: 'https://www.instagram.com/smartoakprojects/',
-            icon: FaInstagram,
+            icon: AiFillInstagram,
         },
         {
             href: 'https://www.youtube.com/c/SmartOakProject/featured',
@@ -116,7 +128,7 @@ const SocialMedia = ({ footer, navigation, mobileNav }) => {
             mobileNav={mobileNav}
             // anim={firstLoad}
         >
-            {mapIcons}
+            <LinksWrapper>{mapIcons}</LinksWrapper>
         </Container>
     );
 };
