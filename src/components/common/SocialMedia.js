@@ -47,6 +47,15 @@ const LinksWrapper = styled.div`
     margin: 0 auto;
 `;
 
+const LinksWrapper = styled.div`
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0 auto;
+`;
+
 const ExternalLink = styled.a`
     text-decoration: none;
     transition: all 0.15s ease;
