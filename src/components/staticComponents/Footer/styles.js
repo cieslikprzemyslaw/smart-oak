@@ -18,7 +18,7 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 900px) {
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
@@ -27,8 +27,15 @@ const Container = styled.div`
 
 const Copy = styled.div`
     display: flex;
-    @media screen and (max-width: 600px) {
-        order: 5;
+    width: 50%;
+    @media screen and (max-width: 1300px) {
+        width: 70%;
+    }
+    @media screen and (max-width: 1100px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 900px) {
+        justify-content: center;
         margin-top: 2rem;
     }
 `;
