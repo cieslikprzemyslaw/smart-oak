@@ -126,6 +126,7 @@ const Wrapper = styled.div`
     z-index: 3;
 `;
 
+
 export {
     AnimationImg,
     AnimationContainer,
