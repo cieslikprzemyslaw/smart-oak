@@ -12,7 +12,7 @@ const Section = styled.footer`
 const Container = styled.div`
     position: relative;
     z-index: 3;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -27,7 +27,7 @@ const Container = styled.div`
 
 const Copy = styled.div`
     display: flex;
-    width: 50%;
+    width: fit-content;
     @media screen and (max-width: 1300px) {
         width: 70%;
     }
@@ -43,6 +43,7 @@ const Copy = styled.div`
 const CopyCompany = styled.h2`
     font-style: normal;
     font-weight: normal;
+    width: content;
     margin-top: 2px;
     font-size: 12px;
     line-height: 15px;

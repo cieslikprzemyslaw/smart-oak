@@ -16,7 +16,7 @@ import { gsap } from 'gsap';
 const Container = styled.div`
     display: flex;
     align-items: center;
-    width: 100%;
+    width: fit-content;
 
     @media only screen and (max-width: 600px) {
         margin: 0 auto;
@@ -39,7 +39,7 @@ const Container = styled.div`
 `;
 
 const LinksWrapper = styled.div`
-    width: 80%;
+    width: 25%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -47,14 +47,6 @@ const LinksWrapper = styled.div`
     margin: 0 auto;
 `;
 
-const LinksWrapper = styled.div`
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    margin: 0 auto;
-`;
 
 const ExternalLink = styled.a`
     text-decoration: none;
