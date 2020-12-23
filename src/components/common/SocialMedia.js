@@ -47,7 +47,6 @@ const LinksWrapper = styled.div`
     margin: 0 auto;
 `;
 
-
 const ExternalLink = styled.a`
     text-decoration: none;
     transition: all 0.15s ease;

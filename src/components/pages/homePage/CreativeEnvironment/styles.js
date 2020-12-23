@@ -21,6 +21,9 @@ const AnimationImg = styled.img`
 
 const AnimationContainer = styled.div`
     position: relative;
+    @media (max-width: 1224px) {
+        text-align: justify;
+    }
 `;
 
 const AnimationContent = styled.div`
@@ -83,6 +86,9 @@ const AfterAnimationContainer = styled.div`
     padding: 250px 0 100px 0;
     margin: 0 auto;
     text-align: center;
+    @media (max-width: 1224px) {
+        text-align: justify;
+    }
 `;
 
 const AfterAnimationContentParagraph = styled.p`
@@ -125,7 +131,6 @@ const Wrapper = styled.div`
     position: relative;
     z-index: 3;
 `;
-
 
 export {
     AnimationImg,

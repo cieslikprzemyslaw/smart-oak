@@ -13,6 +13,7 @@ const FirstSection = styled.div`
     font-style: normal;
     font-weight: bold;
     flex-wrap: wrap;
+    text-align: justify;
 `;
 
 const InfoSection = styled.div`
@@ -119,6 +120,8 @@ const Text = styled.div`
 
     @media (max-width: 1224px) {
         width: 100%;
+        text-align: justify;
+        margin: 0 15px 0 15px;
     }
 `;
 

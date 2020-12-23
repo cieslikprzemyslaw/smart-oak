@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ImageSrc from '../../../../assets/images/some-dude-in-cafe.png';
 
 const Wrapper = styled.div`
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     position: relative;
     z-index: 3;
 `;
@@ -52,6 +52,7 @@ const ImageAndTextContainer = styled.div`
 
     @media (max-width: 1224px) {
         background-size: auto;
+        text-align: justify;
     }
 `;
 

@@ -8,6 +8,8 @@ const Container = styled.div`
 const TextContainer = styled.div`
     position: relative;
     height: 100%;
+    text-align: justify;
+    margin: 0 15px 0 15px
 `;
 
 const VideoWrapper = styled.video`
