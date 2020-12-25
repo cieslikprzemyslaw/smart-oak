@@ -54,7 +54,7 @@ const Section = styled.div`
     position: relative;
     z-index: 4;
 
-    @media only screen and (min-width: 1100px) {
+    @media only screen and (max-width: 1100px) {
         position: absolute;
         left: 70px;
         top: 85px;
@@ -64,10 +64,10 @@ const Section = styled.div`
 
 const DescriptionContainer = styled.div`
     position: absolute;
-    width: 980px;
-    height: 180px;
-    left: 100px;
-    top: 128px;
+    width: 80%;
+    height: 100%;
+    left: 8%;
+    top: 10%;
     font-family: Open Sans, sans-serif;
     > * {
         will-change: opacity, scale, transform;
@@ -96,6 +96,7 @@ const DescriptionTitle = styled.h2`
     font-size: 48px;
     line-height: 111.5%;
     color: #fff;
+    width: 70%;
 
     @media only screen and (max-width: 900px) {
         font-size: 36px;
@@ -120,6 +121,7 @@ const DescriptionMainTitle = styled.h1`
     letter-spacing: 3px;
     line-height: 111.5%;
     color: #fff;
+    width: 50%;
 
     @media only screen and (max-width: 900px) {
         font-size: 36px;
@@ -139,8 +141,8 @@ const Description = styled.p`
     font-style: normal;
     font-weight: 400;
     margin-bottom: 7.8rem;
-    width: 830px;
-    font-size: 20px;
+    width: 100%;
+    font-size: 24px;
     line-height: 32.6px;
     letter-spacing: 0.01em;
     color: #fff;
