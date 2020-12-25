@@ -9,7 +9,7 @@ const TextContainer = styled.div`
     position: relative;
     height: 100%;
     text-align: justify;
-    margin: 0 15px 0 15px
+    margin: 0 15px 0 15px;
 `;
 
 const VideoWrapper = styled.video`
@@ -35,7 +35,7 @@ const VideoOverlay = styled.div`
 const StyledLogo = styled.img`
     z-index: 4;
     will-change: opacity, scale;
-    width: 90rem;
+    width: 50rem;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -111,6 +111,30 @@ const DescriptionTitle = styled.h2`
         text-align: left;
     }
 `;
+
+const DescriptionMainTitle = styled.h1`
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    font-size: 72px;
+    letter-spacing: 3px;
+    line-height: 111.5%;
+    color: #fff;
+
+    @media only screen and (max-width: 900px) {
+        font-size: 36px;
+        line-height: 119%;
+        margin-bottom: 2rem;
+    }
+    @media only screen and (max-width: 500px) {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+`;
 const Description = styled.p`
     font-style: normal;
     font-weight: 400;
@@ -136,6 +160,34 @@ const Description = styled.p`
     }
 `;
 
+const DescriptionConquer = styled.section`
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 6;
+
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    font-size: 48px;
+    line-height: 111.5%;
+    color: #fff;
+
+    @media only screen and (max-width: 900px) {
+        font-size: 36px;
+        line-height: 119%;
+        margin-bottom: 2rem;
+    }
+    @media only screen and (max-width: 500px) {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+`;
+
 export {
     Container,
     TextContainer,
@@ -146,4 +198,6 @@ export {
     DescriptionTitle,
     Description,
     VideoOverlay,
+    DescriptionConquer,
+    DescriptionMainTitle,
 };

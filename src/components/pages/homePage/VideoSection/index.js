@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import videoSrc from '../../../../assets/videos/video.mp4';
 import Description from './Description';
@@ -9,9 +9,11 @@ import { Container, VideoWrapper, TextContainer, StyledLogo, VideoOverlay } from
 const VideoSection = () => {
     const imgRef = useRef(null);
     const descRef = useRef(null);
+    const [isDisplayLogo, setIsDisplayLogo] = useState(true);
 
     useEffect(() => {
         animationForVideoSection(imgRef, descRef);
+        setTimeout(()=> setIsDisplayLogo(false), 2500)
     }, []);
 
     return (
@@ -21,7 +23,7 @@ const VideoSection = () => {
                 <source src={videoSrc} type="video/mp4" />
             </VideoWrapper>
             <TextContainer>
-                <StyledLogo src={logoSrc} alt="" ref={imgRef} />
+                {isDisplayLogo && <StyledLogo src={logoSrc} alt="" ref={imgRef} />}
                 <Description forwardRef={descRef} />
             </TextContainer>
         </Container>

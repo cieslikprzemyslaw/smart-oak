@@ -6,17 +6,17 @@ const animationForVideoSection = (firstElement, secondElement) => {
     tl.from(firstElement.current, {
         skewX: 0.01,
         transformOrigin: 'center',
-        scale: 0.6,
-        opacity: 0,
-        duration: 3,
-        delay: 1,
+        scale: 0.87,
+        opacity: 0.35,
+        duration: 1,
+        delay: 0.5,
     })
         .to(firstElement.current, {
             skewX: 0.01,
-            scale: 0.95,
-            opacity: 0,
-            duration: 1.5,
-            delay: 2,
+            scale: 0.97,
+            opacity: 1,
+            duration: 0.6,
+            delay: 0.5,
         })
         .from(secondElement.current.children, {
             skewX: 0.01,
