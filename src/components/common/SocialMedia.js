@@ -29,7 +29,6 @@ const Container = styled.div`
     ${({ navigation }) =>
         navigation &&
         css`
-            width: 220px;
             justify-content: space-evenly;
             margin-left: 3rem;
         `}
