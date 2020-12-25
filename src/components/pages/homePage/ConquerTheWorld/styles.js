@@ -69,7 +69,8 @@ const Text = styled.p`
 
     p {
         max-width: 75%;
-        margin: 24px 0;
+        margin: 25px 0;
+        line-height: 170%;
         @media (max-width: 1224px) {
             width: 100%;
         }
@@ -79,8 +80,8 @@ const Text = styled.p`
         font-family: Open Sans;
         font-style: normal;
         font-weight: 600;
-        font-size: 23px;
-        line-height: 152%;
+        font-size: 32px;
+        line-height: 150%;
     }
     @media (max-width: 1224px) {
         padding-top: 0px;
