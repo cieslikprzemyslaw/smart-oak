@@ -13,7 +13,7 @@ const Section = styled.footer`
 const Container = styled.div`
     position: relative;
     z-index: 3;
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
     height: 100%;
     display: flex;
