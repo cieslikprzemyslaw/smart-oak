@@ -13,16 +13,16 @@ const Header = styled.h2`
     flex-direction: column;
     color: black;
 
-    width: 80%;
-    margin: 100px auto 0;
+    width: fit-content;
+    margin: 0 0 100px 100px;
 
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 52px;
     line-height: 136%;
-    @media (max-width: 1224px) {
-        margin-top: auto;
+    @media (max-width: 550px) {
+        margin: 0 15px 0 15px;
     }
     span {
         color: gray;
