@@ -236,7 +236,7 @@ const LanguageSubmenuWrapper = styled.ul`
 const LanguageSubmenuListItem = styled.li`
     margin: 1rem 0;
     list-style-type: none;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
     padding: 0.8rem 4rem;
 
