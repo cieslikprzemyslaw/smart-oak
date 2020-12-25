@@ -8,7 +8,6 @@ export const scaleImgOnScroll = (elem) => {
         trigger: elem,
         start: 'top 10%',
         end: 'bottom 90%',
-        markers: true,
         onUpdate: (self) => {
             gsap.to(elem, {
                 scaleX: 1 - self.progress / 5,
