@@ -91,6 +91,9 @@ const DropdownLink = styled.li`
     padding: 1.2rem ${(props) => (props.rightNav ? '1rem' : '1.4rem')};
     cursor: pointer;
     position: relative;
+    &:hover{
+        color: #257CF8;
+    }
 `;
 const fadeInBackDrop = keyframes`
   0% {

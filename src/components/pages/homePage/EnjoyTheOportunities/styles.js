@@ -141,7 +141,7 @@ const ImageContainer = styled.div`
     }
 `;
 const Wrapper = styled.section`
-    margin: 150px 0 100px 0; 
+    margin: 150px 0 150px 0; 
 `;
 
 export {
