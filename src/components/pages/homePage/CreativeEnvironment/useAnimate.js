@@ -6,8 +6,9 @@ gsap.registerPlugin(ScrollTrigger);
 export const scaleImgOnScroll = (elem) => {
     ScrollTrigger.create({
         trigger: elem,
-        start: 'top 10%',
-        end: 'bottom 90%',
+        start: 'top 70%',
+        end: 'top',
+        markers: true,
         onUpdate: (self) => {
             gsap.to(elem, {
                 scaleX: 1 - self.progress / 10,
