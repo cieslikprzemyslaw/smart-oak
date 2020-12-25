@@ -267,7 +267,7 @@ const SubmenuWrapper = styled.ul`
 `;
 
 const SubmenuListItem = styled.li`
-    margin: 1.6rem 0;
+    margin: 5px;
     list-style-type: none;
     &:first-child {
         margin-top: 2.4rem;
