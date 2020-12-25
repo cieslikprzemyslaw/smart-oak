@@ -30,10 +30,10 @@ const Copy = styled.div`
     display: flex;
     width: fit-content;
     @media screen and (max-width: 1300px) {
-        width: 70%;
+        width: fit-content;
     }
     @media screen and (max-width: 1100px) {
-        width: 100%;
+        width: fit-content;
     }
     @media screen and (max-width: 900px) {
         justify-content: center;

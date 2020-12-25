@@ -7,11 +7,11 @@ const Footer = () => {
     return (
         <Section>
             <Container>
+                <SocialMedia footer />
                 <Copy>
                     <StyledCopyLogo className="copyright" />
                     <CopyCompany>Smart Oak System 2020</CopyCompany>
                 </Copy>
-                <SocialMedia footer />
             </Container>
         </Section>
     );
