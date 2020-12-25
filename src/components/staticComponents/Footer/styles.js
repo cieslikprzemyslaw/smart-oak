@@ -3,6 +3,7 @@ import { MdCopyright } from 'react-icons/md';
 
 const Section = styled.footer`
     width: 100%;
+    height: 45px;
     background: #0e0e0e;
     padding: 17px 0;
     position: relative;
