@@ -159,7 +159,7 @@ const DropdownSearchLink = styled(Link)`
 
     &:hover {
         &:last-child {
-            border-radius: 0 0 1rem 1rem;
+            border-radius: 0 0 18px 18px;;
         }
         color: #06c;
         background-color: #f4f4f4;
