@@ -11,7 +11,7 @@ const FourthAnimationExtended = styled.div`
 
 const AnimationImg = styled.img`
     min-width: 100%;
-    min-height: 125vh;
+    max-height: 125vh;
     @media (max-width: 1224px) {
         transform: scale(1) !important;
         width: auto;

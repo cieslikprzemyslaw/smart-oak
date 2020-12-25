@@ -50,7 +50,7 @@ const StyledLogo = styled.img`
 
 const Section = styled.div`
     object-fit: fill;
-    height: 100vh;
+    height: 70vh;
     position: relative;
     z-index: 4;
 
@@ -96,7 +96,7 @@ const DescriptionTitle = styled.h2`
     font-size: 48px;
     line-height: 111.5%;
     color: #fff;
-    width: 70%;
+    width: 90%;
 
     @media only screen and (max-width: 900px) {
         font-size: 36px;
@@ -110,6 +110,11 @@ const DescriptionTitle = styled.h2`
         line-height: 29px;
         letter-spacing: 0em;
         text-align: left;
+    }
+
+    @media (min-height: 1300px){
+       font-size: 75px; 
+       margin-bottom: 70px;
     }
 `;
 
@@ -121,7 +126,7 @@ const DescriptionMainTitle = styled.h1`
     letter-spacing: 3px;
     line-height: 111.5%;
     color: #fff;
-    width: 50%;
+    width: fit-content;
 
     @media only screen and (max-width: 900px) {
         font-size: 36px;
@@ -135,6 +140,10 @@ const DescriptionMainTitle = styled.h1`
         line-height: 29px;
         letter-spacing: 0em;
         text-align: left;
+    }
+    @media (min-height: 1300px){
+       font-size: 105px; 
+       margin-bottom: 50px;
     }
 `;
 const Description = styled.p`
@@ -160,33 +169,9 @@ const Description = styled.p`
         letter-spacing: 0em;
         text-align: left;
     }
-`;
-
-const DescriptionConquer = styled.section`
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    z-index: 6;
-
-    font-style: normal;
-    font-weight: 600;
-    margin-bottom: 3rem;
-    font-size: 48px;
-    line-height: 111.5%;
-    color: #fff;
-
-    @media only screen and (max-width: 900px) {
-        font-size: 36px;
-        line-height: 119%;
-        margin-bottom: 2rem;
-    }
-    @media only screen and (max-width: 500px) {
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 29px;
-        letter-spacing: 0em;
-        text-align: left;
+    @media (min-height: 1300px){
+       font-size: 48px; 
+       line-height: 160%;
     }
 `;
 
@@ -200,6 +185,5 @@ export {
     DescriptionTitle,
     Description,
     VideoOverlay,
-    DescriptionConquer,
     DescriptionMainTitle,
 };
