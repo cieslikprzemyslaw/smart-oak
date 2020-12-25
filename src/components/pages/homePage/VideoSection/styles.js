@@ -67,7 +67,7 @@ const DescriptionContainer = styled.div`
     width: 80%;
     height: 100%;
     left: 8%;
-    top: 10%;
+    top: 15%;
     font-family: Open Sans, sans-serif;
     > * {
         will-change: opacity, scale, transform;
@@ -92,11 +92,13 @@ const DescriptionContainer = styled.div`
 const DescriptionTitle = styled.h2`
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 3rem;
+    margin-bottom: 50px;
     font-size: 48px;
     line-height: 111.5%;
     color: #fff;
     width: 90%;
+    text-align: justify;
+
 
     @media only screen and (max-width: 900px) {
         font-size: 36px;
@@ -114,11 +116,40 @@ const DescriptionTitle = styled.h2`
 
     @media (min-height: 1300px){
        font-size: 75px; 
-       margin-bottom: 70px;
+       margin-bottom: 50px;
     }
 `;
 
 const DescriptionMainTitle = styled.h1`
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    letter-spacing: 3px;
+    line-height: 111.5%;
+    color: #fff;
+    width: fit-content;
+    text-align: left;
+;
+
+    @media only screen and (max-width: 900px) {
+        font-size: 36px;
+        line-height: 119%;
+        margin-bottom: 2rem;
+    }
+    @media only screen and (max-width: 500px) {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    @media (min-height: 1300px){
+       font-size: 105px; 
+       margin-bottom: 50px;
+    }
+`;
+const DescriptionMainSubtitle = styled.h1`
     font-style: normal;
     font-weight: 600;
     margin-bottom: 3rem;
@@ -127,6 +158,8 @@ const DescriptionMainTitle = styled.h1`
     line-height: 111.5%;
     color: #fff;
     width: fit-content;
+    text-align: left;
+    margin-bottom: 70px;
 
     @media only screen and (max-width: 900px) {
         font-size: 36px;
@@ -150,16 +183,17 @@ const Description = styled.p`
     font-style: normal;
     font-weight: 400;
     margin-bottom: 7.8rem;
-    width: 100%;
+    width: 70%;
     font-size: 24px;
     line-height: 32.6px;
     letter-spacing: 0.01em;
     color: #fff;
+    text-align: left;
     @media only screen and (max-width: 900px) {
         font-size: 16px;
         line-height: 125%;
         margin-bottom: 4rem;
-        width: 100%;
+        width: 75%;
     }
     @media only screen and (max-width: 500px) {
         font-size: 16px;
@@ -172,6 +206,7 @@ const Description = styled.p`
     @media (min-height: 1300px){
        font-size: 48px; 
        line-height: 160%;
+       width: 80%;
     }
 `;
 
@@ -186,4 +221,5 @@ export {
     Description,
     VideoOverlay,
     DescriptionMainTitle,
+    DescriptionMainSubtitle,
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIntl } from 'gatsby-plugin-intl';
 
-import { Section, DescriptionContainer, DescriptionTitle, Description, DescriptionMainTitle } from './styles';
+import { Section, DescriptionContainer, DescriptionTitle, Description, DescriptionMainTitle, DescriptionMainSubtitle } from './styles';
 
 const DescriptionSection = ({ forwardRef }) => {
     const intl = useIntl();
@@ -14,11 +14,11 @@ const DescriptionSection = ({ forwardRef }) => {
                         id: `videoSection.conquerTheWorld`,
                     })}
                 </DescriptionMainTitle>
-                <DescriptionMainTitle>
+                <DescriptionMainSubtitle>
                     {intl.formatMessage({
                         id: `videoSection.projects`,
                     })}
-                </DescriptionMainTitle>
+                </DescriptionMainSubtitle>
                 <DescriptionTitle>
                     {intl.formatMessage({
                         id: `videoSection.downloadPlatform`,
