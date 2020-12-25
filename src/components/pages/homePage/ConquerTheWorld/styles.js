@@ -57,8 +57,7 @@ const ImageAndTextContainer = styled.div`
 `;
 
 const Text = styled.p`
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin: 65px 0px 0px 0;
     color: white;
 
     font-family: Open Sans;
@@ -69,8 +68,8 @@ const Text = styled.p`
     overflow: hidden;
 
     p {
-        width: 60%;
-        margin: 28px 0;
+        max-width: 75%;
+        margin: 24px 0;
         @media (max-width: 1224px) {
             width: 100%;
         }
