@@ -13,6 +13,7 @@ import {
     InfoSectionHeader,
     InfoSectionContent,
     InfoSection,
+    Wrapper,
 } from './styles';
 
 /** [ "SECTION_NAME", SECTION_IMAGE, ["SECTION_POINT", ...] ] */
@@ -37,8 +38,8 @@ const ThirdAnimation = () => {
         });
 
     return (
-        <>
-            <Section imageOnLeft src={firstImage} shiftValue={200}>
+        <Wrapper>
+            <Section imageOnLeft src={firstImage} shiftValue={100}>
                 <FirstSection>
                     <Title1>{firstPartTitile}</Title1>
                     <Title2>{secondPartTitle}</Title2>
@@ -50,7 +51,7 @@ const ThirdAnimation = () => {
                     key={section}
                     src={section[1]}
                     imageOnLeft={!!index % 2}
-                    shiftValue={!!index % 2 ? 200 : -200}
+                    shiftValue={!!index % 2 ? 100 : -100}
                 >
                     <InfoSection>
                         {section[2].map((point) => (
@@ -66,7 +67,7 @@ const ThirdAnimation = () => {
                     </InfoSection>
                 </Section>
             ))}
-        </>
+        </Wrapper>
     );
 };
 

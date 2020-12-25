@@ -79,6 +79,7 @@ const Container = styled.div`
     flex-direction: row;
     flex-flow: ${(props) => (props.imageOnLeft ? 'row' : 'row-reverse')};
     min-height: 100vh;
+    margin-bottom: 50px;
     @media (max-width: 1224px) {
         flex-direction: column;
         width: 100%;
@@ -87,7 +88,7 @@ const Container = styled.div`
 `;
 
 const ImageWithAnimation = styled.img`
-    min-height: 100vh;
+    min-height: 100%;
     min-width: 85vw;
     max-width: ${(props) => props.maxWidth || '75vw'};
     position: absolute;
@@ -139,6 +140,9 @@ const ImageContainer = styled.div`
         left: 0 !important;
     }
 `;
+const Wrapper = styled.section`
+    margin: 150px 0 100px 0; 
+`;
 
 export {
     FirstSection,
@@ -152,4 +156,5 @@ export {
     ImageWithAnimation,
     Text,
     ImageContainer,
+    Wrapper,
 };
