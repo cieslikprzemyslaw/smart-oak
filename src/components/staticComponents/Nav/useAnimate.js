@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 const menuAnimation = (refElement) => {
     gsap.to(refElement.current, {
         opacity: 0,
-        duration: 0.5,
+        duration: 0.4,
         ease: 'none',
     });
 };
@@ -12,7 +12,7 @@ const showMenuChildren = (refElement) => {
     gsap.to(refElement, {
         transform: 'translateX(0)',
         opacity: 1,
-        duration: 0.5,
+        duration: 0.4,
         stagger: 0.03,
         ease: 'none',
     });

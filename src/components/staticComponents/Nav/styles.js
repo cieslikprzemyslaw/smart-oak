@@ -267,6 +267,10 @@ const SubmenuWrapper = styled.ul`
             width: 15rem;
             padding: 0.5rem;
         `}
+
+    & li>a:hover{
+        color: #1461F8;
+    }
 `;
 
 const SubmenuListItem = styled.li`

@@ -51,7 +51,7 @@ const Nav = () => {
         setTimeout(() => {
             setShowSearch(true);
             console.log(showSearch);
-        }, 500);
+        }, 400);
     };
 
     const openSearchbar = () => {
