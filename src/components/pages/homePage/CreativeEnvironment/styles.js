@@ -29,7 +29,7 @@ const AnimationContainer = styled.div`
 
 const AnimationContent = styled.div`
     position: fixed;
-    width: 75%;
+    width: 55%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -64,6 +64,9 @@ const AnimationContentParagraph = styled.p`
     @media (max-width: 1224px) {
         position: absolute;
     }
+    @media (min-height: 1300px){
+       font-size: 44px;
+    }
 `;
 
 const AnimationContentHeader = styled.h2`
@@ -80,15 +83,21 @@ const AnimationContentHeader = styled.h2`
     @media screen and (max-width: 600px) {
         font-size: 22px;
     }
+    @media (min-height: 1300px){
+       font-size: 62px;
+    }
 `;
 
 const AfterAnimationContainer = styled.div`
-    width: 75%;
-    padding: 250px 0 100px 0;
+    width: 70%;
+    padding: 150px 0 150px 0;
     margin: 0 auto;
     text-align: center;
     @media (max-width: 1224px) {
         text-align: justify;
+    }
+     @media (min-height: 1300px){
+       width: 70%;
     }
 `;
 
@@ -108,6 +117,9 @@ const AfterAnimationContentParagraph = styled.p`
         text-align: left;
         font-size: 16px;
     }
+     @media (min-height: 1300px){
+       font-size: 44px;
+    }
 `;
 
 const AfterAnimationContentHeader = styled.h2`
@@ -124,6 +136,9 @@ const AfterAnimationContentHeader = styled.h2`
     @media screen and (max-width: 600px) {
         text-align: left;
         font-size: 16px;
+    }
+     @media (min-height: 1300px){
+       font-size: 62px;
     }
 `;
 

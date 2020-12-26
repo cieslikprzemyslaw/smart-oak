@@ -6,11 +6,11 @@ gsap.registerPlugin(ScrollTrigger);
 export const scaleImgOnScroll = (elem) => {
     ScrollTrigger.create({
         trigger: elem,
-        start: 'top 10%',
-        end: 'bottom 90%',
-        onUpdate: (self) => {
+        start: 'top 0%',
+        toggleActions: "restart none reverse reverse",
+        onUpdate: () => {
             gsap.to(elem, {
-                scaleX: 1 - self.progress / 5,
+                clipPath: "inset(0 10%)",
             });
         },
     });
