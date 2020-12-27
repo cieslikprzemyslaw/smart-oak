@@ -35,13 +35,12 @@ const AnimationContent = styled.div`
     transform: translate(-50%, -50%);
     color: white;
     z-index: 2;
-    @media (max-width: 1224px) {
+    @media (max-width: 1024px) {
+        width: 70%;
         position: absolute;
-        top: 0;
-        transform: translate(0, 0);
-        left: 0;
-        margin: 120px 15px 15px 15px;
-        width: auto;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 `;
 
@@ -50,6 +49,10 @@ const AnimationContentParagraph = styled.p`
     font-size: 24px;
     line-height: 1.5;
     font-weight: 400;
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 20px;
+    }
 
     @media screen and (max-width: 950px) {
         font-size: 22px;
@@ -64,8 +67,8 @@ const AnimationContentParagraph = styled.p`
     @media (max-width: 1224px) {
         position: absolute;
     }
-    @media (min-height: 1300px){
-       font-size: 44px;
+    @media (min-height: 1300px) {
+        font-size: 44px;
     }
 `;
 
@@ -73,6 +76,11 @@ const AnimationContentHeader = styled.h2`
     font-size: 44px;
     line-height: 1.2;
     font-weight: 600;
+
+    @media only screen and (max-width: 1024px) {
+       font-size: 34px;
+       text-align: left;
+    }
 
     @media screen and (max-width: 950px) {
         font-size: 33px;
@@ -83,8 +91,8 @@ const AnimationContentHeader = styled.h2`
     @media screen and (max-width: 600px) {
         font-size: 22px;
     }
-    @media (min-height: 1300px){
-       font-size: 62px;
+    @media (min-height: 1300px) {
+        font-size: 62px;
     }
 `;
 
@@ -93,12 +101,19 @@ const AfterAnimationContainer = styled.div`
     padding: 150px 0 150px 0;
     margin: 0 auto;
     text-align: center;
-    @media (max-width: 1224px) {
-        text-align: justify;
+    @media only screen and (max-width: 1440px) {
+        padding: 100px 0 100px 0;
     }
-     @media (min-height: 1300px){
-       width: 70%;
+
+    @media only screen and (max-width: 1024px) {
+        padding: 50px 0 50px 0;
+        width: 80%;
     }
+
+    @media (min-height: 1300px) {
+        width: 70%;
+    }
+
 `;
 
 const AfterAnimationContentParagraph = styled.p`
@@ -106,6 +121,10 @@ const AfterAnimationContentParagraph = styled.p`
     font-size: 24px;
     line-height: 1.5;
     font-weight: 400;
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 20px;
+    }
 
     @media screen and (max-width: 900px) {
         font-size: 18px;
@@ -117,8 +136,8 @@ const AfterAnimationContentParagraph = styled.p`
         text-align: left;
         font-size: 16px;
     }
-     @media (min-height: 1300px){
-       font-size: 44px;
+    @media (min-height: 1300px) {
+        font-size: 44px;
     }
 `;
 
@@ -126,6 +145,10 @@ const AfterAnimationContentHeader = styled.h2`
     font-size: 37px;
     line-height: 1.2;
     font-weight: 600;
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 34px;
+    }
 
     @media screen and (max-width: 900px) {
         font-size: 28px;
@@ -137,8 +160,8 @@ const AfterAnimationContentHeader = styled.h2`
         text-align: left;
         font-size: 16px;
     }
-     @media (min-height: 1300px){
-       font-size: 62px;
+    @media (min-height: 1300px) {
+        font-size: 62px;
     }
 `;
 

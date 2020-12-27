@@ -50,7 +50,7 @@ const ImageAndTextContainer = styled.div`
 
     background-position: 0 0;
 
-    @media (max-width: 1224px) {
+    @media screen and (max-width: 1024px) {
         background-size: auto;
         text-align: justify;
     }
@@ -71,8 +71,9 @@ const Text = styled.p`
         max-width: 75%;
         margin: 25px 0;
         line-height: 170%;
-        @media (max-width: 1224px) {
-            width: 100%;
+        @media screen and (max-width: 1024px) {
+            max-width: 85%;
+            margin: 10px auto;
         }
     }
 
@@ -82,9 +83,15 @@ const Text = styled.p`
         font-weight: 600;
         font-size: 32px;
         line-height: 150%;
+
+        @media screen and (max-width: 1024px) {
+            font-size: 28px;
+            margin-bottom: 50px;
+        }
     }
-    @media (max-width: 1224px) {
-        padding-top: 0px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 20px;
     }
 
     @media screen and (max-width: 900px) {

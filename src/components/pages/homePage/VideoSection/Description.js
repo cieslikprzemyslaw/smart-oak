@@ -1,7 +1,14 @@
 import React from 'react';
 import { useIntl } from 'gatsby-plugin-intl';
 
-import { Section, DescriptionContainer, DescriptionTitle, Description, DescriptionMainTitle, DescriptionMainSubtitle } from './styles';
+import {
+    Section,
+    DescriptionContainer,
+    DescriptionTitle,
+    Description,
+    DescriptionMainTitle,
+    DescriptionMainSubtitle,
+} from './styles';
 
 const DescriptionSection = ({ forwardRef }) => {
     const intl = useIntl();

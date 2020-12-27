@@ -91,8 +91,8 @@ const DropdownLink = styled.li`
     padding: 1.2rem ${(props) => (props.rightNav ? '1rem' : '1.4rem')};
     cursor: pointer;
     position: relative;
-    &:hover{
-        color: #257CF8;
+    &:hover {
+        color: #257cf8;
     }
 `;
 const fadeInBackDrop = keyframes`
@@ -162,7 +162,7 @@ const DropdownSearchLink = styled(Link)`
 
     &:hover {
         &:last-child {
-            border-radius: 0 0 18px 18px;;
+            border-radius: 0 0 18px 18px;
         }
         color: #06c;
         background-color: #f4f4f4;
@@ -268,8 +268,8 @@ const SubmenuWrapper = styled.ul`
             padding: 0.5rem;
         `}
 
-    & li>a:hover{
-        color: #1461F8;
+    & li>a:hover {
+        color: #1461f8;
     }
 `;
 

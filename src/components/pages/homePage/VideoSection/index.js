@@ -13,7 +13,7 @@ const VideoSection = () => {
 
     useEffect(() => {
         animationForVideoSection(imgRef, descRef);
-        setTimeout(()=> setIsDisplayLogo(false), 2500)
+        setTimeout(() => setIsDisplayLogo(false), 2500);
     }, []);
 
     return (

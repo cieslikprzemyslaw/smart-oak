@@ -26,6 +26,10 @@ const InfoSectionContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: start;
+
+    @media (max-width: 1024px) {
+        margin: 20px 10px;
+    }
 `;
 
 const InfoSectionHeader = styled.h4`
@@ -35,6 +39,10 @@ const InfoSectionHeader = styled.h4`
     font-size: 38px;
     line-height: 125.5%;
     text-align: left;
+
+    @media (max-width: 1024px) {
+        font-size: 28px;
+    }
 `;
 
 const InfoSectionContent = styled.h4`
@@ -45,6 +53,10 @@ const InfoSectionContent = styled.h4`
     line-height: 152%;
     text-align: left;
     margin-top: 14px;
+
+    @media (max-width: 1024px) {
+        font-size: 20px;
+    }
 `;
 
 const Title1 = styled.h2`
@@ -80,10 +92,10 @@ const Container = styled.div`
     flex-flow: ${(props) => (props.imageOnLeft ? 'row' : 'row-reverse')};
     min-height: 100vh;
     margin-bottom: 50px;
-    @media (max-width: 1224px) {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
+    @media screen only and (max-width: 1024px) {
+        // flex-direction: column;
+        // width: 100%;
+        // text-align: center;
     }
 `;
 
@@ -96,19 +108,19 @@ const ImageWithAnimation = styled.img`
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @media (max-width: 1224px) {
-        min-height: unset;
-        transform: translate(0%) !important;
-        background-size: auto;
-        max-width: 100vw;
-        width: 100vw;
-        height: auto !important;
-        top: unset;
-        left: unset;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        @media (min-width: 800px) {
+    @media (max-width: 1024px) {
+        // min-height: unset;
+        // transform: translate(0%) !important;
+        // background-size: auto;
+        // max-width: 100vw;
+        // width: 100vw;
+        // height: auto !important;
+        // top: unset;
+        // left: unset;
+        // position: absolute;
+        // bottom: 0;
+        // right: 0;
+        @media (max-width: 800px) {
             bottom: -350px;
         }
     }
@@ -141,7 +153,11 @@ const ImageContainer = styled.div`
     }
 `;
 const Wrapper = styled.section`
-    margin: 150px 0 150px 0; 
+    margin: 150px 0 150px 0;
+
+    @media screen and (max-width: 1024px) {
+        margin: 50px 0 50px 0;
+    }
 `;
 
 export {

@@ -72,8 +72,9 @@ const DescriptionContainer = styled.div`
     > * {
         will-change: opacity, scale, transform;
     }
-    @media only screen and (max-width: 1250px) {
-        width: 80vw;
+    @media only screen and (max-width: 1024px) {
+        left: 0%;
+        top: 0%;
     }
     @media only screen and (max-width: 900px) {
         position: absolute;
@@ -99,6 +100,10 @@ const DescriptionTitle = styled.h2`
     width: 90%;
     text-align: justify;
 
+    @media only screen and (max-width: 1024px) {
+        font-size: 36px;
+        text-align: left;
+    }
 
     @media only screen and (max-width: 900px) {
         font-size: 36px;
@@ -114,9 +119,9 @@ const DescriptionTitle = styled.h2`
         text-align: left;
     }
 
-    @media (min-height: 1300px){
-       font-size: 75px; 
-       margin-bottom: 50px;
+    @media (min-height: 1300px) {
+        font-size: 75px;
+        margin-bottom: 50px;
     }
 `;
 
@@ -129,7 +134,15 @@ const DescriptionMainTitle = styled.h1`
     color: #fff;
     width: fit-content;
     text-align: left;
-;
+
+    @media (min-height: 1300px) {
+        font-size: 105px;
+        margin-bottom: 50px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 52px;
+    }
 
     @media only screen and (max-width: 900px) {
         font-size: 36px;
@@ -144,10 +157,7 @@ const DescriptionMainTitle = styled.h1`
         letter-spacing: 0em;
         text-align: left;
     }
-    @media (min-height: 1300px){
-       font-size: 105px; 
-       margin-bottom: 50px;
-    }
+
 `;
 const DescriptionMainSubtitle = styled.h1`
     font-style: normal;
@@ -161,6 +171,15 @@ const DescriptionMainSubtitle = styled.h1`
     text-align: left;
     margin-bottom: 70px;
 
+    @media (min-height: 1300px) {
+        font-size: 105px;
+        margin-bottom: 50px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 52px;
+    }
+
     @media only screen and (max-width: 900px) {
         font-size: 36px;
         line-height: 119%;
@@ -174,9 +193,9 @@ const DescriptionMainSubtitle = styled.h1`
         letter-spacing: 0em;
         text-align: left;
     }
-    @media (min-height: 1300px){
-       font-size: 105px; 
-       margin-bottom: 50px;
+    @media (min-height: 1300px) {
+        font-size: 105px;
+        margin-bottom: 50px;
     }
 `;
 const Description = styled.p`
@@ -189,6 +208,11 @@ const Description = styled.p`
     letter-spacing: 0.01em;
     color: #fff;
     text-align: left;
+
+    @media only screen and (max-width: 1024px) {
+        width: 100%;
+    }
+
     @media only screen and (max-width: 900px) {
         font-size: 16px;
         line-height: 125%;
@@ -203,10 +227,10 @@ const Description = styled.p`
         letter-spacing: 0em;
         text-align: left;
     }
-    @media (min-height: 1300px){
-       font-size: 48px; 
-       line-height: 160%;
-       width: 80%;
+    @media (min-height: 1300px) {
+        font-size: 48px;
+        line-height: 160%;
+        width: 80%;
     }
 `;
 
