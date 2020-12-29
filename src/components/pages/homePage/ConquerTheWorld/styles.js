@@ -6,6 +6,10 @@ const Wrapper = styled.div`
     padding: 100px 0 0 0;
     position: relative;
     z-index: 3;
+
+    @media (max-width: 800px){
+        padding: 0 0 0 0;
+    }
 `;
 
 const Header = styled.h2`
@@ -21,8 +25,16 @@ const Header = styled.h2`
     font-weight: bold;
     font-size: 52px;
     line-height: 136%;
-    @media (max-width: 550px) {
-        margin: 0 15px 0 15px;
+    @media (max-width: 800px){
+        margin: 50px 0 50px 50px;
+        font-size: 34px;
+    }
+    @media (max-width: 640px) {
+        margin: 50px 15px;
+        font-size: 34px;
+    }
+    @media (max-width: 360px) {
+        font-size: 24px;
     }
     span {
         color: gray;
@@ -31,8 +43,7 @@ const Header = styled.h2`
 
 const ImageAndTextContainer = styled.div`
     display: flex;
-
-    height: 960px;
+    min-height: 960px;
     width: 100%;
     .WhiteBox {
         display: block;
@@ -41,18 +52,26 @@ const ImageAndTextContainer = styled.div`
         width: 35vw;
 
         background: white;
+
+        @media (max-width: 800px){
+            display: none;
+        }
+
     }
 
     margin: 80px auto 0;
+    background-image: url(${ImageSrc});
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 
-    background: url(${ImageSrc}) no-repeat;
-    background-size: cover;
-
-    background-position: 0 0;
-
-    @media screen and (max-width: 1024px) {
+    @media (max-width: 1024px) {
         background-size: auto;
         text-align: justify;
+    }
+    @media (max-width: 800px){
+        overflow-x: hidden;
+        margin: 0 auto;
     }
 `;
 
@@ -71,9 +90,16 @@ const Text = styled.p`
         max-width: 75%;
         margin: 25px 0;
         line-height: 170%;
-        @media screen and (max-width: 1024px) {
+        @media (max-width: 1024px) {
             max-width: 85%;
             margin: 10px auto;
+        }
+        @media (max-width: 800px){
+            font-size: 20px;
+        }
+        @media (max-width: 640px) {
+            margin: 25px auto;
+            font-size: 16px;
         }
     }
 
@@ -84,25 +110,26 @@ const Text = styled.p`
         font-size: 32px;
         line-height: 150%;
 
-        @media screen and (max-width: 1024px) {
-            font-size: 28px;
+        @media (max-width: 1024px){
+            font-size: 26px;
             margin-bottom: 50px;
+        }
+
+        @media (max-width: 800px){
+            font-size: 24px;
+        }
+
+        @media (max-width: 640px){
+            font-size: 20px;
         }
     }
 
-    @media screen and (max-width: 1024px) {
-        font-size: 20px;
-    }
-
-    @media screen and (max-width: 900px) {
-        font-size: 22px;
-    }
     @media screen and (max-width: 800px) {
-        font-size: 14px;
+        margin: 10px auto;
     }
     @media screen and (max-width: 600px) {
         font-size: 12px;
     }
 `;
-
+// browser doesn't see styles for less then 1024px check it
 export { Wrapper, Header, ImageAndTextContainer, Text };
