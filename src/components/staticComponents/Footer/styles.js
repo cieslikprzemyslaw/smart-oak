@@ -8,6 +8,10 @@ const Section = styled.footer`
     padding: 17px 0;
     position: relative;
     z-index: 3;
+    
+    @media (max-width: 800px) {
+        height: 100px;
+    }
 `;
 
 const Container = styled.div`

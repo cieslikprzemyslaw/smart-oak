@@ -30,7 +30,7 @@ const Header = styled.h2`
         font-size: 34px;
     }
     @media (max-width: 640px) {
-        margin: 50px 15px;
+        margin: 60px 12px;
         font-size: 34px;
     }
     @media (max-width: 360px) {

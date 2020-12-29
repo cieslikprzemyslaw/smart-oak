@@ -7,16 +7,19 @@ const FourthAnimationExtended = styled.div`
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
+
+    @media (max-width: 800px) {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
 `;
 
 const AnimationImg = styled.img`
     min-width: 100%;
     max-height: 125vh;
-    @media (max-width: 1224px) {
-        transform: scale(1) !important;
-        width: auto;
-        height: 100%;
-        max-width: unset;
+    @media (max-width: 1024px) {
+        min-height: 100vh;
     }
 `;
 
@@ -37,10 +40,21 @@ const AnimationContent = styled.div`
     z-index: 2;
     @media (max-width: 1024px) {
         width: 70%;
+    }
+    @media (max-width: 800px) {
+        width: 70%;
         position: absolute;
         top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    @media (max-width: 500px) {
+        width: 90%;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
     }
 `;
 
@@ -50,18 +64,20 @@ const AnimationContentParagraph = styled.p`
     line-height: 1.5;
     font-weight: 400;
 
-    @media only screen and (max-width: 1024px) {
+    @media (max-width: 1024px) {
+        width: 100%;
+        text-align: justify;
+        margin: 14px auto
+        font-size: 24px;
+    }
+    @media (max-width: 800px) {
         font-size: 20px;
     }
-
-    @media screen and (max-width: 950px) {
-        font-size: 22px;
+    @media (max-width: 500px) {
+        font-size: 16px;
     }
-    @media screen and (max-width: 800px) {
-        font-size: 21px;
-    }
-    @media screen and (max-width: 600px) {
-        font-size: 20px;
+    @media (max-width: 360px) {
+        font-size: 16px;
     }
 
     @media (max-width: 1224px) {
@@ -77,19 +93,18 @@ const AnimationContentHeader = styled.h2`
     line-height: 1.2;
     font-weight: 600;
 
-    @media only screen and (max-width: 1024px) {
-       font-size: 34px;
-       text-align: left;
+    @media (max-width: 1024px) {
+        width: 100%;
+        font-size: 36px;
     }
-
-    @media screen and (max-width: 950px) {
-        font-size: 33px;
+    @media (max-width: 800px) {
+        font-size: 28px;
     }
-    @media screen and (max-width: 800px) {
-        font-size: 27px;
+    @media (max-width: 500px) {
+        font-size: 24px;
     }
-    @media screen and (max-width: 600px) {
-        font-size: 22px;
+    @media (max-width: 360px) {
+        font-size: 20px;
     }
     @media (min-height: 1300px) {
         font-size: 62px;
@@ -106,14 +121,21 @@ const AfterAnimationContainer = styled.div`
     }
 
     @media only screen and (max-width: 1024px) {
-        padding: 50px 0 50px 0;
+        margin: 50px auto 0 auto;
         width: 80%;
+    }
+    @media only screen and (max-width: 800px) {
+        padding: 50px 0;
+    }
+
+    @media only screen and (max-width: 500px) {
+        width: 100vw;
+        text-align: justify;
     }
 
     @media (min-height: 1300px) {
         width: 70%;
     }
-
 `;
 
 const AfterAnimationContentParagraph = styled.p`
@@ -122,22 +144,20 @@ const AfterAnimationContentParagraph = styled.p`
     line-height: 1.5;
     font-weight: 400;
 
-    @media only screen and (max-width: 1024px) {
+    @media (max-width: 1024px) {
+        width: 100%;
+        margin: 14px auto
+        font-size: 24px;
+    }
+    @media (max-width: 800px) {
         font-size: 20px;
     }
-
-    @media screen and (max-width: 900px) {
-        font-size: 18px;
-    }
-    @media screen and (max-width: 800px) {
-        font-size: 17px;
-    }
-    @media screen and (max-width: 600px) {
-        text-align: left;
+    @media (max-width: 500px) {
+        width: 90%;
         font-size: 16px;
     }
-    @media (min-height: 1300px) {
-        font-size: 44px;
+    @media (max-width: 360px) {
+        font-size: 16px;
     }
 `;
 
@@ -146,19 +166,18 @@ const AfterAnimationContentHeader = styled.h2`
     line-height: 1.2;
     font-weight: 600;
 
-    @media only screen and (max-width: 1024px) {
-        font-size: 34px;
+   @media (max-width: 1024px) {
+        font-size: 36px;
     }
-
-    @media screen and (max-width: 900px) {
+    @media (max-width: 800px) {
         font-size: 28px;
     }
-    @media screen and (max-width: 800px) {
-        font-size: 22px;
+    @media (max-width: 500px) {
+        width: 90%;
+        font-size: 24px;
     }
-    @media screen and (max-width: 600px) {
-        text-align: left;
-        font-size: 16px;
+    @media (max-width: 360px) {
+        font-size: 20px;
     }
     @media (min-height: 1300px) {
         font-size: 62px;
@@ -169,6 +188,18 @@ const Wrapper = styled.div`
     background-color: white;
     position: relative;
     z-index: 3;
+    @media (max-width: 1024px) {
+        width: 70%;
+    }
+    @media (max-width: 800px) {
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    @media (max-width: 500px) {
+       
+        text-align: justify
+    }
 `;
 
 export {
