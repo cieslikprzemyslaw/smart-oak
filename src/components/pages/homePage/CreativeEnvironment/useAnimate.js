@@ -4,7 +4,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export const scaleImgOnScroll = (elem) => {
-    if(window.innerWidth > 1023){
+    if (window.innerWidth > 1023) {
         ScrollTrigger.create({
             trigger: elem,
             start: 'top 0%',

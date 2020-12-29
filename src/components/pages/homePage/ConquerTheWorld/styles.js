@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     position: relative;
     z-index: 3;
 
-    @media (max-width: 800px){
+    @media (max-width: 800px) {
         padding: 0 0 0 0;
     }
 `;
@@ -25,7 +25,7 @@ const Header = styled.h2`
     font-weight: bold;
     font-size: 52px;
     line-height: 136%;
-    @media (max-width: 800px){
+    @media (max-width: 800px) {
         margin: 50px 0 50px 50px;
         font-size: 34px;
     }
@@ -53,10 +53,9 @@ const ImageAndTextContainer = styled.div`
 
         background: white;
 
-        @media (max-width: 800px){
+        @media (max-width: 800px) {
             display: none;
         }
-
     }
 
     margin: 80px auto 0;
@@ -69,7 +68,7 @@ const ImageAndTextContainer = styled.div`
         background-size: auto;
         text-align: justify;
     }
-    @media (max-width: 800px){
+    @media (max-width: 800px) {
         overflow-x: hidden;
         margin: 0 auto;
     }
@@ -94,7 +93,7 @@ const Text = styled.p`
             max-width: 85%;
             margin: 10px auto;
         }
-        @media (max-width: 800px){
+        @media (max-width: 800px) {
             font-size: 20px;
         }
         @media (max-width: 640px) {
@@ -110,16 +109,16 @@ const Text = styled.p`
         font-size: 32px;
         line-height: 150%;
 
-        @media (max-width: 1024px){
+        @media (max-width: 1024px) {
             font-size: 26px;
             margin-bottom: 50px;
         }
 
-        @media (max-width: 800px){
+        @media (max-width: 800px) {
             font-size: 24px;
         }
 
-        @media (max-width: 640px){
+        @media (max-width: 640px) {
             font-size: 20px;
         }
     }

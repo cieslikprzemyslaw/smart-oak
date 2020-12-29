@@ -96,7 +96,7 @@ const Title1 = styled.h2`
     font-size: 52px;
     color: #7e7e7e;
     width: 55%;
-     @media (max-width: 1024px) {
+    @media (max-width: 1024px) {
         font-size: 40px;
         width: 100%;
         text-align: center;
@@ -141,7 +141,7 @@ const Container = styled.div`
     flex-flow: ${(props) => (props.imageOnLeft ? 'row' : 'row-reverse')};
     min-height: 100vh;
     margin-bottom: 50px;
-    @media(max-width: 800px){
+    @media (max-width: 800px) {
         flex-wrap: wrap;
     }
 `;

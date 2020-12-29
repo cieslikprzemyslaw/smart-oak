@@ -68,8 +68,8 @@ const Section = styled.div`
         top: 50px;
     }
 
-    @media(max-width: 640px){
-        top:0;
+    @media (max-width: 640px) {
+        top: 0;
     }
 `;
 
@@ -92,7 +92,7 @@ const DescriptionContainer = styled.div`
         width: 90vw;
     }
 
-    @media (max-width: 360px){
+    @media (max-width: 360px) {
         left: 2%;
         top: 0;
         text-align: justify;
@@ -125,7 +125,7 @@ const DescriptionTitle = styled.h2`
         text-align: justify;
     }
 
-    @media (max-width: 360px){
+    @media (max-width: 360px) {
         font-size: 20px;
     }
 
@@ -166,7 +166,7 @@ const DescriptionMainTitle = styled.h1`
         letter-spacing: 0em;
     }
 
-        @media (max-width: 360px){
+    @media (max-width: 360px) {
         font-size: 24px;
     }
 `;
@@ -203,7 +203,7 @@ const DescriptionMainSubtitle = styled.h1`
         letter-spacing: 0em;
         text-align: left;
     }
-    @media (max-width: 360px){
+    @media (max-width: 360px) {
         font-size: 24px;
     }
     @media (min-height: 1500px) {
@@ -246,7 +246,7 @@ const Description = styled.p`
         width: 80%;
     }
 
-    @media (max-width: 360px){
+    @media (max-width: 360px) {
         font-size: 16px;
     }
 `;
