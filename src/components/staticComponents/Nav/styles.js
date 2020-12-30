@@ -46,7 +46,7 @@ const NavContent = styled.div`
 const StyledLink = styled((props) => <Link {...props} />)`
     color: #fff;
     text-decoration: none;
-    padding: 1.2rem ${(props) => (props.rightNav ? '1rem' : '1.4rem')};
+    padding: 0.6rem ${(props) => (props.rightNav ? '0.5rem' : '0.7rem')};
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -267,6 +267,10 @@ const SubmenuWrapper = styled.ul`
             width: 15rem;
             padding: 0.5rem;
         `}
+
+    & li {
+      align-items: center;
+    }
 
     & li>a:hover {
         color: #1461f8;
