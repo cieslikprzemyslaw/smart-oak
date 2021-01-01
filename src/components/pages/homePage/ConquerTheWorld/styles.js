@@ -43,7 +43,7 @@ const Header = styled.h2`
 
 const ImageAndTextContainer = styled.div`
     display: flex;
-    min-height: 960px;
+    height: 960px;
     width: 100%;
     .WhiteBox {
         display: block;
@@ -53,24 +53,34 @@ const ImageAndTextContainer = styled.div`
 
         background: white;
 
-        @media (max-width: 800px) {
+        @media screen and (max-width: 1023px){
             display: none;
         }
     }
 
     margin: 80px auto 0;
-    background-image: url(${ImageSrc});
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background: url(${ImageSrc}) no-repeat;
+    background-size: cover;
+    background-position: 0 0;
 
     @media (max-width: 1024px) {
         background-size: auto;
         text-align: justify;
     }
-    @media (max-width: 800px) {
+    @media (max-width: 1023px) {
+        min-height: 960px;
+        background: none;
+        background-size: auto;
+        text-align: justify;
+        background-image: url(${ImageSrc});
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    @media (max-width: 800px){
         overflow-x: hidden;
         margin: 0 auto;
+        min-height: 1200px;
     }
 `;
 

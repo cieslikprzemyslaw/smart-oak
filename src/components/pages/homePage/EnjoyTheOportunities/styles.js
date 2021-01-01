@@ -99,7 +99,7 @@ const Title1 = styled.h2`
     @media (max-width: 1024px) {
         font-size: 40px;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
     @media (max-width: 800px) {
         font-size: 34px;
@@ -122,7 +122,7 @@ const Title2 = styled.h2`
     @media (max-width: 1024px) {
         font-size: 40px;
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
     @media (max-width: 800px) {
         font-size: 34px;
@@ -167,9 +167,14 @@ const Text = styled.div`
     z-index: 101;
 
     @media (max-width: 1024px) {
-        width: 100%;
-        text-align: justify;
-        margin: 0 15px 0 15px;
+        width: min-content;
+        text-align: left;
+        margin: 0 auto;
+    }
+    @media (max-width: 1023px) {
+        width: 90%;
+        text-align: left;
+        margin: 0 auto;
     }
 `;
 

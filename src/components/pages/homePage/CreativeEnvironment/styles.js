@@ -41,7 +41,7 @@ const AnimationContent = styled.div`
     @media (max-width: 1024px) {
         width: 70%;
     }
-    @media (max-width: 800px) {
+    @media (max-width: 1023px) {
         width: 70%;
         position: absolute;
         top: 25%;
@@ -49,9 +49,9 @@ const AnimationContent = styled.div`
         transform: translate(-50%, -50%);
     }
     @media (max-width: 500px) {
-        width: 90%;
+        width: 95%;
         position: absolute;
-        top: 25%;
+        top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
         margin: 0 auto;
@@ -190,10 +190,11 @@ const Wrapper = styled.div`
     z-index: 3;
     @media (max-width: 1024px) {
         width: 70%;
+        margin: 0 auto;
     }
     @media (max-width: 800px) {
         width: 90%;
-        margin: 0 auto;
+        
     }
     @media (max-width: 500px) {
         text-align: justify;
