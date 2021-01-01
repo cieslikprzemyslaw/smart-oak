@@ -4,7 +4,7 @@ const FirstSection = styled.div`
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 100vh;
+    min-height: 100vh;
     white-space: pre;
     text-align: right;
     color: #7e7e7e;
@@ -14,11 +14,19 @@ const FirstSection = styled.div`
     font-weight: bold;
     flex-wrap: wrap;
     text-align: justify;
+    @media (max-width: 800px) {
+        margin: 20px 10px;
+        height: auto;
+        margin: 0 0 50px 0;
+    }
 `;
 
 const InfoSection = styled.div`
     display: flex;
     flex-direction: column;
+    @media (max-width: 800px) {
+        margin: 40px auto;
+    }
 `;
 
 const InfoSectionContainer = styled.div`
@@ -41,7 +49,17 @@ const InfoSectionHeader = styled.h4`
     text-align: left;
 
     @media (max-width: 1024px) {
+        width: 100%;
+        font-size: 36px;
+    }
+    @media (max-width: 800px) {
         font-size: 28px;
+    }
+    @media (max-width: 500px) {
+        font-size: 24px;
+    }
+    @media (max-width: 360px) {
+        font-size: 20px;
     }
 `;
 
@@ -55,7 +73,19 @@ const InfoSectionContent = styled.h4`
     margin-top: 14px;
 
     @media (max-width: 1024px) {
+        width: 100%;
+        text-align: justify;
+        margin: 14px auto
+        font-size: 24px;
+    }
+    @media (max-width: 800px) {
         font-size: 20px;
+    }
+    @media (max-width: 500px) {
+        font-size: 16px;
+    }
+    @media (max-width: 360px) {
+        font-size: 16px;
     }
 `;
 
@@ -66,9 +96,19 @@ const Title1 = styled.h2`
     font-size: 52px;
     color: #7e7e7e;
     width: 55%;
-    @media (max-width: 1224px) {
+    @media (max-width: 1024px) {
         font-size: 40px;
-        width: unset;
+        width: 100%;
+        text-align: left;
+    }
+    @media (max-width: 800px) {
+        font-size: 34px;
+    }
+    @media (max-width: 500px) {
+        font-size: 28px;
+    }
+    @media (max-width: 360px) {
+        font-size: 24px;
     }
 `;
 
@@ -79,10 +119,19 @@ const Title2 = styled.h2`
     font-size: 52px;
     color: #000;
     width: 55%;
-    @media (max-width: 1224px) {
+    @media (max-width: 1024px) {
         font-size: 40px;
         width: 100%;
-        text-align: center;
+        text-align: left;
+    }
+    @media (max-width: 800px) {
+        font-size: 34px;
+    }
+    @media (max-width: 500px) {
+        font-size: 28px;
+    }
+    @media (max-width: 360px) {
+        font-size: 24px;
     }
 `;
 
@@ -92,10 +141,8 @@ const Container = styled.div`
     flex-flow: ${(props) => (props.imageOnLeft ? 'row' : 'row-reverse')};
     min-height: 100vh;
     margin-bottom: 50px;
-    @media screen only and (max-width: 1024px) {
-        // flex-direction: column;
-        // width: 100%;
-        // text-align: center;
+    @media (max-width: 800px) {
+        flex-wrap: wrap;
     }
 `;
 
@@ -108,21 +155,9 @@ const ImageWithAnimation = styled.img`
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @media (max-width: 1024px) {
-        // min-height: unset;
-        // transform: translate(0%) !important;
-        // background-size: auto;
-        // max-width: 100vw;
-        // width: 100vw;
-        // height: auto !important;
-        // top: unset;
-        // left: unset;
-        // position: absolute;
-        // bottom: 0;
-        // right: 0;
-        @media (max-width: 800px) {
-            bottom: -350px;
-        }
+    @media (max-width: 800px) {
+        min-width: 100%;
+        object-fit: cover;
     }
 `;
 
@@ -131,10 +166,15 @@ const Text = styled.div`
     background-color: #ffffff;
     z-index: 101;
 
-    @media (max-width: 1224px) {
-        width: 100%;
-        text-align: justify;
-        margin: 0 15px 0 15px;
+    @media (max-width: 1024px) {
+        width: min-content;
+        text-align: left;
+        margin: 0 auto;
+    }
+    @media (max-width: 1023px) {
+        width: 90%;
+        text-align: left;
+        margin: 0 auto;
     }
 `;
 
@@ -145,11 +185,14 @@ const ImageContainer = styled.div`
     z-index: 100;
     overflow: hidden;
     display: inline-block;
-    @media (max-width: 1224px) {
+    @media (max-width: 1024px) {
         max-width: 100vw;
         width: 100%;
-        height: 100vh;
-        left: 0 !important;
+        min-height: 100vh;
+    }
+    @media (max-width: 800px) {
+        max-width: 100%;
+        min-height: 100vh;
     }
 `;
 const Wrapper = styled.section`

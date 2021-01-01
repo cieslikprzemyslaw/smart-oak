@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
+    overflow-x: hidden;
     position: relative;
     height: calc(100vh - 4.5rem);
     z-index: 3;
 `;
 const TextContainer = styled.div`
     position: relative;
+    margin: 0 15px 0 15px;
     height: 100%;
     text-align: justify;
-    margin: 0 15px 0 15px;
 `;
 
 const VideoWrapper = styled.video`
@@ -33,13 +34,14 @@ const VideoOverlay = styled.div`
 `;
 
 const StyledLogo = styled.img`
-    z-index: 4;
-    will-change: opacity, scale;
-    width: 50rem;
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 50rem;
+    will-change: opacity, scale;
+    z-index: 4;
+
     @media screen and (max-width: 1100px) {
         width: 70rem;
     }
@@ -49,9 +51,9 @@ const StyledLogo = styled.img`
 `;
 
 const Section = styled.div`
-    object-fit: fill;
-    height: 70vh;
     position: relative;
+    height: 70vh;
+    object-fit: fill;
     z-index: 4;
 
     @media only screen and (max-width: 1100px) {
@@ -60,34 +62,41 @@ const Section = styled.div`
         top: 85px;
         width: 100%;
     }
+
+    @media only screen and (max-width: 800px) {
+        position: absolute;
+        left: 0px;
+        top: 50px;
+    }
+
+    @media (max-width: 640px) {
+        top: 0;
+    }
 `;
 
 const DescriptionContainer = styled.div`
     position: absolute;
-    width: 80%;
-    height: 100%;
     left: 8%;
     top: 15%;
+    width: 80%;
+    height: 100%;
     font-family: Open Sans, sans-serif;
     > * {
         will-change: opacity, scale, transform;
     }
-    @media only screen and (max-width: 1024px) {
-        left: 0%;
-        top: 0%;
+    @media only screen and (max-width: 1200px) {
+        left: 4%;
+        top: 8%;
     }
-    @media only screen and (max-width: 900px) {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+
     @media only screen and (max-width: 550px) {
         width: 90vw;
+    }
+
+    @media (max-width: 360px) {
+        left: 2%;
+        top: 0;
+        text-align: justify;
     }
 `;
 const DescriptionTitle = styled.h2`
@@ -98,16 +107,14 @@ const DescriptionTitle = styled.h2`
     line-height: 111.5%;
     color: #fff;
     width: 90%;
-    text-align: justify;
+    text-align: left;
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1200px) {
         font-size: 36px;
-        text-align: left;
     }
 
-    @media only screen and (max-width: 900px) {
-        font-size: 36px;
-        line-height: 119%;
+    @media only screen and (max-width: 800px) {
+        font-size: 28px;
         margin-bottom: 2rem;
     }
     @media only screen and (max-width: 500px) {
@@ -116,10 +123,14 @@ const DescriptionTitle = styled.h2`
         font-weight: 700;
         line-height: 29px;
         letter-spacing: 0em;
-        text-align: left;
+        text-align: justify;
     }
 
-    @media (min-height: 1300px) {
+    @media (max-width: 360px) {
+        font-size: 20px;
+    }
+
+    @media (min-height: 1500px) {
         font-size: 75px;
         margin-bottom: 50px;
     }
@@ -135,29 +146,30 @@ const DescriptionMainTitle = styled.h1`
     width: fit-content;
     text-align: left;
 
-    @media (min-height: 1300px) {
+    @media (min-height: 1500px) {
         font-size: 105px;
         margin-bottom: 50px;
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1200px) {
         font-size: 52px;
     }
 
-    @media only screen and (max-width: 900px) {
-        font-size: 36px;
-        line-height: 119%;
-        margin-bottom: 2rem;
+    @media only screen and (max-width: 800px) {
+        font-size: 34px;
     }
+
     @media only screen and (max-width: 500px) {
-        font-size: 24px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 700;
         line-height: 29px;
         letter-spacing: 0em;
-        text-align: left;
     }
 
+    @media (max-width: 360px) {
+        font-size: 24px;
+    }
 `;
 const DescriptionMainSubtitle = styled.h1`
     font-style: normal;
@@ -171,29 +183,31 @@ const DescriptionMainSubtitle = styled.h1`
     text-align: left;
     margin-bottom: 70px;
 
-    @media (min-height: 1300px) {
+    @media (min-height: 1500px) {
         font-size: 105px;
         margin-bottom: 50px;
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1200px) {
         font-size: 52px;
     }
 
-    @media only screen and (max-width: 900px) {
-        font-size: 36px;
-        line-height: 119%;
+    @media only screen and (max-width: 800px) {
+        font-size: 34px;
         margin-bottom: 2rem;
     }
     @media only screen and (max-width: 500px) {
-        font-size: 24px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 700;
         line-height: 29px;
         letter-spacing: 0em;
         text-align: left;
     }
-    @media (min-height: 1300px) {
+    @media (max-width: 360px) {
+        font-size: 24px;
+    }
+    @media (min-height: 1500px) {
         font-size: 105px;
         margin-bottom: 50px;
     }
@@ -209,12 +223,12 @@ const Description = styled.p`
     color: #fff;
     text-align: left;
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1200px) {
         width: 100%;
     }
 
     @media only screen and (max-width: 900px) {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 125%;
         margin-bottom: 4rem;
         width: 75%;
@@ -225,12 +239,16 @@ const Description = styled.p`
         font-weight: 600;
         line-height: 20px;
         letter-spacing: 0em;
-        text-align: left;
+        text-align: justify;
     }
-    @media (min-height: 1300px) {
+    @media (min-height: 1500px) {
         font-size: 48px;
         line-height: 160%;
         width: 80%;
+    }
+
+    @media (max-width: 360px) {
+        font-size: 16px;
     }
 `;
 
