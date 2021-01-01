@@ -27,7 +27,7 @@ const Patronite = () => {
                     return <Logo src={logo[0]} alt={logo[1]} key={logo[1]} />;
                 })}
             </PatroniteSection>
-        </PatroniteWrapper>    
+        </PatroniteWrapper>
     );
 };
 export default Patronite;
