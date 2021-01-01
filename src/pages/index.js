@@ -10,6 +10,7 @@ import ConquerTheWorld from '../components/pages/homePage/ConquerTheWorld';
 import CreativeEnvironment from '../components/pages/homePage/CreativeEnvironment';
 import EnjoyTheOportunities from '../components/pages/homePage/EnjoyTheOportunities';
 import Footer from '../components/staticComponents/Footer';
+import Patronite from '../components/pages/homePage/Patronite';
 
 const Wrapper = styled.div`
     position: relative;
@@ -30,6 +31,7 @@ const IndexPage = () => {
             <ConquerTheWorld />
             <EnjoyTheOportunities />
             <CreativeEnvironment />
+            <Patronite/>
             <Footer />
         </Wrapper>
     );

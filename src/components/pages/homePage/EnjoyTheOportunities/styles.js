@@ -4,7 +4,7 @@ const FirstSection = styled.div`
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 100vh;
+    min-height: 100vh;
     white-space: pre;
     text-align: right;
     color: #7e7e7e;
@@ -188,11 +188,11 @@ const ImageContainer = styled.div`
     @media (max-width: 1024px) {
         max-width: 100vw;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
     }
     @media (max-width: 800px) {
         max-width: 100%;
-        height: 100vh;
+        min-height: 100vh;
     }
 `;
 const Wrapper = styled.section`
