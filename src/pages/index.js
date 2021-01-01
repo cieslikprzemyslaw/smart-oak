@@ -31,7 +31,7 @@ const IndexPage = () => {
             <ConquerTheWorld />
             <EnjoyTheOportunities />
             <CreativeEnvironment />
-            <Patronite/>
+            <Patronite />
             <Footer />
         </Wrapper>
     );

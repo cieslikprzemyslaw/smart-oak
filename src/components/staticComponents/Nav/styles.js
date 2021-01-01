@@ -269,10 +269,10 @@ const SubmenuWrapper = styled.ul`
         `}
 
     & li {
-      align-items: center;
+        align-items: center;
     }
 
-    & li>a:hover {
+    & li > a:hover {
         color: #1461f8;
     }
 `;

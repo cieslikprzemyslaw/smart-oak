@@ -53,7 +53,7 @@ const ImageAndTextContainer = styled.div`
 
         background: white;
 
-        @media screen and (max-width: 1023px){
+        @media screen and (max-width: 1023px) {
             display: none;
         }
     }
@@ -77,7 +77,7 @@ const ImageAndTextContainer = styled.div`
         background-attachment: fixed;
         background-position: center;
     }
-    @media (max-width: 800px){
+    @media (max-width: 800px) {
         overflow-x: hidden;
         margin: 0 auto;
         min-height: 1200px;

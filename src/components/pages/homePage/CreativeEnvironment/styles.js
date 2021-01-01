@@ -194,7 +194,6 @@ const Wrapper = styled.div`
     }
     @media (max-width: 800px) {
         width: 90%;
-        
     }
     @media (max-width: 500px) {
         text-align: justify;
