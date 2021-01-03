@@ -14,9 +14,13 @@ const FirstSection = styled.div`
     font-weight: bold;
     flex-wrap: wrap;
     text-align: justify;
+
+    @media (max-width: 1023px) {
+        min-height: 100px;
+    }
     @media (max-width: 800px) {
         margin: 20px 10px;
-        height: auto;
+        height: 0;
         margin: 0 0 50px 0;
     }
 `;
@@ -143,6 +147,7 @@ const Container = styled.div`
     margin-bottom: 50px;
     @media (max-width: 800px) {
         flex-wrap: wrap;
+        min-height: unset;
     }
 `;
 
@@ -155,7 +160,7 @@ const ImageWithAnimation = styled.img`
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @media (max-width: 800px) {
+    @media (max-width: 1023px) {
         min-width: 100%;
         object-fit: cover;
     }
