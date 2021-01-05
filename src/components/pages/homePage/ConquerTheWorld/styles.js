@@ -18,7 +18,7 @@ const Header = styled.h2`
     color: black;
 
     width: fit-content;
-    margin: 0 0 100px 100px;
+    margin: 0 0 100px 80px;
 
     font-family: Open Sans;
     font-style: normal;
