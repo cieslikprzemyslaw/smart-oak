@@ -26,9 +26,11 @@ const SearchBtn = styled.span`
 `;
 
 const Container = styled.div`
+    position: relative;
     height: 45px;
     background-color: black;
     display: flex;
+    z-index: 5;
     justify-content: space-between;
     @media screen and (max-width: 900px) {
         display: none;
@@ -269,10 +271,10 @@ const SubmenuWrapper = styled.ul`
         `}
 
     & li {
-      align-items: center;
+        align-items: center;
     }
 
-    & li>a:hover {
+    & li > a:hover {
         color: #1461f8;
     }
 `;

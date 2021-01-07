@@ -4,7 +4,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const slideAnimation = (value, ref) => {
-    if(window.innerWidth > 1023){
+    if (window.innerWidth > 1023) {
         ScrollTrigger.create({
             trigger: ref.current,
             onUpdate: (self) => {

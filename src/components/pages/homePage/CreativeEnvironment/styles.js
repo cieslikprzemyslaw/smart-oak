@@ -25,6 +25,7 @@ const AnimationImg = styled.img`
 
 const AnimationContainer = styled.div`
     position: relative;
+    max-height: 125vh;
     @media (max-width: 1224px) {
         text-align: justify;
     }
@@ -166,7 +167,7 @@ const AfterAnimationContentHeader = styled.h2`
     line-height: 1.2;
     font-weight: 600;
 
-   @media (max-width: 1024px) {
+    @media (max-width: 1024px) {
         font-size: 36px;
     }
     @media (max-width: 800px) {
@@ -194,11 +195,9 @@ const Wrapper = styled.div`
     }
     @media (max-width: 800px) {
         width: 90%;
-        
     }
     @media (max-width: 500px) {
-       
-        text-align: justify
+        text-align: justify;
     }
 `;
 

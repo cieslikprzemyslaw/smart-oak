@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 import { useIntl } from 'gatsby-plugin-intl';
 
-import { Wrapper, Header, ImageAndTextContainer, Text } from './styles';
+import { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper } from './styles';
 import { conquerTheWorldAnimation } from './useAnimate';
 
 const SecondAnimation = () => {
@@ -32,23 +32,26 @@ const SecondAnimation = () => {
                 </Header>
                 <ImageAndTextContainer className="ImageAndTextContainer">
                     <div className="WhiteBox" ref={WhiteBoxLeft}></div>
-                    <Text ref={TextRef}>
-                        <p>
-                            {intl.formatMessage({
-                                id: `projectSection.block1`,
-                            })}
-                        </p>
-                        <p>
-                            {intl.formatMessage({
-                                id: `projectSection.block2`,
-                            })}
-                        </p>
-                        <p>
-                            {intl.formatMessage({
-                                id: `projectSection.block3`,
-                            })}
-                        </p>
-                    </Text>
+                    <TextWrapper>
+                        <Text ref={TextRef}>
+                            <p>
+                                {intl.formatMessage({
+                                    id: `projectSection.block1`,
+                                })}
+                            </p>
+                            <p>
+                                {intl.formatMessage({
+                                    id: `projectSection.block2`,
+                                })}
+                            </p>
+                            <p>
+                                {intl.formatMessage({
+                                    id: `projectSection.block3`,
+                                })}
+                            </p>
+                        </Text>
+                    </TextWrapper>
+                    
                     <div className="WhiteBox" ref={WhiteBoxRight}></div>
                 </ImageAndTextContainer>
             </div>

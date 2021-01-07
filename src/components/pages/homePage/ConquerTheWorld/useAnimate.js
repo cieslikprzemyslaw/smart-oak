@@ -4,7 +4,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const conquerTheWorldAnimation = (element1, element2, element3, element4) => {
-    if(window.innerWidth > 1023){
+    if (window.innerWidth > 1023) {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: element1.current,
@@ -19,9 +19,7 @@ const conquerTheWorldAnimation = (element1, element2, element3, element4) => {
         tl.to(element2.current, { xPercent: -100 }, 0)
             .to(element3.current, { xPercent: +100 }, 0)
 
-            .fromTo(element4.current, { opacity: 0, ease: 'none' }, { opacity: 1, ease: 'none' 
-        });
-        
+            .fromTo(element4.current, { opacity: 0, ease: 'none' }, { opacity: 1, ease: 'none' });
     }
 };
 

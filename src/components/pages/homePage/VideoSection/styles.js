@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     height: calc(100vh - 4.5rem);
     z-index: 3;
 `;
 const TextContainer = styled.div`
     position: relative;
-    margin: 0 15px 0 15px;
     height: 100%;
     text-align: justify;
 `;
@@ -52,7 +51,7 @@ const StyledLogo = styled.img`
 
 const Section = styled.div`
     position: relative;
-    height: 70vh;
+    min-height: 100vh;
     object-fit: fill;
     z-index: 4;
 
@@ -69,15 +68,15 @@ const Section = styled.div`
         top: 50px;
     }
 
-    @media(max-width: 640px){
-        top:0;
+    @media (max-width: 640px) {
+        top: 0;
     }
 `;
 
 const DescriptionContainer = styled.div`
     position: absolute;
-    left: 8%;
-    top: 15%;
+    left: 5%;
+    top: 5%;
     width: 80%;
     height: 100%;
     font-family: Open Sans, sans-serif;
@@ -85,16 +84,16 @@ const DescriptionContainer = styled.div`
         will-change: opacity, scale, transform;
     }
     @media only screen and (max-width: 1200px) {
-        left: 4%;
-        top: 8%;
+        left: 5%;
+        top: 5%;
     }
 
     @media only screen and (max-width: 550px) {
         width: 90vw;
     }
 
-    @media (max-width: 360px){
-        left: 2%;
+    @media (max-width: 360px) {
+        left: 5%;
         top: 0;
         text-align: justify;
     }
@@ -126,7 +125,7 @@ const DescriptionTitle = styled.h2`
         text-align: justify;
     }
 
-    @media (max-width: 360px){
+    @media (max-width: 360px) {
         font-size: 20px;
     }
 
@@ -167,7 +166,7 @@ const DescriptionMainTitle = styled.h1`
         letter-spacing: 0em;
     }
 
-        @media (max-width: 360px){
+    @media (max-width: 360px) {
         font-size: 24px;
     }
 `;
@@ -204,7 +203,7 @@ const DescriptionMainSubtitle = styled.h1`
         letter-spacing: 0em;
         text-align: left;
     }
-    @media (max-width: 360px){
+    @media (max-width: 360px) {
         font-size: 24px;
     }
     @media (min-height: 1500px) {
@@ -247,7 +246,7 @@ const Description = styled.p`
         width: 80%;
     }
 
-    @media (max-width: 360px){
+    @media (max-width: 360px) {
         font-size: 16px;
     }
 `;
