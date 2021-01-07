@@ -25,6 +25,7 @@ const AnimationImg = styled.img`
 
 const AnimationContainer = styled.div`
     position: relative;
+    max-height: 125vh;
     @media (max-width: 1224px) {
         text-align: justify;
     }
