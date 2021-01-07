@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const FirstSection = styled.div`
     display: flex;
-    justify-content: center;
+    margin-left: 10%;
     align-content: center;
     min-height: 100vh;
     white-space: pre;
@@ -17,30 +17,31 @@ const FirstSection = styled.div`
 
     @media (max-width: 1023px) {
         min-height: 100px;
+        margin-left: 5%;
     }
     @media (max-width: 800px) {
-        margin: 20px 10px;
         height: 0;
-        margin: 0 0 50px 0;
     }
 `;
 
 const InfoSection = styled.div`
     display: flex;
     flex-direction: column;
+    width: 100%;
     @media (max-width: 800px) {
-        margin: 40px auto;
+        margin: 40px 0;
     }
 `;
 
 const InfoSectionContainer = styled.div`
-    margin: 60px;
+    margin: 60px 10% 60px 10%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: start;
 
     @media (max-width: 1024px) {
-        margin: 20px 10px;
+        margin: 20px 5%;
     }
 `;
 
@@ -128,6 +129,9 @@ const Title2 = styled.h2`
         width: 100%;
         text-align: left;
     }
+    @media (max-width: 1023px) {
+        margin-bottom: 50px;
+    }
     @media (max-width: 800px) {
         font-size: 34px;
     }
@@ -177,7 +181,7 @@ const Text = styled.div`
         margin: 0 auto;
     }
     @media (max-width: 1023px) {
-        width: 90%;
+        width: 100%;
         text-align: left;
         margin: 0 auto;
     }

@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     height: calc(100vh - 4.5rem);
     z-index: 3;
 `;
 const TextContainer = styled.div`
     position: relative;
-    margin: 0 15px 0 15px;
     height: 100%;
     text-align: justify;
 `;
@@ -52,7 +51,7 @@ const StyledLogo = styled.img`
 
 const Section = styled.div`
     position: relative;
-    height: 70vh;
+    min-height: 100vh;
     object-fit: fill;
     z-index: 4;
 
@@ -76,8 +75,8 @@ const Section = styled.div`
 
 const DescriptionContainer = styled.div`
     position: absolute;
-    left: 8%;
-    top: 15%;
+    left: 5%;
+    top: 5%;
     width: 80%;
     height: 100%;
     font-family: Open Sans, sans-serif;
@@ -85,8 +84,8 @@ const DescriptionContainer = styled.div`
         will-change: opacity, scale, transform;
     }
     @media only screen and (max-width: 1200px) {
-        left: 4%;
-        top: 8%;
+        left: 5%;
+        top: 5%;
     }
 
     @media only screen and (max-width: 550px) {
@@ -94,7 +93,7 @@ const DescriptionContainer = styled.div`
     }
 
     @media (max-width: 360px) {
-        left: 2%;
+        left: 5%;
         top: 0;
         text-align: justify;
     }
