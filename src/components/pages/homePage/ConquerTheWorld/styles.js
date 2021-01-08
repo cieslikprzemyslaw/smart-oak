@@ -83,10 +83,12 @@ const ImageAndTextContainer = styled.div`
         margin: 0 auto;
         min-height: 1200px;
     }
+    @media (max-width: 500px) {
+        min-height: 1320px;
+    }
 `;
 
 const Text = styled.p`
-    margin: 65px 0px 0px 0;
     color: white;
     min-width: 75%;
     font-family: Open Sans;
@@ -139,10 +141,10 @@ const Text = styled.p`
     }
 
     @media (max-width: 1023px) {
-            max-width: 100%;
-            top: 5%;
-            left: 0;
-        }
+        max-width: 100%;
+        top: 5%;
+        left: 0;
+    }
 
     @media screen and (max-width: 800px) {
         margin: 10px auto;
@@ -151,8 +153,7 @@ const Text = styled.p`
         font-size: 12px;
     }
 `;
-const TextWrapper = styled.p`
-    margin: 65px 0px 0px 0;
+const TextWrapper = styled.section`
     color: white;
     min-width: 75%;
     font-family: Open Sans;
@@ -162,10 +163,10 @@ const TextWrapper = styled.p`
     line-height: 152%;
 
     @media (max-width: 1023px) {
-            min-width: 100%
+        min-width: 100%;
     }
-        
 `;
 
+const Paragraph = styled.p``;
 // browser doesn't see styles for less then 1024px check it
-export { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper };
+export { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper, Paragraph };

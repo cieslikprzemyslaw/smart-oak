@@ -32,6 +32,7 @@ const Container = styled.div`
     display: flex;
     z-index: 5;
     justify-content: space-between;
+
     @media screen and (max-width: 900px) {
         display: none;
     }
