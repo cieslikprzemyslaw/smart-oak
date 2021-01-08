@@ -51,7 +51,7 @@ const SecondAnimation = () => {
                             </Paragraph>
                         </Text>
                     </TextWrapper>
-                    
+
                     <div className="WhiteBox" ref={WhiteBoxRight}></div>
                 </ImageAndTextContainer>
             </div>

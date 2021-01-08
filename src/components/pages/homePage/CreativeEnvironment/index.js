@@ -31,14 +31,14 @@ const FourthAnimation = () => {
                     <AnimationImg src={ImageSrc} ref={imgRef} />
                     <AnimationContent>
                         <AnimationContentHeader>
-                                {intl.formatMessage({
-                                    id: `fourthAnimationExtendedSection.title1`,
-                                })}
+                            {intl.formatMessage({
+                                id: `fourthAnimationExtendedSection.title1`,
+                            })}
                         </AnimationContentHeader>
                         <AnimationContentParagraph>
-                                {intl.formatMessage({
-                                    id: `fourthAnimationExtendedSection.block1`,
-                                })}
+                            {intl.formatMessage({
+                                id: `fourthAnimationExtendedSection.block1`,
+                            })}
                         </AnimationContentParagraph>
                     </AnimationContent>
                 </AnimationContainer>
@@ -46,14 +46,14 @@ const FourthAnimation = () => {
                     <FourthAnimationExtended>
                         <AfterAnimationContainer>
                             <AfterAnimationContentHeader>
-                                    {intl.formatMessage({
-                                        id: `fourthAnimationExtendedSection.title2`,
-                                    })}
+                                {intl.formatMessage({
+                                    id: `fourthAnimationExtendedSection.title2`,
+                                })}
                             </AfterAnimationContentHeader>
                             <AfterAnimationContentParagraph>
-                                    {intl.formatMessage({
-                                        id: `fourthAnimationExtendedSection.block2`,
-                                    })}
+                                {intl.formatMessage({
+                                    id: `fourthAnimationExtendedSection.block2`,
+                                })}
                             </AfterAnimationContentParagraph>
                         </AfterAnimationContainer>
                     </FourthAnimationExtended>
