@@ -21,6 +21,12 @@ const AnimationImg = styled.img`
     @media (max-width: 1024px) {
         min-height: 100vh;
     }
+    @media (max-width: 550px) {
+        min-height: 120vh;
+    }
+    @media (max-width: 450px) {
+        min-height: 130vh;
+    }
 `;
 
 const AnimationContainer = styled.div`
@@ -33,15 +39,12 @@ const AnimationContainer = styled.div`
 
 const AnimationContent = styled.div`
     position: fixed;
-    width: 55%;
+    width: 65%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     z-index: 2;
-    @media (max-width: 1024px) {
-        width: 70%;
-    }
     @media (max-width: 1023px) {
         width: 70%;
         position: absolute;
@@ -49,17 +52,19 @@ const AnimationContent = styled.div`
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    @media (max-width: 700px) {
+        width: 85%;
+    }
     @media (max-width: 500px) {
         width: 95%;
         position: absolute;
         top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin: 0 auto;
     }
 `;
 
-const AnimationContentParagraph = styled.p`
+const AnimationContentParagraph = styled.div`
     margin-top: 40px;
     font-size: 24px;
     line-height: 1.5;
@@ -68,7 +73,7 @@ const AnimationContentParagraph = styled.p`
     @media (max-width: 1024px) {
         width: 100%;
         text-align: justify;
-        margin: 14px auto
+        margin: 14px auto;
         font-size: 24px;
     }
     @media (max-width: 800px) {
@@ -90,7 +95,7 @@ const AnimationContentParagraph = styled.p`
 `;
 
 const AnimationContentHeader = styled.h2`
-    font-size: 44px;
+    font-size: 37px;
     line-height: 1.2;
     font-weight: 600;
 
@@ -131,7 +136,6 @@ const AfterAnimationContainer = styled.div`
 
     @media only screen and (max-width: 500px) {
         width: 100vw;
-        text-align: justify;
     }
 
     @media (min-height: 1300px) {
@@ -147,14 +151,15 @@ const AfterAnimationContentParagraph = styled.p`
 
     @media (max-width: 1024px) {
         width: 100%;
-        margin: 14px auto
+        margin: 14px auto;
         font-size: 24px;
     }
     @media (max-width: 800px) {
         font-size: 20px;
     }
     @media (max-width: 500px) {
-        width: 90%;
+        margin-left: 14px;
+        width:80%;
         font-size: 16px;
     }
     @media (max-width: 360px) {

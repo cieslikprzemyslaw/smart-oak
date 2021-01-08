@@ -19,9 +19,6 @@ const FirstSection = styled.div`
         min-height: 100px;
         margin-left: 5%;
     }
-    @media (max-width: 800px) {
-        height: 0;
-    }
 `;
 
 const InfoSection = styled.div`
@@ -80,7 +77,7 @@ const InfoSectionContent = styled.h4`
     @media (max-width: 1024px) {
         width: 100%;
         text-align: justify;
-        margin: 14px auto
+        margin: 14px auto;
         font-size: 24px;
     }
     @media (max-width: 800px) {
@@ -149,7 +146,7 @@ const Container = styled.div`
     flex-flow: ${(props) => (props.imageOnLeft ? 'row' : 'row-reverse')};
     min-height: 100vh;
     margin-bottom: 50px;
-    @media (max-width: 800px) {
+    @media (max-width: 1023px) {
         flex-wrap: wrap;
         min-height: unset;
     }
@@ -174,12 +171,6 @@ const Text = styled.div`
     width: 50%;
     background-color: #ffffff;
     z-index: 101;
-
-    @media (max-width: 1024px) {
-        width: min-content;
-        text-align: left;
-        margin: 0 auto;
-    }
     @media (max-width: 1023px) {
         width: 100%;
         text-align: left;
@@ -197,10 +188,6 @@ const ImageContainer = styled.div`
     @media (max-width: 1024px) {
         max-width: 100vw;
         width: 100%;
-        min-height: 100vh;
-    }
-    @media (max-width: 800px) {
-        max-width: 100%;
         min-height: 100vh;
     }
 `;

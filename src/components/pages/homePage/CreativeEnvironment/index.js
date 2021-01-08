@@ -31,18 +31,14 @@ const FourthAnimation = () => {
                     <AnimationImg src={ImageSrc} ref={imgRef} />
                     <AnimationContent>
                         <AnimationContentHeader>
-                            <h2>
                                 {intl.formatMessage({
                                     id: `fourthAnimationExtendedSection.title1`,
                                 })}
-                            </h2>
                         </AnimationContentHeader>
                         <AnimationContentParagraph>
-                            <p>
                                 {intl.formatMessage({
                                     id: `fourthAnimationExtendedSection.block1`,
                                 })}
-                            </p>
                         </AnimationContentParagraph>
                     </AnimationContent>
                 </AnimationContainer>
@@ -50,18 +46,14 @@ const FourthAnimation = () => {
                     <FourthAnimationExtended>
                         <AfterAnimationContainer>
                             <AfterAnimationContentHeader>
-                                <h2>
                                     {intl.formatMessage({
                                         id: `fourthAnimationExtendedSection.title2`,
                                     })}
-                                </h2>
                             </AfterAnimationContentHeader>
                             <AfterAnimationContentParagraph>
-                                <p>
                                     {intl.formatMessage({
                                         id: `fourthAnimationExtendedSection.block2`,
                                     })}
-                                </p>
                             </AfterAnimationContentParagraph>
                         </AfterAnimationContainer>
                     </FourthAnimationExtended>

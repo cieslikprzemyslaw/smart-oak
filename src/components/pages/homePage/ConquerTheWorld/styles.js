@@ -49,11 +49,8 @@ const ImageAndTextContainer = styled.div`
     .WhiteBox {
         display: block;
         height: 100%;
-
         width: 35vw;
-
         background: white;
-
         @media screen and (max-width: 1023px) {
             display: none;
         }
@@ -69,7 +66,7 @@ const ImageAndTextContainer = styled.div`
         text-align: justify;
     }
     @media (max-width: 1023px) {
-        min-height: 960px;
+        min-height: 1200px;
         background: none;
         background-size: auto;
         text-align: justify;
@@ -83,9 +80,12 @@ const ImageAndTextContainer = styled.div`
         margin: 0 auto;
         min-height: 1200px;
     }
+    @media (max-width: 360px) {
+        min-height: 1400px;
+    }
 `;
 
-const Text = styled.p`
+const Text = styled.div`
     margin: 65px 0px 0px 0;
     color: white;
     min-width: 75%;
@@ -151,7 +151,7 @@ const Text = styled.p`
         font-size: 12px;
     }
 `;
-const TextWrapper = styled.p`
+const TextWrapper = styled.div`
     margin: 65px 0px 0px 0;
     color: white;
     min-width: 75%;
@@ -164,7 +164,6 @@ const TextWrapper = styled.p`
     @media (max-width: 1023px) {
             min-width: 100%
     }
-        
 `;
 
 // browser doesn't see styles for less then 1024px check it
