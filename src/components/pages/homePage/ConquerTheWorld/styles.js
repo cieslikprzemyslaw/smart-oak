@@ -49,8 +49,11 @@ const ImageAndTextContainer = styled.div`
     .WhiteBox {
         display: block;
         height: 100%;
+
         width: 35vw;
+
         background: white;
+
         @media screen and (max-width: 1023px) {
             display: none;
         }
@@ -66,7 +69,7 @@ const ImageAndTextContainer = styled.div`
         text-align: justify;
     }
     @media (max-width: 1023px) {
-        min-height: 1200px;
+        min-height: 960px;
         background: none;
         background-size: auto;
         text-align: justify;
@@ -80,12 +83,9 @@ const ImageAndTextContainer = styled.div`
         margin: 0 auto;
         min-height: 1200px;
     }
-    @media (max-width: 360px) {
-        min-height: 1400px;
-    }
 `;
 
-const Text = styled.div`
+const Text = styled.p`
     color: white;
     min-width: 75%;
     font-family: Open Sans;
@@ -94,9 +94,8 @@ const Text = styled.div`
     font-size: 18px;
     line-height: 152%;
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 5%;
-    transform: translate(0, -50%);
 
     p {
         max-width: 75%;
@@ -139,10 +138,10 @@ const Text = styled.div`
     }
 
     @media (max-width: 1023px) {
-            max-width: 100%;
-            top: 5%;
-            left: 0;
-        }
+        max-width: 100%;
+        top: 5%;
+        left: 0;
+    }
 
     @media screen and (max-width: 800px) {
         margin: 10px auto;
@@ -151,7 +150,7 @@ const Text = styled.div`
         font-size: 12px;
     }
 `;
-const TextWrapper = styled.div`
+const TextWrapper = styled.p`
     margin: 65px 0px 0px 0;
     color: white;
     min-width: 75%;
@@ -162,11 +161,10 @@ const TextWrapper = styled.div`
     line-height: 152%;
 
     @media (max-width: 1023px) {
-            min-width: 100%
+        min-width: 100%;
     }
 `;
 
 const Paragraph = styled.p``;
-
 // browser doesn't see styles for less then 1024px check it
 export { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper, Paragraph };
