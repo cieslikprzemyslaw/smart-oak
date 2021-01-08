@@ -83,6 +83,9 @@ const ImageAndTextContainer = styled.div`
         margin: 0 auto;
         min-height: 1200px;
     }
+    @media (max-width: 500px) {
+        min-height: 1320px;
+    }
 `;
 
 const Text = styled.p`
@@ -150,8 +153,7 @@ const Text = styled.p`
         font-size: 12px;
     }
 `;
-const TextWrapper = styled.p`
-    margin: 65px 0px 0px 0;
+const TextWrapper = styled.section`
     color: white;
     min-width: 75%;
     font-family: Open Sans;
