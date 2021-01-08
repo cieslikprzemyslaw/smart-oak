@@ -26,7 +26,6 @@ const MobileList = ({ open, dropdown, children }) => {
 MobileList.propTypes = {
     open: PropTypes.bool,
     dropdown: PropTypes.bool,
-    children: PropTypes.elementType,
 };
 
 export default MobileList;
