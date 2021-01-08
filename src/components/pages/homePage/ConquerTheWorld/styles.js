@@ -86,7 +86,6 @@ const ImageAndTextContainer = styled.div`
 `;
 
 const Text = styled.div`
-    margin: 65px 0px 0px 0;
     color: white;
     min-width: 75%;
     font-family: Open Sans;
@@ -95,8 +94,9 @@ const Text = styled.div`
     font-size: 18px;
     line-height: 152%;
     position: absolute;
-    top: 10%;
+    top: 50%;
     left: 5%;
+    transform: translate(0, -50%);
 
     p {
         max-width: 75%;
@@ -166,5 +166,7 @@ const TextWrapper = styled.div`
     }
 `;
 
+const Paragraph = styled.p``;
+
 // browser doesn't see styles for less then 1024px check it
-export { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper };
+export { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper, Paragraph };
