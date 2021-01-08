@@ -159,7 +159,7 @@ const AfterAnimationContentParagraph = styled.p`
     }
     @media (max-width: 500px) {
         margin-left: 14px;
-        width:80%;
+        width: 80%;
         font-size: 16px;
     }
     @media (max-width: 360px) {

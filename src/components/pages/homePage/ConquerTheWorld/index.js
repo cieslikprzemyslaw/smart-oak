@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 import { useIntl } from 'gatsby-plugin-intl';
 
-import { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper } from './styles';
+import { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper, Paragraph } from './styles';
 import { conquerTheWorldAnimation } from './useAnimate';
 
 const SecondAnimation = () => {
@@ -34,24 +34,24 @@ const SecondAnimation = () => {
                     <div className="WhiteBox" ref={WhiteBoxLeft}></div>
                     <TextWrapper>
                         <Text ref={TextRef}>
-                            <p>
+                            <Paragraph>
                                 {intl.formatMessage({
                                     id: `projectSection.block1`,
                                 })}
-                            </p>
-                            <p>
+                            </Paragraph>
+                            <Paragraph>
                                 {intl.formatMessage({
                                     id: `projectSection.block2`,
                                 })}
-                            </p>
-                            <p>
+                            </Paragraph>
+                            <Paragraph>
                                 {intl.formatMessage({
                                     id: `projectSection.block3`,
                                 })}
-                            </p>
+                            </Paragraph>
                         </Text>
                     </TextWrapper>
-                    
+
                     <div className="WhiteBox" ref={WhiteBoxRight}></div>
                 </ImageAndTextContainer>
             </div>
