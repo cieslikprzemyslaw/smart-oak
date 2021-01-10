@@ -50,7 +50,7 @@ const ThirdAnimation = () => {
                 <Section
                     key={section}
                     src={section[1]}
-                    imageOnLeft={!!index % 2}
+                    imageOnLeft={!!(index % 2)}
                     shiftValue={!!index % 2 ? 120 : -120}
                 >
                     <InfoSection>
