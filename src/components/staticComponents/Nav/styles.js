@@ -45,8 +45,8 @@ const NavContent = styled.div`
     justify-content: space-between;
     animation: ${(props) => (props.anim ? '0.6' : '0')}s ${fadeIn} ease-out;
 `;
-
-const StyledLink = styled((props) => <Link {...props} />)`
+// eslint-disable-next-line
+const StyledLink = styled(({ rightNav, ...props }) => <Link {...props} />)`
     color: #fff;
     text-decoration: none;
     padding: 0.6rem ${(props) => (props.rightNav ? '0.5rem' : '0.7rem')};
