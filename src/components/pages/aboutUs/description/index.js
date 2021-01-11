@@ -2,12 +2,10 @@ import React from 'react';
 
 import { useIntl } from 'gatsby-plugin-intl';
 
-import {Title, Paragraph, Section, Wrapper, WrapperWithParagraph} from './styles.js';
-
+import { Title, Paragraph, Section, Wrapper, WrapperWithParagraph } from './styles.js';
 
 const Description = () => {
     const intl = useIntl();
-
 
     return (
         <Section>
@@ -16,7 +14,7 @@ const Description = () => {
                     {intl.formatMessage({
                         id: `aboutUs.title`,
                     })}
-                </Title>                    
+                </Title>
                 <Paragraph>
                     {intl.formatMessage({
                         id: `aboutUs.content1`,
@@ -24,13 +22,12 @@ const Description = () => {
                 </Paragraph>
             </WrapperWithParagraph>
             <Wrapper>
-                <Paragraph> 
-                        {intl.formatMessage({
+                <Paragraph>
+                    {intl.formatMessage({
                         id: `aboutUs.content2`,
                     })}
                 </Paragraph>
             </Wrapper>
-            
         </Section>
     );
 };
