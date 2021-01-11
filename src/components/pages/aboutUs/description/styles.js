@@ -46,7 +46,7 @@ const Title = styled.h2`
 
     @media (min-width: 1440px) {
         font-size: 38px;
-    }  
+    }
 `;
 const Paragraph = styled.p`
     margin: 0 5vw;

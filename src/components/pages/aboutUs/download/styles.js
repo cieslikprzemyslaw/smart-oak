@@ -46,12 +46,12 @@ const Button = styled.button`
     justify-content: center;
     align-items: center;
     padding: 7px 20px;
-    border: 0.5px solid #9D9D9D;
+    border: 0.5px solid #9d9d9d;
     background-color: #fff;
 `;
 
 const Alink = styled.a`
-      text-decoration: none;
+    text-decoration: none;
 `;
 
 export { Section, Links, Link, Paragraph, DownloadTitle, Button, Alink };

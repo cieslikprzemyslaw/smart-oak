@@ -40,10 +40,9 @@ const Download = () => {
                                     {intl.formatMessage({
                                         id: `aboutUs.download`,
                                     })}
-                                <BiArrowToBottom style={{fontSize: "22px"}}/>
+                                    <BiArrowToBottom style={{ fontSize: '22px' }} />
                                 </Button>
                             </Alink>
-                            
                         </Link>
                     );
                 })}
