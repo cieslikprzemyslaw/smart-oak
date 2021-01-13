@@ -10,16 +10,16 @@ const Download = () => {
 
     const links = [
         {
-            name: 'Status.pdf',
-            link: '#',
+            name: 'Statut Fundacji',
+            link: 'https://drive.google.com/file/d/11gSIQrQHo6hedvfYHYSfGdVKlhZjgpad/view?usp=sharing',
         },
         {
-            name: 'Sprawozdanie2019',
-            link: '#',
+            name: 'Sprawozdanie Finansowe 2019',
+            link: 'https://drive.google.com/file/d/1FIuHUPXaencDvlgV4t1-H7ZWY-fq2dwJ/view?usp=sharing',
         },
         {
-            name: 'Sprawozdanie2018',
-            link: '#',
+            name: 'Bilans 2019',
+            link: 'https://drive.google.com/file/d/1Cfejj_3v9oHldP5olsjiaYinARbIs9He/view?usp=sharing',
         },
     ];
 
