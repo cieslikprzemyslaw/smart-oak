@@ -14,20 +14,27 @@ import {
     AfterAnimationContentHeader,
     FourthAnimationExtended,
     Wrapper,
+    WhiteBoxL,
+    WhiteBoxR,
 } from './styles.js';
 
 const FourthAnimation = () => {
     const imgRef = useRef(null);
     const intl = useIntl();
 
+    const WhiteBoxRight = useRef(null);
+    const WhiteBoxLeft = useRef(null);
+    const animationWrapper = useRef(null);
+
     useEffect(() => {
-        scaleImgOnScroll(imgRef.current);
+        scaleImgOnScroll(animationWrapper, WhiteBoxLeft, WhiteBoxRight);
     }, []);
 
     return (
         <>
             <FourthAnimationExtended>
-                <AnimationContainer>
+                <AnimationContainer ref={animationWrapper}>
+                    <WhiteBoxL ref={WhiteBoxLeft}></WhiteBoxL>
                     <AnimationImg src={ImageSrc} ref={imgRef} />
                     <AnimationContent>
                         <AnimationContentHeader>
@@ -41,6 +48,7 @@ const FourthAnimation = () => {
                             })}
                         </AnimationContentParagraph>
                     </AnimationContent>
+                    <WhiteBoxR ref={WhiteBoxRight}></WhiteBoxR>
                 </AnimationContainer>
                 <Wrapper>
                     <FourthAnimationExtended>
