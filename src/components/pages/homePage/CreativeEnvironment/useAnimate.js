@@ -11,7 +11,6 @@ export const scaleImgOnScroll = (elem) => {
                 start: '-20% top',
                 end: '20% top',
                 scrub: 1,
-                markers: true,
             },
         });
         tl.to(elem, {
