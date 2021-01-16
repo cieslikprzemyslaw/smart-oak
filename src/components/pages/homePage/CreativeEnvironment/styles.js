@@ -206,27 +206,6 @@ const Wrapper = styled.div`
     }
 `;
 
-const WhiteBoxL = styled.div`
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 14vw;
-    background: #fff;
-    z-index: 100;
-    left: -290px;
-`;
-
-const WhiteBoxR = styled.div`
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 14vw;
-    background: #fff;
-    z-index: 100;
-    right: -290px;
-    top: 0;
-`;
-
 export {
     AnimationImg,
     AnimationContainer,
@@ -238,6 +217,4 @@ export {
     AfterAnimationContentHeader,
     FourthAnimationExtended,
     Wrapper,
-    WhiteBoxL,
-    WhiteBoxR,
 };
