@@ -7,7 +7,7 @@ const Section = styled.footer`
     background: #0e0e0e;
     padding: 17px 0;
     position: relative;
-    z-index: 3;
+    z-index: 5;
 
     @media (max-width: 800px) {
         height: 100px;
@@ -16,7 +16,7 @@ const Section = styled.footer`
 
 const Container = styled.div`
     position: relative;
-    z-index: 3;
+    z-index: 5;
     width: 98%;
     margin: 0 auto;
     height: 100%;

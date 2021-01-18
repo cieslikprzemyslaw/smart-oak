@@ -5,23 +5,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const scaleImgOnScroll = (elem) => {
     if (window.innerWidth > 1023) {
-        gsap.to(elem, {
-            clipPath: 'inset(0 10%)',
+        const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: elem,
-                start: 'top top',
-                end: 'bottom 20%',
-                toggleActions: 'restart none none reverse',
+                start: '-20% top',
+                end: '20% top',
+                scrub: 1,
             },
         });
+        tl.to(elem, {
+            clipPath: 'inset(0 10%)',
+        });
     }
-};
-
-export const pinContent = (elem) => {
-    ScrollTrigger.create({
-        trigger: elem,
-        start: 'top -50',
-        end: 'bottom 100%',
-        pin: '#fourth-animation-content',
-    });
 };

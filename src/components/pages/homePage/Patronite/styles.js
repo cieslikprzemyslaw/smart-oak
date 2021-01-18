@@ -30,7 +30,7 @@ const PatroniteSection = styled.section`
 
 const Logo = styled.img`
     height: 75px;
-    margin-bottom: 50px;
+    margin: 50px 20px;
 `;
 
 export { PatroniteWrapper, PatroniteSection, Logo };
