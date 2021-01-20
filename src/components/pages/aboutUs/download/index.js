@@ -2,8 +2,8 @@ import React from 'react';
 
 import { useIntl } from 'gatsby-plugin-intl';
 
-import { BiArrowToBottom } from 'react-icons/bi';
-import { Section, Links, Link, Paragraph, DownloadTitle, Button, Alink } from './styles';
+import { BiArrowToBottom } from 'react-icons/Bi';
+import { Section, Links, Link, Paragraph, DownloadTitle, Alink } from './styles';
 
 const Download = () => {
     const intl = useIntl();
@@ -39,12 +39,10 @@ const Download = () => {
                         <Link key={element.name}>
                             <DownloadTitle>{element.name}</DownloadTitle>
                             <Alink href={element.link}>
-                                <Button>
                                     {intl.formatMessage({
                                         id: `aboutUs.download`,
                                     })}
                                     <BiArrowToBottom style={{ fontSize: '22px' }} />
-                                </Button>
                             </Alink>
                         </Link>
                     );
