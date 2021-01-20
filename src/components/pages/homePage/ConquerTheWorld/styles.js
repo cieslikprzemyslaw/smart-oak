@@ -69,7 +69,7 @@ const ImageAndTextContainer = styled.div`
         text-align: justify;
     }
     @media (max-width: 1023px) {
-        min-height: 960px;
+        min-height: 1350px;
         background: none;
         background-size: auto;
         text-align: justify;
@@ -84,17 +84,17 @@ const ImageAndTextContainer = styled.div`
         min-height: 1200px;
     }
     @media (max-width: 500px) {
-        min-height: 1320px;
+        min-height: 970px;
     }
 `;
 
 const Text = styled.section`
     color: white;
-    max-width: 75%;
+    max-width: 65%;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 28px;
     line-height: 152%;
     position: absolute;
     top: 10%;
@@ -102,9 +102,10 @@ const Text = styled.section`
     text-align: justify;
 
     p {
-        max-width: 75%;
+        max-width: 90%;
         margin: 25px 0;
         line-height: 150%;
+
         @media (max-width: 1024px) {
             max-width: 90%;
             margin: 10px auto;
@@ -141,15 +142,10 @@ const Text = styled.section`
         }
     }
 
-    @media (min-width: 1440px) {
-            font-size: 28px;
-            line-height: 170%;
-    }
-
-    @media (max-width: 1023px) {
+    @media (max-width: 1440px) {
         max-width: 100%;
         top: 5%;
-        left: 0;
+        left: 5%;
     }
 
     @media screen and (max-width: 800px) {

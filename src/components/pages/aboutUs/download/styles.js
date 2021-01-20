@@ -11,7 +11,7 @@ const Links = styled.section`
     margin: 2.5vh 5vw 2.5vh 5vw;
 
     @media (min-width: 640px) {
-       width: content;
+        width: content;
     }
 
     @media (min-width: 1024px) {

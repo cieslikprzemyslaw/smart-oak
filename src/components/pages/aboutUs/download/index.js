@@ -39,10 +39,10 @@ const Download = () => {
                         <Link key={element.name}>
                             <DownloadTitle>{element.name}</DownloadTitle>
                             <Alink href={element.link}>
-                                    {intl.formatMessage({
-                                        id: `aboutUs.download`,
-                                    })}
-                                    <BiArrowToBottom style={{ fontSize: '22px' }} />
+                                {intl.formatMessage({
+                                    id: `aboutUs.download`,
+                                })}
+                                <BiArrowToBottom style={{ fontSize: '22px' }} />
                             </Alink>
                         </Link>
                     );
