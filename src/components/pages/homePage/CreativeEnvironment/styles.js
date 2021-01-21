@@ -39,7 +39,7 @@ const AnimationContainer = styled.div`
 
 const AnimationContent = styled.div`
     position: fixed;
-    width: 65%;
+    width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -66,8 +66,8 @@ const AnimationContent = styled.div`
 
 const AnimationContentParagraph = styled.div`
     margin-top: 40px;
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 26px;
+    line-height: 1.8;
     font-weight: 400;
 
     @media (max-width: 1024px) {
@@ -96,7 +96,7 @@ const AnimationContentParagraph = styled.div`
 
 const AnimationContentHeader = styled.h2`
     font-size: 37px;
-    line-height: 1.2;
+    line-height: 1.5;
     font-weight: 600;
 
     @media (max-width: 1024px) {
@@ -169,7 +169,7 @@ const AfterAnimationContentParagraph = styled.p`
 
 const AfterAnimationContentHeader = styled.h2`
     font-size: 37px;
-    line-height: 1.2;
+    line-height: 1.5;
     font-weight: 600;
 
     @media (max-width: 1024px) {

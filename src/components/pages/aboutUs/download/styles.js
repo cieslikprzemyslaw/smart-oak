@@ -7,10 +7,15 @@ const Section = styled.section`
 const Links = styled.section`
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     margin: 2.5vh 5vw 2.5vh 5vw;
 
+    @media (min-width: 640px) {
+        width: content;
+    }
+
     @media (min-width: 1024px) {
-        max-width: 45%;
+        text-align: left;
     }
 `;
 const Link = styled.section`
@@ -35,23 +40,33 @@ const Paragraph = styled.p`
 
 const DownloadTitle = styled.p`
     font-size: 16px;
+    width: 100%;
+    margin: 20px auto;
+
+    @media (min-width: 640px) {
+        margin: 0 0;
+        width: auto;
+    }
 
     @media (min-width: 1024px) {
         font-size: 20px;
     }
 `;
 
-const Button = styled.button`
+const Alink = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 7px 20px;
     border: 0.5px solid #9d9d9d;
     background-color: #fff;
-`;
-
-const Alink = styled.a`
     text-decoration: none;
+    color: #000;
+    margin: 0 auto;
+
+    @media (min-width: 640px) {
+        margin: 0 0;
+    }
 `;
 
-export { Section, Links, Link, Paragraph, DownloadTitle, Button, Alink };
+export { Section, Links, Link, Paragraph, DownloadTitle, Alink };
