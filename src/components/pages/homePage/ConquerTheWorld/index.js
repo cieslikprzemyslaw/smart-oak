@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState, useLayoutEffect } from 'react';
 
 import { useIntl } from 'gatsby-plugin-intl';
 
@@ -12,10 +12,18 @@ const SecondAnimation = () => {
     const WhiteBoxLeft = useRef(null);
     const TextRef = useRef(null);
     const animationWrapper = useRef(null);
+    const [height, setHeight] = useState(0);
 
     useEffect(() => {
         conquerTheWorldAnimation(animationWrapper, WhiteBoxLeft, WhiteBoxRight, TextRef);
     }, []);
+
+    useLayoutEffect(() => {
+        const intervalIndex = setInterval(() => {return setHeight(TextRef.current.clientHeight)}, 1000)
+        return () => {
+            clearInterval(intervalIndex)
+        };
+    }, [])
 
     return (
         <Wrapper>
@@ -30,7 +38,7 @@ const SecondAnimation = () => {
                         id: `projectSection.title2`,
                     })}
                 </Header>
-                <ImageAndTextContainer className="ImageAndTextContainer">
+                <ImageAndTextContainer className="ImageAndTextContainer" style={{height: `${height+200}px`}}>
                     <div className="WhiteBox" ref={WhiteBoxLeft}></div>
                     <TextWrapper>
                         <Text ref={TextRef}>

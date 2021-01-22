@@ -43,7 +43,6 @@ const Header = styled.h2`
 
 const ImageAndTextContainer = styled.div`
     display: flex;
-    height: 960px;
     width: 100%;
     position: relative;
     .WhiteBox {
@@ -69,7 +68,6 @@ const ImageAndTextContainer = styled.div`
         text-align: justify;
     }
     @media (max-width: 1023px) {
-        min-height: 1350px;
         background: none;
         background-size: auto;
         text-align: justify;
@@ -81,10 +79,8 @@ const ImageAndTextContainer = styled.div`
     @media (max-width: 800px) {
         overflow-x: hidden;
         margin: 0 auto;
-        min-height: 1200px;
     }
     @media (max-width: 500px) {
-        min-height: 970px;
     }
 `;
 
@@ -97,7 +93,7 @@ const Text = styled.section`
     font-size: 28px;
     line-height: 152%;
     position: absolute;
-    top: 10%;
+    top: 100px;
     left: 5%;
     text-align: justify;
 
@@ -162,8 +158,7 @@ const TextWrapper = styled.section`
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 152%;
-
+    line-height: 152%
     @media (max-width: 1023px) {
         min-width: 100%;
     }
