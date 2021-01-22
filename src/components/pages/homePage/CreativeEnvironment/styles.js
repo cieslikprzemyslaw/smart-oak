@@ -17,7 +17,7 @@ const FourthAnimationExtended = styled.div`
 
 const AnimationImg = styled.img`
     min-width: 100%;
-    max-height: 125vh;
+    max-height: 150vh;
     @media (max-width: 1024px) {
         min-height: 100vh;
     }

@@ -8,8 +8,8 @@ export const scaleImgOnScroll = (elem) => {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: elem,
-                start: '-20% top',
-                end: '20% top',
+                start: '80% top',
+                end: '110% top',
                 scrub: 1,
             },
         });
