@@ -94,7 +94,7 @@ const Text = styled.section`
     line-height: 152%;
     position: absolute;
     top: 100px;
-    left: 5%;
+    left: 5vw;
     text-align: justify;
 
     p {
@@ -104,7 +104,7 @@ const Text = styled.section`
 
         @media (max-width: 1024px) {
             max-width: 90%;
-            margin: 10px auto;
+            margin: 10px 0;
             top: 5%;
             left: 0;
         }
@@ -112,7 +112,7 @@ const Text = styled.section`
             font-size: 20px;
         }
         @media (max-width: 640px) {
-            margin: 25px auto;
+            margin: 25px 0;
             font-size: 16px;
         }
     }
@@ -140,12 +140,10 @@ const Text = styled.section`
 
     @media (max-width: 1440px) {
         max-width: 100%;
-        top: 5%;
-        left: 5%;
     }
 
     @media screen and (max-width: 800px) {
-        margin: 10px auto;
+        margin: 10px 0;
     }
     @media screen and (max-width: 600px) {
         font-size: 12px;

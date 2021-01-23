@@ -16,7 +16,7 @@ const SecondAnimation = () => {
 
     useEffect(() => {
         conquerTheWorldAnimation(animationWrapper, WhiteBoxLeft, WhiteBoxRight, TextRef);
-        setHeight(TextRef.current.clientHeight)
+        setHeight(TextRef.current.clientHeight);
     }, []);
 
     useLayoutEffect(() => {
