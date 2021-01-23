@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useIntl } from 'gatsby-plugin-intl';
 
-import { BiArrowToBottom } from 'react-icons/Bi';
+import { BiArrowToBottom } from 'react-icons/bi';
 import { Section, Links, Link, Paragraph, DownloadTitle, Alink } from './styles';
 
 const Download = () => {
