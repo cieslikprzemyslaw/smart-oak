@@ -19,11 +19,14 @@ const SecondAnimation = () => {
     }, []);
 
     useLayoutEffect(() => {
-        const intervalIndex = setInterval(() => {return setHeight(TextRef.current.clientHeight)}, 1000)
-        return () => {
-            clearInterval(intervalIndex)
+        const checkSize = () => {
+            return setHeight(TextRef.current.clientHeight)
         };
-    }, [])
+        window.addEventListener('resize', checkSize);
+        return () => {
+            window.addEventListener('resize', checkSize);
+        };
+    }, []);
 
     return (
         <Wrapper>
@@ -38,7 +41,10 @@ const SecondAnimation = () => {
                         id: `projectSection.title2`,
                     })}
                 </Header>
-                <ImageAndTextContainer className="ImageAndTextContainer" style={{height: `${height+200}px`}}>
+                <ImageAndTextContainer
+                    className="ImageAndTextContainer"
+                    style={{ height: `${height + 200}px` }}
+                >
                     <div className="WhiteBox" ref={WhiteBoxLeft}></div>
                     <TextWrapper>
                         <Text ref={TextRef}>
