@@ -164,5 +164,5 @@ const TextWrapper = styled.section`
 `;
 
 const Paragraph = styled.p``;
-// browser doesn't see styles for less then 1024px check it
+
 export { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper, Paragraph };
