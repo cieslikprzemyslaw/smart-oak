@@ -24,8 +24,9 @@ const fadeInFromNone = keyframes`
 `;
 
 const MobileNavMenu = styled.div`
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 999999999999999;
     align-items: center;
     justify-content: space-between;
