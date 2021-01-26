@@ -63,8 +63,9 @@ const ExternalLink = styled.a`
     ${({ footer }) =>
         footer &&
         css`
-            font-size: 1.8rem;
-            padding: 0.6rem;
+            color: #3a3a3a;
+            font-size: 2.2rem;
+            padding: 0.8rem;
             margin: 0 2px;
         `}
 `;

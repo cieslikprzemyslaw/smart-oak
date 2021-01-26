@@ -116,5 +116,15 @@
         "support": "Wesprzyj",
         "contact": "Kontakt",
         "asSoon": "Już wkrótce"
+    },
+    "footer": {
+        "donate": "Wesprzyj",
+        "contact": "Kontakt",
+        "soon": "Już wkrótce",
+        "downloadApp": "Pobierz aplikację z ",
+        "appStore": "APP STORE",
+        "googlePlay": "GOOGLE PLAY",
+        "smartOakRights": " 2020 Smart Oak Project Wszelkie prawa zastrzeżone",
+        "privacyPolicy": "Polityka prywatności"
     }
 }

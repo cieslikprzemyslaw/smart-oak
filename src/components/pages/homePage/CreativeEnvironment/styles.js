@@ -7,11 +7,13 @@ const FourthAnimationExtended = styled.div`
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: fixed;
+    padding-bottom: 90px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
+        padding-bottom: 140px;
     }
 `;
 

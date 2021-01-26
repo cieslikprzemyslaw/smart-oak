@@ -126,7 +126,7 @@ const ListWrapper = styled.ul`
     flex-direction: column;
     display: flex;
     overflow: ${(props) => (props.dropdown ? 'visible' : 'auto')};
-    height: ${(props) => (props.dropdown ? 'auto' : '100vh')};
+    height: ${(props) => (props.dropdown ? 'auto' : '95%')};
     position: relative;
 `;
 

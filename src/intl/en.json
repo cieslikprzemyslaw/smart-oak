@@ -122,5 +122,15 @@
         "download": "DOWNLOAD:",
         "contact": "Kontakt",
         "asSoon": "Już wkrótce"
+    },
+    "footer": {
+        "donate": "Support",
+        "contact": "Contact",
+        "soon": "Coming soon",
+        "downloadApp": "Download the app from ",
+        "appStore": "APP STORE",
+        "googlePlay": "GOOGLE PLAY",
+        "smartOakRights": " 2020 Smart Oak Project All rights reserved",
+        "privacyPolicy": "Privacy policy"
     }
 }
