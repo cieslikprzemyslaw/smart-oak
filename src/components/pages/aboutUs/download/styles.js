@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Section = styled.section`
-    margin-bottom: 5vh;
+    margin-bottom: 240px;
 `;
 
 const Links = styled.section`
