@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 const Section = styled.section`
     margin-bottom: 240px;
+
+    @media (max-width: 850px) {
+        margin-bottom: 340px;
+    }
 `;
 
 const Links = styled.section`
