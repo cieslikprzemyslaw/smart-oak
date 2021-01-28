@@ -14,15 +14,16 @@ const SecondAnimation = () => {
     const animationWrapper = useRef(null);
     const [height, setHeight] = useState(0);
 
+    const checkSize = () => {
+            return setHeight(TextRef.current.clientHeight);
+        };
+
     useEffect(() => {
         conquerTheWorldAnimation(animationWrapper, WhiteBoxLeft, WhiteBoxRight, TextRef);
         setHeight(TextRef.current.clientHeight);
     }, []);
 
     useLayoutEffect(() => {
-        const checkSize = () => {
-            return setHeight(TextRef.current.clientHeight);
-        };
         window.addEventListener('resize', checkSize);
         return () => {
             window.addEventListener('resize', checkSize);
