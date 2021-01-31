@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useLayoutEffect } from 'react';
 
 import { useIntl } from 'gatsby-plugin-intl';
 
@@ -17,8 +17,14 @@ const SecondAnimation = () => {
     useEffect(() => {
         conquerTheWorldAnimation(animationWrapper, WhiteBoxLeft, WhiteBoxRight, TextRef);
         setHeight(TextRef.current.clientHeight);
-        window.addEventListener('resize', () => setHeight(TextRef.current.clientHeight));
     }, [TextRef.current]);
+
+    useLayoutEffect(() => {
+        window.addEventListener('resize', () => setHeight(TextRef.current.clientHeight));
+        return () => {
+            window.addEventListener('resize', () => setHeight(TextRef.current.clientHeight));
+        };
+    }, []);
 
     return (
         <Wrapper>
