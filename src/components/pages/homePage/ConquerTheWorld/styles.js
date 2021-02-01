@@ -161,6 +161,4 @@ const TextWrapper = styled.section`
     }
 `;
 
-const Paragraph = styled.p``;
-
-export { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper, Paragraph };
+export { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper };
