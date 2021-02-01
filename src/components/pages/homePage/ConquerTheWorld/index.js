@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import { useIntl } from 'gatsby-plugin-intl';
 
-import { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper, Paragraph } from './styles';
+import { Wrapper, Header, ImageAndTextContainer, Text, TextWrapper } from './styles';
 import { conquerTheWorldAnimation } from './useAnimate';
 
 const SecondAnimation = () => {
@@ -16,8 +16,8 @@ const SecondAnimation = () => {
 
     useEffect(() => {
         conquerTheWorldAnimation(animationWrapper, WhiteBoxLeft, WhiteBoxRight, TextRef);
-        setHeight(TextRef.current.clientHeight);
-        window.addEventListener('resize', () => setHeight(TextRef.current.clientHeight));
+        setHeight(TextRef?.current?.clientHeight);
+        window.addEventListener('resize', () => setHeight(TextRef?.current?.clientHeight));
     }, []);
 
     return (
@@ -40,21 +40,21 @@ const SecondAnimation = () => {
                     <div className="WhiteBox" ref={WhiteBoxLeft}></div>
                     <TextWrapper>
                         <Text ref={TextRef}>
-                            <Paragraph>
+                            <p>
                                 {intl.formatMessage({
                                     id: `projectSection.block1`,
                                 })}
-                            </Paragraph>
-                            <Paragraph>
+                            </p>
+                            <p>
                                 {intl.formatMessage({
                                     id: `projectSection.block2`,
                                 })}
-                            </Paragraph>
-                            <Paragraph>
+                            </p>
+                            <p>
                                 {intl.formatMessage({
                                     id: `projectSection.block3`,
                                 })}
-                            </Paragraph>
+                            </p>
                         </Text>
                     </TextWrapper>
 
