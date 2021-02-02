@@ -58,7 +58,7 @@ const AnimationContent = styled.div`
         width: 85%;
     }
     @media (max-width: 500px) {
-        width: 95%;
+        width: 90%;
         position: absolute;
         top: 20%;
         left: 50%;
