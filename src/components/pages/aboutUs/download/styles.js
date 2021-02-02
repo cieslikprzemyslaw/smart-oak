@@ -20,6 +20,7 @@ const Links = styled.section`
 
     @media (min-width: 1024px) {
         text-align: left;
+        width: 40vw;
     }
 `;
 const Link = styled.section`
