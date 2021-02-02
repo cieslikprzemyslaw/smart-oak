@@ -5,6 +5,10 @@ const Container = styled.div`
     position: relative;
     height: calc(100vh - 4.5rem);
     z-index: 3;
+
+    @media (max-width: 900px) {
+        margin-top: 5rem;
+    }
 `;
 const TextContainer = styled.div`
     position: relative;
