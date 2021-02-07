@@ -20,20 +20,20 @@ const FourthAnimationExtended = styled.div`
 const AnimationImg = styled.img`
     min-width: 100%;
     max-height: 150vh;
-    @media (max-width: 1024px) {
-        min-height: 100vh;
-    }
-    @media (max-width: 550px) {
-        min-height: 120vh;
-    }
-    @media (max-width: 450px) {
-        min-height: 130vh;
-    }
+    // @media (max-width: 1024px) {
+    //     min-height: 100vh;
+    // }
+    // @media (max-width: 550px) {
+    //     min-height: 120vh;
+    // }
+    // @media (max-width: 450px) {
+    //     min-height: 130vh;
+    // }
 `;
 
 const AnimationContainer = styled.div`
     position: relative;
-    max-height: 125vh;
+    max-height: 150vh;
     @media (max-width: 1224px) {
         text-align: justify;
     }
@@ -68,7 +68,7 @@ const AnimationContent = styled.div`
 
 const AnimationContentParagraph = styled.div`
     margin-top: 40px;
-    font-size: 26px;
+    font-size: 2.5vh;
     line-height: 1.8;
     font-weight: 400;
 
@@ -76,53 +76,53 @@ const AnimationContentParagraph = styled.div`
         width: 100%;
         text-align: justify;
         margin: 14px auto;
-        font-size: 24px;
+        // font-size: 24px;
     }
-    @media (max-width: 800px) {
-        font-size: 20px;
-    }
-    @media (max-width: 500px) {
-        font-size: 16px;
-    }
-    @media (max-width: 360px) {
-        font-size: 16px;
-    }
+    // @media (max-width: 800px) {
+    //     font-size: 20px;
+    // }
+    // @media (max-width: 500px) {
+    //     font-size: 16px;
+    // }
+    // @media (max-width: 360px) {
+    //     font-size: 16px;
+    // }
 
-    @media (max-width: 1224px) {
+    @media (max-width: 1023px) {
         position: absolute;
     }
-    @media (min-height: 1300px) {
-        font-size: 44px;
-    }
+    // @media (min-height: 1300px) {
+    //     font-size: 44px;
+    // }
 `;
 
 const AnimationContentHeader = styled.h2`
-    font-size: 37px;
+    font-size: 4.5vh;
     line-height: 1.5;
     font-weight: 600;
 
     @media (max-width: 1024px) {
         width: 100%;
-        font-size: 36px;
+        // font-size: 36px;
     }
-    @media (max-width: 800px) {
-        font-size: 28px;
-    }
-    @media (max-width: 500px) {
-        font-size: 24px;
-    }
-    @media (max-width: 360px) {
-        font-size: 20px;
-    }
-    @media (min-height: 1300px) {
-        font-size: 62px;
-    }
+    // @media (max-width: 800px) {
+    //     font-size: 28px;
+    // }
+    // @media (max-width: 500px) {
+    //     font-size: 24px;
+    // }
+    // @media (max-width: 360px) {
+    //     font-size: 20px;
+    // }
+    // @media (min-height: 1300px) {
+    //     font-size: 62px;
+    // }
 `;
 
 const AfterAnimationContainer = styled.div`
     width: 70%;
     padding: 150px 0 150px 0;
-    margin: 0 auto;
+    margin: 100 auto;
     text-align: center;
     @media only screen and (max-width: 1440px) {
         padding: 100px 0 100px 0;
