@@ -5,7 +5,7 @@ const Section = styled.footer`
     width: 100%;
     height: 168px;
     padding: 1rem 4rem;
-    background: none;
+    background-color: #f7f6f5;
     border-top: 1px solid #c1c1c1;
     position: absolute;
     z-index: 5;
