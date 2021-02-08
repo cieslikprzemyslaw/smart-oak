@@ -18,6 +18,8 @@ const SecondAnimation = () => {
         conquerTheWorldAnimation(animationWrapper, WhiteBoxLeft, WhiteBoxRight, TextRef);
         setHeight(TextRef?.current?.clientHeight);
         window.addEventListener('resize', () => setHeight(TextRef?.current?.clientHeight));
+        const myRef = TextRef?.current ? TextRef.current : null;
+        return () => window.removeEventListener('resize', () => setHeight(myRef.clientHeight));
     }, []);
 
     return (

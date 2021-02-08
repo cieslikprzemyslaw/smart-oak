@@ -8,11 +8,11 @@ import Nav from '../components/staticComponents/Nav';
 const AboutUs = () => {
     return (
         <>
-        <Nav />
-        <MobileNav />
-        <Description />
-        <Download />
-        <Footer />
+            <Nav />
+            <MobileNav />
+            <Description />
+            <Download />
+            <Footer />
         </>
     );
 };
