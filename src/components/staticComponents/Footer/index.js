@@ -74,12 +74,10 @@ const Footer = () => {
             <SecondLine>
                 <SocialMedia footer />
                 <Policy>
-                    <p>
-                        &copy;
-                        {intl.formatMessage({
-                            id: `footer.smartOakRights`,
-                        })}
-                    </p>
+                    &copy;
+                    {intl.formatMessage({
+                        id: `footer.smartOakRights`,
+                    })}
                     <PrivacyPolicy as="a" href="#">
                         {intl.formatMessage({
                             id: `footer.privacyPolicy`,

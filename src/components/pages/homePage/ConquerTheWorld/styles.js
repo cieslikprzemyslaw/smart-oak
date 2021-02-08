@@ -156,7 +156,8 @@ const TextWrapper = styled.section`
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 152% @media (max-width: 1023px) {
+    line-height: 152%;
+    @media (max-width: 1023px) {
         min-width: 100%;
     }
 `;

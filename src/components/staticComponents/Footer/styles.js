@@ -104,7 +104,7 @@ const DownloadApp = styled.button`
     //     cursor: pointer;
     // }
 
-    &: before {
+    &:before {
         content: '';
         position: absolute;
         display: block;
@@ -161,7 +161,7 @@ const AppDesc = styled.p`
     line-height: 15px;
 `;
 
-const StoreName = styled.p`
+const StoreName = styled.span`
     font-weight: 600;
     font-size: 12px;
 `;
