@@ -123,6 +123,27 @@
         "contact": "Kontakt",
         "asSoon": "Już wkrótce"
     },
+    "contact": {
+        "header": "Contact",
+        "block1": {
+            "title": "Contact details",
+            "subtitle1": "E-mail:",
+            "subtitle2": "Phone:",
+            "subtitle3": "Adress:",
+            "desc1": "office@smartoakprojects.com",
+            "desc2": "739 095 011",
+            "desc3": "Cienin Kościelny 56",
+            "desc4": "62-400 Słupca"
+        },
+        "block2": {
+            "title": "Write ti us",
+            "subtitle1": "Name and Surname",
+            "subtitle2": "E-mail",
+            "subtitle3": "Message",
+            "button": "Submit",
+            "error": "This field is required !"
+        }
+    },
     "footer": {
         "donate": "Support",
         "contact": "Contact",
